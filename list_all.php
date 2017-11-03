@@ -12,8 +12,10 @@
 			echo "<div class='entry_box' style='border: 3px solid black; width: 270px;'>";
 			echo "<p>Titel: " . $post['title'] . "</p>";
 			echo "<p>Innehåll: " . $post['content'] . "</p>";
-			echo "<p>Kategori:" . $post['category'] . "</p>";
-			echo "<p>Skapad av:" . $post['name'] . "</p>";
+			echo "<p>Kategori: " . $post['category'] . "</p>";
+			echo "<p>Skapad av: " . $post['name'] . "</p>";
+			echo "<p>E-mail: " . $post['email'] . "</p>";
+			echo "<p>Skapad: " . $post['time'] . "</p>";
 			echo "</div>";
 		}
 if(isset($_SESSION["user"]["username"])) {

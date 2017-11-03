@@ -18,6 +18,12 @@
 				<input type="text" name="content" class="form-control">
 
 			</div>
+			<div class="form-group">
+				<label for="email"> E-post </label>
+
+				<input type="email" name="email" class="form-control">
+
+			</div>
 			<label for="category"> Välj en kategori </label><br>
 
 			<select class="custom-select" name="category">
