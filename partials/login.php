@@ -19,10 +19,10 @@ if( password_verify($password, $fetched_user["password"]) ){
   $_SESSION["loggedIn"] = true;
 
 
-  header("Location: ../list_all.php?success=true");
+  header("Location: ../index.php?success=true");
 
 } else {
 
-  header("Location: ../index.php?error=Wrong username&success=false");
+  header("Location: ../landing.php?error=Wrong username&success=false");
   
 }

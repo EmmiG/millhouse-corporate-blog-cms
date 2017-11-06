@@ -44,4 +44,4 @@
 			echo "Logga in för att skapa ett inlägg.";
 		}
 ?>
-	<a href="list_all.php" style="font-size: 1.5em; color: black; text-decoration: underline;">Klicka här för att komma tillbaka.</a>
+		<a href="index.php" style="font-size: 1.5em; color: black; text-decoration: underline;">Klicka här för att komma tillbaka.</a>

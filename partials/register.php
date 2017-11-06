@@ -1,16 +1,22 @@
 <?php
     require 'database.php';
+		require 'duplet_checker.php';
+			
+		if(duplet() == false) {
+			$password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+			$username = $_POST["username"];
 
-    $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
-    $username = $_POST["username"];
+			$statement = $pdo->prepare("
+				INSERT INTO users (username, password)
+				VALUES (:username, :password)");
 
-    $statement = $pdo->prepare("
-      INSERT INTO users (username, password)
-      VALUES (:username, :password)");
+			$statement->execute(array(
+				":username" => $username,
+				":password" => $password
+			)); 
 
-    $statement->execute(array(
-      ":username" => $username,
-      ":password" => $password
-    )); 
-
-    header("Location: ../index.php?success=true");
+			header("Location: ../register.php?success=true");
+		}
+		else {
+			header("Location: ../register.php?success=false&username=taken");
+		}
