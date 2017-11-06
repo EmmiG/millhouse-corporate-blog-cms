@@ -4,11 +4,11 @@ require 'database.php';
 
 if(isset($_POST['title'], $_POST['content'], $_POST['category'], $_POST['email'])) {
 			$Message = urlencode("Du har lagt till ett nytt inlägg.");
-			header("Location: ../post.php?Message=".$Message);
+			header("Location: ../index.php?Message=".$Message);
 
 			$statement = $pdo->prepare(
-			"INSERT INTO posts (title, content, category, name, time, email) 
-			VALUES (:title, :content, :category, :name, :time, :email) "
+			"INSERT INTO posts (title, content, category, name, time, email, userID) 
+			VALUES (:title, :content, :category, :name, :time, :email, :userID) "
 			);
 			$date = date('Y-m-d H:i:s');
 			$statement->execute(array(
@@ -16,6 +16,7 @@ if(isset($_POST['title'], $_POST['content'], $_POST['category'], $_POST['email']
 			":content"     => $_POST["content"],
 			":category"    => $_POST["category"],
 			":name"        => $_SESSION["user"]["username"],
+			":userID"			 => $_SESSION["user_id"]["userID"],
 			":time"        => $date,
 			":email"       => $_POST['email']
 			));

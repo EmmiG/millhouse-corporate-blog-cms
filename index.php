@@ -43,6 +43,7 @@
 			echo '</form>';
 		}
 
+
 ?>
 
 <a href="post.php" style="font-size: 1.5em; color: black; text-decoration: underline;">Klicka här för att skapa ett nytt inlägg</a>

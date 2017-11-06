@@ -13,9 +13,17 @@ $statement->execute(array(
 
 $fetched_user = $statement->fetch(PDO::FETCH_ASSOC);
 
-if( password_verify($password, $fetched_user["password"]) ){
+$statement = $pdo->prepare("SELECT userID FROM users WHERE username = :username");
+$statement->execute(array(
+  ":username" => $username
+));
+
+$user_id = $statement->fetch(PDO::FETCH_ASSOC);
+
+if(password_verify($password, $fetched_user["password"])){
 
   $_SESSION["user"] = $fetched_user;
+	$_SESSION["user_id"] = $user_id;
   $_SESSION["loggedIn"] = true;
 
 
