@@ -28,18 +28,18 @@
 
 					<label for="name"> Namn </label>
 
-					<input type="text" name="name" class="form-control">
+					<input type="text" name="name" class="form-control" required>
 				</div>
 				<div class="form-group">
 					<label for="email"> E-post </label>
 
-					<input type="email" name="email" class="form-control">
+					<input type="email" name="email" class="form-control" required>
 
 				</div>
 				<div class="form-group">
 					<label for="comment"> Kommentar </label>
 
-					<input type="text" name="comment" class="form-control">
+					<input type="text" name="comment" class="form-control" required>
 
 				</div>
 				<div class="form-group">

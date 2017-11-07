@@ -10,23 +10,23 @@
 
 				<label for="username"> Titel </label>
 
-				<input type="text" name="title" class="form-control">
+				<input type="text" name="title" class="form-control" required>
 			</div>
 			<div class="form-group">
 				<label for="password"> Inlägg </label>
 
-				<input type="text" name="content" class="form-control">
+				<input type="text" name="content" class="form-control" required>
 
 			</div>
 			<div class="form-group">
 				<label for="email"> E-post </label>
 
-				<input type="email" name="email" class="form-control">
+				<input type="email" name="email" class="form-control" required>
 
 			</div>
 			<label for="category"> Välj en kategori </label><br>
 
-			<select class="custom-select" name="category">
+			<select class="custom-select" name="category" required>
 				<option selected>Open this select menu</option>
 				<option value="Kläder">Kläder</option>
 				<option value="Frukter">Frukter</option>
