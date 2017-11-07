@@ -12,7 +12,7 @@ if(isset($_POST['name'], $_POST['comment'], $_POST['email'])) {
 			);
 			$date = date('Y-m-d H:i:s');
 			$statement->execute(array(
-			":userID"			 => $_SESSION["user_id"]["userID"],
+			":userID"			 => $_SESSION["user"]["userID"],
 			":postID"      => $_POST['postID'],
 			":content"     => $_POST['comment'],
 			":username"    => $_SESSION["user"]["username"],

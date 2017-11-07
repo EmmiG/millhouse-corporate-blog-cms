@@ -16,7 +16,7 @@ if(isset($_POST['title'], $_POST['content'], $_POST['category'], $_POST['email']
 			":content"     => $_POST["content"],
 			":category"    => $_POST["category"],
 			":name"        => $_SESSION["user"]["username"],
-			":userID"			 => $_SESSION["user_id"]["userID"],
+			":userID"			 => $_SESSION["user"]["userID"],
 			":time"        => $date,
 			":email"       => $_POST['email']
 			));

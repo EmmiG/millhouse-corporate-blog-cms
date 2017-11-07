@@ -24,7 +24,7 @@
 					echo '<input type="hidden" value="'.$post["postID"].'" name="postID"/>';
 					echo '<input type="submit" value="ta bort" class="btn btn-primary"/>';
 					echo '</form>';
-					echo '<form action="partials/edit_entry.php" method="post">';
+					echo '<form action="edit_post.php" method="post">';
 					echo '<input type="hidden" value="'.$post["postID"].'" name="postID"/>';
 					echo '<input type="submit" value="redigera" class="btn btn-primary"/>';
 					echo '</form>';
