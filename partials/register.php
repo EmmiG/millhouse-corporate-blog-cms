@@ -15,8 +15,8 @@
 				":password" => $password
 			)); 
 
-			header("Location: ../register.php?success=true");
+			header("Location: ../register_user.php?success=true");
 		}
 		else {
-			header("Location: ../register.php?success=false&username=taken");
+			header("Location: ../register_user.php?success=false&username=taken");
 		}
