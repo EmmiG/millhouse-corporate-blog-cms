@@ -3,30 +3,30 @@
 		require 'partials/head.php';
 		if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
 			?>
-	<div class="container mt-5">
+	<div style="margin-top: 100px" class="container mt-5">
 		<h4>Skapa ett nytt inlägg</h4>
 		<form action="partials/new_entry.php" method="POST">
 			<div class="form-group">
 
 				<label for="username"> Titel </label>
 
-				<input type="text" name="title" class="form-control" required>
+				<input type="text" name="title" class="form-control">
 			</div>
 			<div class="form-group">
 				<label for="password"> Inlägg </label>
 
-				<input type="text" name="content" class="form-control" required>
+                <textarea type="text" name="content" class="form-control" rows="15"></textarea>
 
 			</div>
 			<div class="form-group">
 				<label for="email"> E-post </label>
 
-				<input type="email" name="email" class="form-control" required>
+				<input type="email" name="email" class="form-control">
 
 			</div>
 			<label for="category"> Välj en kategori </label><br>
 
-			<select class="custom-select" name="category" required>
+			<select class="custom-select" name="category">
 				<option selected>Open this select menu</option>
 				<option value="Kläder">Kläder</option>
 				<option value="Frukter">Frukter</option>

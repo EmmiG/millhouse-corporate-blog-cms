@@ -13,18 +13,10 @@ $statement->execute(array(
 
 $fetched_user = $statement->fetch(PDO::FETCH_ASSOC);
 
-$statement = $pdo->prepare("SELECT userID FROM users WHERE username = :username");
-$statement->execute(array(
-  ":username" => $username
-));
-
-$user_id = $statement->fetch(PDO::FETCH_ASSOC);
-
 if(password_verify($password, $fetched_user["password"])){
 
   $_SESSION["user"] = $fetched_user;
   $_SESSION["loggedIn"] = true;
-
 
   header("Location: ../index.php?success=true");
 

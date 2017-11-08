@@ -7,15 +7,13 @@ if(isset($_POST['name'], $_POST['comment'], $_POST['email'])) {
 			header("Location: ../index.php?postID=".$_POST['postID']);
 
 			$statement = $pdo->prepare(
-			"INSERT INTO comments (userID, postID, content, username, name, time, email) 
-			VALUES (:userID, :postID, :content, :username, :name, :time, :email) "
+			"INSERT INTO comments (postID, content, name, time, email) 
+			VALUES (:postID, :content, :name, :time, :email) "
 			);
 			$date = date('Y-m-d H:i:s');
 			$statement->execute(array(
-			":userID"			 => $_SESSION["user"]["userID"],
 			":postID"      => $_POST['postID'],
 			":content"     => $_POST['comment'],
-			":username"    => $_SESSION["user"]["username"],
 			":name"     	 => $_POST['name'],
 			":time"     	 => $date,
 			":email"     	 => $_POST['email']

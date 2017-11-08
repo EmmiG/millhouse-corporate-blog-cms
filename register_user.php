@@ -19,6 +19,11 @@
       <input type="submit" class="btn btn-primary">
     </div>
   </form>
+  
 </div>
-<?php require 'partials/footer.php'; ?>
+<?php
+	if(isset($_SERVER['HTTP_REFERER'])) {
+		echo "<a href=".$_SERVER['HTTP_REFERER'].">Gå tillbaka</a>";
+				}
+require 'partials/footer.php'; ?>
 
