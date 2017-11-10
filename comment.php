@@ -39,18 +39,18 @@
 				<div class="comment_field col-sm-6">
                     <div class="form-group">
                         <label for="name"> Namn </label>
-                        <input type="text" name="name" class="form-control">
+                        <input type="text" name="name" class="form-control" required>
                     </div>
                 </div>
                 <div class="comment_field col-sm-6">
                     <div class="form-group">
                         <label for="email"> E-post </label>
-                        <input type="email" name="email" class="form-control">
+                        <input type="email" name="email" class="form-control" required>
                     </div>
                 </div>
 				<div class="form-group">
 					<label for="comment"> Kommentar </label>
-                    <textarea type="text" name="comment" class="form-control" rows="10"></textarea>
+                    <textarea type="text" name="comment" class="form-control" rows="10" required></textarea>
 				</div>
 				<div class="form-group">
 					<input type="hidden" value="<?=$_POST["postID"]; ?>" name="postID">
