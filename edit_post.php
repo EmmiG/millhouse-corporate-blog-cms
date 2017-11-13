@@ -1,15 +1,17 @@
 <?php	
 		session_start();
+
 		require 'partials/head.php';
 		require 'partials/database.php';
-		if(isset($_POST["postID"])) {
-			$statement = $pdo->prepare("SELECT * FROM posts WHERE postID = :postID");
+		if(isset($_SESSION["user"]["username"])) {
+			if(isset($_GET["postID"]) && $_SESSION["user"]["userID"] == $_GET["author"] or $_SESSION["user"]["username"] == "admin") {
+				$statement = $pdo->prepare("SELECT * FROM posts WHERE postID = :postID");
 
-			$statement->execute(array(
-				":postID"     => $_POST["postID"]
-				));
+				$statement->execute(array(
+					":postID"     => $_GET["postID"]
+					));
 
-			$indivudual_post = $statement->fetchAll(PDO::FETCH_ASSOC); ?>
+				$indivudual_post = $statement->fetchAll(PDO::FETCH_ASSOC); ?>
             
             <div id="blog" class="content_wrap">
 <?php
@@ -43,7 +45,7 @@
                                 <input type="email" name="email" class="form-control" value="<?= $post["email"]; ?>" required>
                             </div>
                             <div class="form-group">
-                                <input type="hidden" value="<?=$_POST["postID"]; ?>" name="postID">
+                                <input type="hidden" value="<?=$_GET["postID"]; ?>" name="postID">
                                 <input type="submit" class="btn btn-primary">
                             </div>
                         </form>
@@ -55,4 +57,5 @@
 					echo "<a href=".$_SERVER['HTTP_REFERER'].">Gå tillbaka</a>";
 					}
 				}
+		}
 			?>

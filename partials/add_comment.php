@@ -3,7 +3,7 @@ session_start();
 require 'database.php';
 
 if(isset($_POST['name'], $_POST['comment'], $_POST['email'], $_SESSION["user"]["userID"], $_SESSION["user"]["username"])) {
-			header("Location: ../index.php?postID=".$_POST['postID']);
+			header("Location: ../comment.php?postID=".$_POST['postID']."#comments");
 
 			$statement = $pdo->prepare(
 			"INSERT INTO comments (userID, postID, content, username, name, time, email) 
@@ -22,7 +22,7 @@ if(isset($_POST['name'], $_POST['comment'], $_POST['email'], $_SESSION["user"]["
 			));
 }
 elseif(isset($_POST['name'], $_POST['comment'], $_POST['email'])) {
-			header("Location: ../index.php?postID=".$_POST['postID']);
+			header("Location: ../comment.php?postID=".$_POST['postID']."#comments");
 
 			$statement = $pdo->prepare(
 			"INSERT INTO comments (userID, postID, content, username, name, time, email) 

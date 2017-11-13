@@ -13,10 +13,10 @@
         </div>
         <div id="blog" class="content_wrap">
 <?php
-    if(isset($_POST["postID"])) {
+    if(isset($_GET["postID"])) {
         $statement = $pdo->prepare("SELECT * FROM posts WHERE postID = :postID");
         $statement->execute(array(
-            ":postID"     => $_POST["postID"]
+            ":postID"     => $_GET["postID"]
         ));
 
 			$indivudual_post = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -53,7 +53,7 @@
                     <textarea type="text" name="comment" class="form-control" rows="10" required></textarea>
 				</div>
 				<div class="form-group">
-					<input type="hidden" value="<?=$_POST["postID"]; ?>" name="postID">
+					<input type="hidden" value="<?=$_GET["postID"]; ?>" name="postID">
 					<input type="submit" class="btn btn-primary">
 				</div>
 			</form>
@@ -62,10 +62,10 @@
 		<h2>(antal) Comments</h2>
 		
 		<?php	
-			$statement = $pdo->prepare("SELECT * FROM comments WHERE postID = :postID");
+			$statement = $pdo->prepare("SELECT * FROM comments WHERE postID = :postID order by id DESC");
 
 			$statement->execute(array(
-				":postID"     => $_POST["postID"]
+				":postID"     => $_GET["postID"]
 				));
 
 			$comments = $statement->fetchAll(PDO::FETCH_ASSOC);

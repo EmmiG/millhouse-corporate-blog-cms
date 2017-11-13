@@ -39,8 +39,9 @@
                                 <input type="hidden" value="<?=$post["postID"] ?>" name="postID"/>
                                 <input type="submit" value="ta bort" class="btn btn-primary"/>
                             </form>
-                            <form action="edit_post.php" method="post">
+                            <form action="edit_post.php" method="get">
                                 <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
+                                <input type="hidden" value="<?= $post["userID"] ?>" name="author"/>
                                 <input type="submit" value="redigera" class="btn btn-primary"/>
                             </form>
                         <?php } else {
@@ -48,7 +49,7 @@
                                 }
                              } ?>
 
-                            <form action="comment.php#comments" method="post">
+                            <form action="comment.php#comments" method="get">
                                 <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
                                 <input type="submit" value="kommentera <?php
 																 $statement = $pdo->prepare("SELECT COUNT(*) FROM comments where postID = :postID");
