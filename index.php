@@ -33,7 +33,7 @@
 
 
                     <?php if(isset($_SESSION["user"]["username"])) {
-                        if($_SESSION["user"]["username"] == $post['name']) {?> 
+                        if($_SESSION["user"]["username"] == $post['name'] or $_SESSION["user"]["username"] == "admin") {?> 
 
                             <form action="partials/delete_entry.php" method="post">
                                 <input type="hidden" value="<?=$post["postID"] ?>" name="postID"/>
