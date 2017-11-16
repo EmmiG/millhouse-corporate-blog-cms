@@ -15,7 +15,15 @@
 			<div class="form-group">
 				<label for="password"> Inlägg </label>
 
-                <textarea type="text" name="content" class="form-control" rows="15"></textarea>
+      <textarea type="text" name="content" id="summernote" rows="15"></textarea>
+        
+			<script>
+				$(document).ready(function() {
+						$('#summernote').summernote({
+							height: 300,
+						});
+				});
+			</script>
 
 			</div>
 			<div class="form-group">
@@ -27,17 +35,18 @@
 			<label for="category"> Välj en kategori </label><br>
 
 			<select class="custom-select" name="category">
-				<option selected>Open this select menu</option>
-				<option value="Kläder">Kläder</option>
+				<option selected="Kläder">Kläder</option>
 				<option value="Frukter">Frukter</option>
 				<option value="Verktyg">Verktyg</option>
 			</select>
+			
 			<div class="form-group">
 
 				<input type="submit" class="btn btn-primary">
 			</div>
 		</form>
 	</div>
+	
 	<?php
 		}
 		else {
@@ -45,3 +54,5 @@
 		}
 ?>
 		<a href="index.php" style="font-size: 1.5em; color: black; text-decoration: underline;">Klicka här för att komma tillbaka.</a>
+		
+		<?php require 'partials/footer.php'; ?>

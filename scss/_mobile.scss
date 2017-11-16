@@ -1,42 +1,36 @@
 @import "_variables.scss";
 @import "_mixin.scss";
 @import "_normalize.scss";
-
 h1, h2, h3, h4, h5 {
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
-
 h1 {
     font-size: 2em;
 }
-
 h2 {
     font-size: 1.6em;
 }
-
 h3 {
     font-size: 1em;
 }
-
 h5 {
     font-size: 0.8em;
     font-weight: 300;
     letter-spacing: 2.2px;
 }
-
-
 p{
     color: #555;
     text-align: left;
 }
-
 a {
     color: #FFF;
     text-decoration: none;
 }
 
-
+article {
+	text-align: left;
+}
 .btn-primary {
     font-size: 1em;
     color: #fff;
@@ -50,23 +44,18 @@ a {
     background-color: #A8AAB3;
     display: block;
     margin: auto;
-
     &:hover {
-    	color: #D8D8D8;
+        color: #D8D8D8;
     }
 }
-
 .content_wrap {
     margin: auto; 
 }
-
 /*-------------------NAVBAR-------------------*/
-
 .navbar {
     background-color: #A5ABB3;
     margin-bottom: 0;
 }
-
 .navbar-fixed-top {
 border-width: 0;
 }
@@ -79,9 +68,7 @@ border-width: 0;
   height: 50px; 
   visibility: hidden; 
 }
-
 /*-------------------JUMBOTRON-------------------*/
-
 .jumbotron {
     background-size: cover;
     background-repeat: no-repeat;
@@ -94,38 +81,33 @@ border-width: 0;
         color: #FFF;
     }
 }
-
 #arrow_down {
-	-webkit-animation-name: arrow_down;
-	animation-name: arrow_down;
-	-webkit-animation-duration: 2s;
-	animation-duration: 2s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
+    -webkit-animation-name: arrow_down;
+    animation-name: arrow_down;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
     font-size: 5em;
     margin-left: 50%;
     
 }
-
 @-webkit-keyframes arrow_down {
-	0% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-		opacity: 1;
-	}
-	100% {
-		-webkit-transform: translateY(20px);
-		transform: translateY(20px);
-		opacity: 0;
-	}
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 0;
+    }
 }
-
 /*-------------------LOG IN-------------------*/
-
 .jumbo_login {
     background-color: #C4CDD6;
 }
-
 .login_box {
     color: #FFF;
     margin: 0 auto;
@@ -151,7 +133,7 @@ border-width: 0;
         text-decoration: none;
         
             &:hover {
-    	    color: #D8D8D8;
+            color: #D8D8D8;
             }
     }
     
@@ -178,20 +160,13 @@ border-width: 0;
         text-align: right;
     }
 }
-
 @media screen and(min-width: 500px){
     .login_box {
         margin-top: 5vh;
     }
 }
-
 /*-------------------REGISTER USER-------------------*/
-
-
-
-
 /*-------------------BLOG LANDING PAGE-------------------*/
-
 .jumbo_start {
     background-color: #D9DEE4;
     
@@ -202,36 +177,46 @@ border-width: 0;
         margin-top: 3vh;      
     }
 }
-
 @media screen and(min-width: 400px){
      .jumbo_start>img {
         width: 500px;
         margin-top: 4vh;      
     }
 }
-
 /*-------------------BLOG PAGE-------------------*/
-
 .entry_box {
     text-align: center;
     margin-top: 54px;
     margin-bottom: 48px; 
 }
-
 /*-------------------COMMENT PAGE-------------------*/
-
 .comment_field {
     padding: 0;
 }
 
+/*-------------------CATEGORY-------------------*/
+
+.category_box {
+	box-shadow: 0px 0px 2px;
+	text-align: center;
+	padding: 5px;
+	margin-top: 30px;
+}
+
+#category {
+	display: flex;
+	align-items: center;
+	width: auto;
+	text-align: center;
+	.buttons {
+		display: flex;
+		margin: 0 auto;
+	}
+}
+
 
 /*-------------------DASHBOARD-------------------*/
-
-
-
-
 /*-------------------FOOTER-------------------*/
-
 #footer {
     background-color: #9EA3A9;
     color: #fff;
@@ -275,11 +260,10 @@ border-width: 0;
         }
         
         a:hover {
-            color: #fff;  
+            color: #fff;  /*-------------------COMMENT PAGE-------------------*/
         }
     }
 }
-
 .social_networks {
     text-align: center;
     margin-top: 30px;

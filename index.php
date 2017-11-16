@@ -28,7 +28,7 @@
                         <h5>Skapad: <?= $post['time'] ?></h5>
                         <h1>Titel: <?= $post['title'] ?></h1>
                         <h5>Författare: <?= $post['name'] ?> | Kategori: <?= $post['category'] ?></h5>
-                        <p>Innehåll: <?= $post['content'] ?></p>
+											  <article><?= $post['content'] ?></article>
                         <h5>E-mail: <?= $post['email'] ?></h5>
 
 
