@@ -1,36 +1,45 @@
 @import "_variables.scss";
 @import "_mixin.scss";
 @import "_normalize.scss";
+
 h1, h2, h3, h4, h5 {
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
+
 h1 {
     font-size: 2em;
 }
+
 h2 {
     font-size: 1.6em;
 }
+
 h3 {
     font-size: 1em;
 }
+
 h5 {
     font-size: 0.8em;
     font-weight: 300;
     letter-spacing: 2.2px;
 }
+
+
 p{
     color: #555;
     text-align: left;
 }
+
 a {
     color: #FFF;
     text-decoration: none;
 }
 
 article {
-	text-align: left;
+    text-align: left;
 }
+
 .btn-primary {
     font-size: 1em;
     color: #fff;
@@ -44,18 +53,35 @@ article {
     background-color: #A8AAB3;
     display: block;
     margin: auto;
+
     &:hover {
-        color: #D8D8D8;
+    	color: #D8D8D8;
     }
 }
+
 .content_wrap {
     margin: auto; 
 }
-/*-------------------NAVBAR-------------------*/
+
+/*--------------------------------------
+        NAVBAR
+--------------------------------------*/
+
 .navbar {
-    background-color: #A5ABB3;
+    background-color: #0F3248;
     margin-bottom: 0;
 }
+
+.navbar-default .navbar-nav>li>a{
+    color: #FFF;
+}
+
+.navbar-default .navbar-brand{
+    color: #FFF;
+    display: inline-block;
+    margin: 0 auto;
+}
+
 .navbar-fixed-top {
 border-width: 0;
 }
@@ -68,7 +94,11 @@ border-width: 0;
   height: 50px; 
   visibility: hidden; 
 }
-/*-------------------JUMBOTRON-------------------*/
+
+/*--------------------------------------
+        JUMBOTRON
+--------------------------------------*/
+
 .jumbotron {
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,40 +111,51 @@ border-width: 0;
         color: #FFF;
     }
 }
+
 #arrow_down {
-    -webkit-animation-name: arrow_down;
-    animation-name: arrow_down;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
+	-webkit-animation-name: arrow_down;
+	animation-name: arrow_down;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
     font-size: 5em;
     margin-left: 50%;
     
 }
+
 @-webkit-keyframes arrow_down {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: translateY(20px);
-        transform: translateY(20px);
-        opacity: 0;
-    }
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+		opacity: 0;
+	}
 }
-/*-------------------LOG IN-------------------*/
+
+.jumbo_login {
+    background-image: url(../images/login_background@500px.jpg);
+}
+
+/*--------------------------------------
+        LOG IN
+--------------------------------------*/
+
 .jumbo_login {
     background-color: #C4CDD6;
 }
+
 .login_box {
     color: #FFF;
     margin: 0 auto;
     margin-bottom: 56px;
     max-width: 480px;
     padding: 48px 56px;
-    background-color: #6A768C;
+    background: rgba(15,50,72,0.80);
     border-radius: 2px;
     
     h3 {
@@ -133,7 +174,7 @@ border-width: 0;
         text-decoration: none;
         
             &:hover {
-            color: #D8D8D8;
+    	    color: #D8D8D8;
             }
     }
     
@@ -142,6 +183,8 @@ border-width: 0;
         display: block;
         margin: auto;
     }
+    
+    
     
     .register_text {
         
@@ -160,13 +203,23 @@ border-width: 0;
         text-align: right;
     }
 }
+
 @media screen and(min-width: 500px){
     .login_box {
         margin-top: 5vh;
     }
 }
-/*-------------------REGISTER USER-------------------*/
-/*-------------------BLOG LANDING PAGE-------------------*/
+
+/*--------------------------------------
+        REGISTER USER
+--------------------------------------*/
+
+
+
+/*--------------------------------------
+        BLOG LANDING
+--------------------------------------*/
+
 .jumbo_start {
     background-color: #D9DEE4;
     
@@ -177,46 +230,214 @@ border-width: 0;
         margin-top: 3vh;      
     }
 }
+
 @media screen and(min-width: 400px){
      .jumbo_start>img {
         width: 500px;
         margin-top: 4vh;      
     }
 }
-/*-------------------BLOG PAGE-------------------*/
+
+/*--------------------------------------
+        BLOG 
+--------------------------------------*/
+
 .entry_box {
     text-align: center;
     margin-top: 54px;
     margin-bottom: 48px; 
 }
-/*-------------------COMMENT PAGE-------------------*/
+
+/*--------------------------------------
+        COMMENT 
+--------------------------------------*/
+
 .comment_field {
     padding: 0;
 }
 
-/*-------------------CATEGORY-------------------*/
+/*--------------------------------------
+        CATEGORY
+--------------------------------------*/
 
 .category_box {
-	box-shadow: 0px 0px 2px;
-	text-align: center;
-	padding: 5px;
-	margin-top: 30px;
+    box-shadow: 0px 0px 2px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
 }
 
 #category {
-	display: flex;
-	align-items: center;
-	width: auto;
-	text-align: center;
-	.buttons {
-		display: flex;
-		margin: 0 auto;
-	}
+    display: flex;
+    align-items: center;
+    width: auto;
+    text-align: center;
+    
+    .buttons {
+        display: flex;
+        margin: 0 auto; 
+    }
+}
+/*--------------------------------------
+        ADMIN/PROFILE
+--------------------------------------*/
+
+/*********SIDEBAR***********/
+ #sidebar {
+    color: #fff;
+    background: #0F3248; 
+    height: 60px;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.3s;
+    position: relative;
+     
+    a, a:hover, a:focus {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+     
+    ul p {
+        color: #fff;
+        padding: 10px;
+    }
+    
+    ul li a {
+        padding: 20px;
+        font-size: 1.1em;
+        display: block;
+        
+        &:hover{
+            color: #8C8E92;
+            background: #fff;
+        }
+    }
+     
+    ul li.active > a {
+        color: #fff;
+        background: #8C8E92;
+    } 
+}
+
+#sidebar .sidebar_header {
+    display: none;
+}
+
+#logout {
+    margin-top: 0;
+}
+     
+#sidebar ul ul a {
+    padding-left: 30px;
+    background: #2c6284;
+    color: #fff;
+}
+
+#sidebar .navbar-collapse {
+    background-color: #0F3248;
+    padding: 0;
+    border: none;
+}
+    
+#sidebar .navbar-collapse ul {
+    margin-bottom: 0;
+}
+
+/*********SHORTCUT BOX***********/    
+.shortcut_box {
+    background-color: #00C59E;
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 120px;
+    height: 120px;
+    
+    p {
+        color: #FFF;
+        margin: auto;
+        text-align: center;
+        padding-top: 50%;
+    }
+    
+    &:nth-child(2){
+        background-color: #00B0C8;
+    }
+    
+    &:nth-child(3){
+        background-color: #FF6C58;
+    }
+    
+    &:nth-child(4){
+        background-color: #F69C35;
+    }
 }
 
 
-/*-------------------DASHBOARD-------------------*/
-/*-------------------FOOTER-------------------*/
+
+/*********CONTENT***********/  
+
+#content {
+    background-color: #F1F2F7;
+    transition: all 0.3s;
+}
+
+.card_header {
+    background-color: #0F3248;
+    padding: 2px 20px;
+    
+    h3 {
+        color: #fff
+    }
+}
+
+.card_content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.recent_loop {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    
+    img {
+        display:none;
+    }
+    
+    p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    &:last-child {
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+}
+ 
+
+
+/*********RECENT POSTS & COMMENTS***********/
+
+.overview_wrap {
+    margin: 16px 0;
+}
+
+.overview_wrap {
+    background-color: #FFF;
+}
+
+.overview_loop {
+    padding-top: 8px;
+}
+
+
+
+/*-----------------------------------------
+                FOOTER
+------------------------------------------*/
+
 #footer {
     background-color: #9EA3A9;
     color: #fff;
@@ -260,10 +481,11 @@ border-width: 0;
         }
         
         a:hover {
-            color: #fff;  /*-------------------COMMENT PAGE-------------------*/
+            color: #fff;  
         }
     }
 }
+
 .social_networks {
     text-align: center;
     margin-top: 30px;

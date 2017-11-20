@@ -62,7 +62,7 @@
 		<h2>(antal) Comments</h2>
 		
 		<?php	
-			$statement = $pdo->prepare("SELECT * FROM comments WHERE postID = :postID order by id DESC");
+			$statement = $pdo->prepare("SELECT * FROM comments WHERE postID = :postID order by id DESC");");
 
 			$statement->execute(array(
 				":postID"     => $_GET["postID"]

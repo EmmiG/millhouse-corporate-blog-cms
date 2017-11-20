@@ -18,7 +18,7 @@ if(password_verify($password, $fetched_user["password"])){
   $_SESSION["user"] = $fetched_user;
   $_SESSION["loggedIn"] = true;
 
-  header("Location: ../index.php?success=true");
+  header("Location: ../profile.php?success=true");
 
 } else {
 

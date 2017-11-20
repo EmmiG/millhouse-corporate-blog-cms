@@ -8,7 +8,6 @@
 		else {
 			echo 'Du är ej inloggad. Logga in <a href="landing.php" style="color: #000;">här</a>';
 		}
-
 ?>
     <div class="main_wrap">
         <div class="jumbotron jumbo_start">
@@ -25,11 +24,11 @@
             <?php
                 foreach($posts as $post) {?>
                     <div class="entry_box">
-                        <h5>Skapad: <?= $post['time'] ?></h5>
-                        <h1>Titel: <?= $post['title'] ?></h1>
-                        <h5>Författare: <?= $post['name'] ?> | Kategori: <?= $post['category'] ?></h5>
-											  <article><?= $post['content'] ?></article>
-                        <h5>E-mail: <?= $post['email'] ?></h5>
+                        <h5><?= $post['time'] ?></h5>
+                        <h1><?= $post['title'] ?></h1>
+                        <h5><?= $post['name'] ?> | Kategori: <?= $post['category'] ?></h5>
+                        <article><?= $post['content'] ?></article>
+                        <h5><?= $post['email'] ?></h5>
 
 
                     <?php if(isset($_SESSION["user"]["username"])) {
@@ -52,30 +51,16 @@
                             <form action="comment.php#comments" method="get">
                                 <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
                                 <input type="submit" value="kommentera <?php
-																 $statement = $pdo->prepare("SELECT COUNT(*) FROM comments where postID = :postID");
-																 $statement->execute(array(
-																 ":postID"        => $post["postID"]
-														 ));
-																 $count = $statement->fetch(PDO::FETCH_ASSOC);
-																 foreach($count as $c) {
-																 	if($c != "0") {
-																		 echo "(" . $c . ")";
-																	}
-																	}?>" class="btn btn-primary"/>
-                            </form>
-                            <form action="partials/like.php" method="post">
-                                <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                                <input type="submit" value="gilla <?php
-																 $statement = $pdo->prepare("SELECT COUNT(*) FROM likes where postID = :postID");
-																 $statement->execute(array(
-																 ":postID"        => $post["postID"]
-														 ));
-																 $count = $statement->fetch(PDO::FETCH_ASSOC);
-																 foreach($count as $c) {
-																	if($c != "0") {
-																		 echo "(" . $c . ")";
-																	}
-																	}?>" class="btn btn-primary"/>
+                                 $statement = $pdo->prepare("SELECT COUNT(*) FROM comments where postID = :postID");
+                                 $statement->execute(array(
+                                 ":postID"        => $post["postID"]
+                                ));
+                                 $count = $statement->fetch(PDO::FETCH_ASSOC);
+                                 foreach($count as $c) {
+                                    if($c != "0") {
+                                         echo "(" . $c . ")";
+                                    }
+                                    }?>" class="btn btn-primary"/>
                             </form>
                             <hr>
                         </div> 
@@ -88,8 +73,9 @@
                     <form action="partials/logout.php" method="post">
                         <input type="submit" value="logga ut" class="btn btn-primary"/>
                     </form>
-            <?php } 
-?>
+            <?php } ?>
+
+
 
 <a href="post.php" style="font-size: 1.5em; color: black; text-decoration: underline;">Klicka här för att skapa ett nytt inlägg</a>
 

@@ -2,6 +2,7 @@
 session_start();
 require 'database.php';
 
+
 if(isset($_POST['name'], $_POST['comment'], $_POST['email'], $_SESSION["user"]["userID"], $_SESSION["user"]["username"]) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 			header("Location: ../comment.php?postID=".$_POST['postID']."#comments");
 

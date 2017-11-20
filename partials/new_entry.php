@@ -4,7 +4,7 @@ require 'database.php';
 
 if(isset($_POST['title'], $_POST['content'], $_POST['category'], $_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 			$Message = urlencode("Du har lagt till ett nytt inlägg.");
-			header("Location: ../index.php?Message=".$Message);
+			header("Location: ../profile_viewposts.php?Message=".$Message);
 
 			$statement = $pdo->prepare(
 			"INSERT INTO posts (title, content, category, name, time, email, userID) 

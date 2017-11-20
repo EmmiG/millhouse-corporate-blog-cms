@@ -33,3 +33,5 @@
 		echo "<a href=".$_SERVER['HTTP_REFERER'].">Go back</a>";
 				}
 require 'partials/footer.php'; ?>
+
+
