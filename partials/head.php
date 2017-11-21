@@ -33,7 +33,7 @@
                 <li><a href="index.php">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="category.php">CATEGORY</a></li>
-                <li><a href="#">ARCHIVE</a></li>
+                <li><a href="archive.php">ARCHIVE</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
