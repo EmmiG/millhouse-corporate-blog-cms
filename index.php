@@ -75,8 +75,6 @@
 																		 echo "(" . $c . ")";
 																		}
 																	}?>" class="btn btn-primary"/>
-															</form>
-
                             <hr>
                         </div> 
                 <?php } ?>  
