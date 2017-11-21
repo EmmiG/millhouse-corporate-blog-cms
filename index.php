@@ -18,7 +18,7 @@
             </div>
             </a>
         </div>
-
+HEEEJ
         <div id="blog" class="content_wrap">
             <article>
             <?php
