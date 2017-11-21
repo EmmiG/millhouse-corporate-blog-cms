@@ -62,6 +62,21 @@
                                     }
                                     }?>" class="btn btn-primary"/>
                             </form>
+                            <form action="partials/like.php" method="post">
+                            	<input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
+                            	<input type="submit" value="gilla <?php
+																$statement = $pdo->prepare("SELECT COUNT(*) FROM likes where postID = :postID");
+																$statement->execute(array(
+																":postID"        => $post["postID"]
+																));
+																$count = $statement->fetch(PDO::FETCH_ASSOC);
+																foreach($count as $c) {
+																	if($c != "0") {
+																		 echo "(" . $c . ")";
+																		}
+																	}?>" class="btn btn-primary"/>
+															</form>
+
                             <hr>
                         </div> 
                 <?php } ?>  
