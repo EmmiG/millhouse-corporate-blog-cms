@@ -25,7 +25,16 @@
 
                             <div class="form-group">
                                 <label for="content"> Innehåll </label>
-                                <input type="text" name="content" class="form-control" value="<?= $post["content"]; ?>" required>
+																<textarea type="text" name="content" id="summernote" rows="15"></textarea>
+                                
+                                <script>
+																		$(document).ready(function() {
+																						$('#summernote').summernote({
+																								height: 300,
+																						});
+																			$("#summernote").summernote("code", "<?= $post["content"]; ?>");
+																		});
+																</script>
 
                             </div>
                             <div class="form-group">
@@ -55,4 +64,4 @@
 					}
 				}
 		}
-			?>
+		require 'partials/footer.php';	?>
