@@ -31,47 +31,55 @@ $date = date("F", mktime(0, 0, 0, $value, 10));
 }
 ?>
 </select>
+
 <br>
 <br>
+
 <div class="row">
 <div class="col-sm-12">      
-            <div class="card_header">
-                <h3>View all posts</h3>    
-            </div>
-            <div class="card_content">
-            <?php 
-            if(isset($_GET['month'])) {
+    <div class="card_header">
+        <h3>View all posts</h3>    
+    </div>
+
+<div class="card_content">
+<?php 
+if(isset($_GET['month'])) {
 include 'partials/sort_months.php';
 foreach($selected_posts as $selpost) { ?>
-                <div class="recent_loop row">
-                    <div class="col-sm-9">
-                        <h4><?= $selpost['title'] ?></h4>
-                        <h5><?= $selpost['time'] ?></h5>
-                        <p><?= $selpost['content'] ?></p>
-                        <!--<p> <?= $c['email'] ?></p>-->
-                    </div>
-                    <div class="col-sm-3">
-                        <?php if(isset($_SESSION["user"]["username"])) {?> 
-                                   
-                                    <form action="partials/delete_entry.php" method="post">
-                                        <input type="hidden" value="<?=$post["postID"] ?>" name="postID"/>
-                                        <input type="submit" value="ta bort" class="btn btn-primary btn_card"/>
-                                    </form>
-                                    <form action="profile_editpost.php" method="post">
-                                        <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                                        <input type="submit" value="redigera" class="btn btn-primary btn_card"/>
-                                    </form>
-                    </div> 
-                </div>  
+
+<div class="recent_loop row">
+    <div class="col-sm-9">
+        <h4><?= $selpost['title'] ?></h4>
+        <h5><?= $selpost['time'] ?></h5>
+        <p><?= $selpost['content'] ?></p>
+        <!--<p> <?= $c['email'] ?></p>-->
+    </div>
+
+	<div class="col-sm-3">
+	    <?php if(isset($_SESSION["user"]["username"])) {?> 
+	                   
+	        <form action="partials/delete_entry.php" method="post">
+	            <input type="hidden" value="<?=$post["postID"] ?>" name="postID"/>
+	            <input type="submit" value="ta bort" class="btn btn-primary btn_card"/>
+	        </form>
+
+	        <form action="profile_editpost.php" method="post">
+	            <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
+	            <input type="submit" value="redigera" class="btn btn-primary btn_card"/>
+	        </form>
+    </div> 
+</div><!--stänger recent_loop row-->
  
-            <?php }}} ?>
-            </div>
-        </div>
-       </div>
+        <?php }}} ?>
+     </div><!--stänger card_content-->
+  </div><!--stänger col-sm-12-->
+</div><!--stänger row-->
+
 <input type="submit" class="btn btn-primary" value="VIEW POSTS">
 </form>
-</div>
-</div><!--stänger content_wrap-->
+
+		</div><!--stänger content_wrap-->
+	</div><!--stänger container-->
 </div><!--stänger main_wrap-->
 
 
