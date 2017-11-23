@@ -2,7 +2,10 @@
     session_start(); 
     require 'partials/head.php';
     require 'partials/fetch_months.php';
+
 ?>
+
+
 
 
 <div class="main_wrap">
@@ -55,19 +58,9 @@ foreach($selected_posts as $selpost) { ?>
         <!--<p> <?= $c['email'] ?></p>-->
     </div>
 
-	<div class="col-sm-3">
-	    <?php if(isset($_SESSION["user"]["username"])) {?> 
-	                   
-	        <form action="partials/delete_entry.php" method="post">
-	            <input type="hidden" value="<?=$post["postID"] ?>" name="postID"/>
-	            <input type="submit" value="ta bort" class="btn btn-primary btn_card"/>
-	        </form>
-
-	        <form action="profile_editpost.php" method="post">
-	            <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-	            <input type="submit" value="redigera" class="btn btn-primary btn_card"/>
-	        </form>
-    </div> 
+<div class="col-sm-3">
+    <?php if(isset($_SESSION["user"]["username"])) {?> 
+</div> 
 </div><!--stänger recent_loop row-->
  
         <?php }}} ?>
