@@ -77,7 +77,12 @@
 						}
 						if(empty($_GET['page'])) {
 							for ($i=1; $i<=$total_pages; $i++) {  
-								 $page_links .= "<li class='page-item'><a class='page-link' href='index.php?page=".$i."'>$i</a></li>";
+								 if(1 == $i) {
+									$page_links .= "<li class='active'><a class='page-link' href='index.php?page=".$i."'>$i</a></li>"; 
+								 }
+								else {
+									$page_links .= "<li class='page-item'><a class='page-link' href='index.php?page=".$i."'>$i</a></li>"; 
+								 }
 							};   
 							if($total_pages > 1) {
 								$page_links .= "<li class='page-item'><a class='page-link' href='index.php?page=2' aria-label='Next'><span aria-hidden='true'>&raquo;</span><span class='sr-only'>Next</span></a></li>";
@@ -86,7 +91,12 @@
 						}
 						if(isset($_GET['page'])) {
 							for ($i=1; $i<=$total_pages; $i++) {  
-								 $page_links .= "<li class='page-item'><a class='page-link' href='index.php?page=".$i."'>$i</a></li>"; 
+								if($_GET['page'] == $i) {
+									$page_links .= "<li class='active'><a class='page-link' href='index.php?page=".$i."'>$i</a></li>"; 
+								 }
+								else {
+									$page_links .= "<li class='page-item'><a class='page-link' href='index.php?page=".$i."'>$i</a></li>"; 
+								 }
 							}
 							if($_GET['page'] < $total_pages) {
 								$page_links .= "<li><a class='page-link' href='index.php?page=".($_GET['page'] + 1)."' aria-label='Next'><span aria-hidden='true'>&raquo;</span><span class='sr-only'>Next</span></a></li>";
