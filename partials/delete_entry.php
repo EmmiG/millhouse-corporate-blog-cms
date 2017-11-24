@@ -5,7 +5,7 @@
 	
 		$statement->execute(array(":postID" => $_POST["postID"]));
 
-		header("Location: ../profile_viewposts.php?post=deleted");
+		header("Location: ../profile_deletepost.php?post=deleted");
 	}
 
 ?>

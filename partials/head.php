@@ -24,17 +24,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">MILLHOUSE</a>
+              
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="category.php">CATEGORY</a></li>
-                <li><a href="archive.php">ARCHIVE</a></li>
-              </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.php">HOME</a></li>                   
+                    <li><a href="about.php">ABOUT</a></li>
+                </ul>
+                <a class="navbar-brand" href="index.php">MILLHOUSE</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="category.php">CATEGORY</a></li>                   
+                    <li><a href="archive.php">ARCHIVE</a></li>
+                </ul>
+                <?php if(isset($_SESSION["user"]["username"])) {?>    
+                <ul class="nav navbar-nav navbar-right">    
+                    <li><a href="profile.php">
+                    LOGGED IN: <?= $_SESSION["user"]["username"]; }?>
+                    </a></li>
+                </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>

@@ -3,15 +3,7 @@
     require 'partials/head.php';
     require 'partials/database.php';
 ?>
-        <div class="jumbotron jumbo_start">
-            <img src="images/millhouse_white_logo.svg">
-            <a href="comment.php#blog">
-            <div id="arrow_down">
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
-            </a>
-        </div>
-        <div id="blog" class="content_wrap">
+        <div class="content_wrap">
 <?php
     if(isset($_GET["postID"])) {
         $statement = $pdo->prepare("SELECT * FROM posts WHERE postID = :postID");

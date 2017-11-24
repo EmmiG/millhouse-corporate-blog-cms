@@ -4,14 +4,6 @@
 ?>
 
  <div class="main_wrap">
-    <div class="jumbotron jumbo_start">
-        <img src="images/millhouse_white_logo.svg">
-        <a href="#category">
-        <div id="arrow_down">
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-        </div>
-        </a>
-    </div>
 
     <div id="category" class="content_wrap">
     	<div class="buttons">
