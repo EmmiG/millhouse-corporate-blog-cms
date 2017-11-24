@@ -23,37 +23,35 @@
 
     <div class="collapse navbar-collapse" id="sidebar_collapsed">       
         <div class="sidebar_header">
-            <h3>ADMIN</h3>
+            <img src="../images/admin.svg"><h3>ADMIN</h3>
         </div>
         <ul class="list-unstyled components">
             <!--<li class="active">-->
             <li>   
-                <a href="profile.php" aria-expanded="false">Dashboard</a>
+                <a href="profile.php" aria-expanded="false"><img src="../images/dashboard.svg">Dashboard</a>
             </li>
             <li>   
-                <a href="#post_submenu" data-toggle="collapse" aria-expanded="false">Posts</a> 
+                <a href="#post_submenu" data-toggle="collapse" aria-expanded="false"><img src="../images/posts.svg">Posts</a> 
                 <ul class="collapse list-unstyled" id="post_submenu">
                     <li><a href="profile_viewposts.php">View posts</a></li>
                     <li><a href="profile_newpost.php">New post</a></li>
-                    <li><a href="profile_editpost.php">Edit post</a></li>
-                    <li><a href="profile_deletepost.php">Delete post</a></li>
                 </ul>
             </li>    
             <li>       
-                <a href="#pages_submenu" data-toggle="collapse" aria-expanded="false">Comments</a>
+                <a href="#pages_submenu" data-toggle="collapse" aria-expanded="false"><img src="../images/comments.svg">Comments</a>
                 <ul class="collapse list-unstyled" id="pages_submenu">
                     <li><a href="#">View comments</a></li>
                     <li><a href="#">Delete comment</a></li>
                 </ul>
             </li>
-            <li>    
+            
+            <li class="logout">   
             <?php
             if(isset($_SESSION["user"]["username"])) { ?>
-            <form action="partials/logout.php" method="post">
-                <input id="logout" type="submit" value="logga ut" class="btn btn-primary"/>
-            </form>    
-            </li>
+                <a href="partials/logout.php" value="logga ut" aria-expanded="false"><img src="../images/logout.svg">Log out</a>
             <?php } ?>
+            </li>
         </ul>
     </div>
 </nav>
+

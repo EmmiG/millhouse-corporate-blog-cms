@@ -35,13 +35,13 @@
         <label for="category"> Choose category</label><br>
         <select class="custom-select" name="category">
             <option selected>Open this select menu</option>
-            <option value="Kläder">Clothes</option>
-            <option value="Frukter">Fruits</option>
-            <option value="Verktyg">Tools</option>
+            <option class="btn" value="Kläder">Clothes</option>
+            <option class="btn" value="Frukter">Fruits</option>
+            <option class="btn" value="Verktyg">Tools</option>
         </select>
 
         <div class="form-group">
-            <input type="submit" class="btn btn-primary">
+            <input type="submit" value="submit" class="btn btn-primary">
         </div>
 
     </form>
