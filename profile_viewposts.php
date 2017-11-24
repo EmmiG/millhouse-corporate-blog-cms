@@ -27,14 +27,7 @@
                     <div class="col-sm-3">
                         <?php if(isset($_SESSION["user"]["username"])) {?> 
                                    
-                                    <form action="partials/delete_entry.php" method="post">
-                                        <input type="hidden" value="<?=$post["postID"] ?>" name="postID"/>
-                                        <input type="submit" value="ta bort" class="btn btn-primary btn_card"/>
-                                    </form>
-                                    <form action="profile_editpost.php" method="post">
-                                        <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                                        <input type="submit" value="redigera" class="btn btn-primary btn_card"/>
-                                    </form>
+                                   
                     </div> 
                 </div>  
  
