@@ -35,10 +35,19 @@
 
                                 <script>
                                     $(document).ready(function() {
-                                    $('#summernote').summernote({
-                                    height: 300,
-                                    });
-                                    });
+																			$('#summernote').summernote({
+																					height: 300,
+																					toolbar: [
+																						// [groupName, [list of button]]
+																						['style', ['bold', 'italic', 'underline', 'clear']],
+																						//['font', ['strikethrough', 'superscript', 'subscript']],
+																						['fontsize', ['fontsize']],
+																						['color', ['color']],
+																						['para', ['ul', 'ol', 'paragraph']],
+																						['height', ['height']]
+																					],
+																				});
+																			});
                                 </script>
                             </div>
                             <div class="form-group">
