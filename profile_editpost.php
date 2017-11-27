@@ -59,10 +59,6 @@
 
                             </div>
                             <div class="form-group">
-                                <label for="comment"> E-mail </label>
-                                <input type="email" name="email" class="form-control" value="<?= $post["email"]; ?>" required>
-                            </div>
-                            <div class="form-group">
                                 <input type="hidden" value="<?=$_POST["postID"]; ?>" name="postID">
                                 <input type="submit" class="btn btn-primary">
                             </div>
