@@ -26,33 +26,12 @@
 
                             <form action="comment.php#comments" method="get">
                                 <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                                <input type="submit" value="<?php
-                                 $statement = $pdo->prepare("SELECT COUNT(*) FROM comments where postID = :postID");
-                                 $statement->execute(array(
-                                 ":postID"        => $post["postID"]
-                                ));
-                                 $count = $statement->fetch(PDO::FETCH_ASSOC);
-                                 foreach($count as $c) {
-                                    if($c != "0") {
-                                         echo $c . " ";
-                                    }
-                                    }?>comments" class="btn btn-primary"/>
+                                <input type="submit" value="<?php require 'partials/fetch_comment_count.php'; ?>comments" class="btn btn-primary"/>
                             </form>
                             
                             <form action="partials/like.php" method="post">
                                 <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                                <input type="submit" value="<?php
-                                $statement = $pdo->prepare("SELECT COUNT(*) FROM likes where postID = :postID");
-                                $statement->execute(array(
-                                ":postID"        => $post["postID"]
-                                ));
-                                          
-                                $count = $statement->fetch(PDO::FETCH_ASSOC);
-                                foreach($count as $c) {
-                                if($c != "0") {
-                                echo $c . " ";
-                                }
-                                }?>like" class="btn btn-primary"/>
+                                <input type="submit" value="<?php require 'partials/fetch_like_count.php'?>like" class="btn btn-primary"/>
                             </form>
                             
                             <hr>

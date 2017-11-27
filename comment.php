@@ -51,7 +51,7 @@
 			</form>
 		</div>
 		
-		<h2>(antal) Comments</h2>
+		<h2><?php require 'partials/fetch_comment_count.php'; ?> Comments</h2>
 		
 		<?php	
 			$statement = $pdo->prepare("SELECT * FROM comments WHERE postID = :postID order by id DESC");
