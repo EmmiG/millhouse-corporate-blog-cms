@@ -2,7 +2,7 @@
 session_start();
 require 'database.php';
 
-if(isset($_POST['title'], $_POST['content'], $_POST['category'], $_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+if(isset($_POST['title'], $_POST['content'], $_POST['category'], $_SESSION['user'])) {
 			$Message = urlencode("Du har lagt till ett nytt inlägg.");
 			header("Location: ../profile_viewposts.php?Message=".$Message);
 
@@ -18,7 +18,7 @@ if(isset($_POST['title'], $_POST['content'], $_POST['category'], $_POST['email']
 			":name"        => $_SESSION["user"]["username"],
 			":userID"	   => $_SESSION["user"]["userID"],
 			":time"        => $date,
-			":email"       => $_POST['email']
+			":email"       => $_SESSION['user']['email']
 			));
 }
 

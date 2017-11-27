@@ -35,11 +35,6 @@
                 </script>
         </div>
 
-        <div class="form-group">
-            <label for="email"> E-mail </label>
-            <input type="email" name="email" class="form-control">
-        </div>
-
         <label for="category"> Choose category</label><br>
         <select class="custom-select" name="category">
             <option selected>Open this select menu</option>

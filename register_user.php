@@ -16,6 +16,10 @@
                         <input type="password" name="password" class="form-control" placeholder="***********">
                     </div>
                     <div class="form-group">
+                        <label for="email"> E-mail </label>
+                        <input type="email" name="email" class="form-control" placeholder="Example@example.com">
+                    </div>
+                    <div class="form-group">
                         <input type="submit" class="btn btn-primary">
                     </div>
                     <div class="register_text">
