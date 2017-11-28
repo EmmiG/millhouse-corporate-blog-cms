@@ -6,7 +6,7 @@
         <div class="content_wrap">
 <?php
     if(isset($_GET["postID"])) {
-			require 'partials/fetch_entry_comment.php';
+			require 'partials/fetch_individual_entry.php';
 			foreach($indivudual_post as $post) { ?>
 				<div class="entry_box">
                     <h5>Skapad: <?= $post['time'] ?></h5>
