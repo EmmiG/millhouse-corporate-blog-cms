@@ -1,6 +1,6 @@
 <?php
     require 'database.php';
-		require 'duplet_checker.php';
+		require 'functions.php';
 			
 		if(duplet() == false && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 			$password = password_hash($_POST["password"], PASSWORD_DEFAULT);
