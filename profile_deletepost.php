@@ -2,7 +2,6 @@
         session_start();
         require 'partials/database.php';
         require 'partials/head_profile.php';
-        require 'partials/fetch_entries.php';
 ?>
 <div id="content" class="container">
     <div class="row">
@@ -12,7 +11,8 @@
             </div>
             <div class="card_content">
             <?php 
-            foreach($posts as $post) { ?>
+						require 'partials/fetch_individual_entries_profile.php';
+            foreach($indivudual_post_profile as $post) { ?>
                 <div class="recent_loop row">
                     <div class="col-sm-9">
                         <h4><?= $post['title'] ?></h4>

@@ -4,15 +4,8 @@
         require 'partials/head_profile.php';
 
         if(isset($_POST["postID"])) {
-			$statement = $pdo->prepare("SELECT * FROM posts WHERE postID = :postID");
-
-			$statement->execute(array(
-				":postID"     => $_POST["postID"]
-				));
-
-			$indivudual_post = $statement->fetchAll(PDO::FETCH_ASSOC); 
-
-            foreach($indivudual_post as $post) { ?>
+					require 'partials/fetch_individual_entry.php';
+					foreach($indivudual_post as $post) { ?>
                 <div id="content" class="container">
                    <?php
 				 
