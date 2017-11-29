@@ -6,8 +6,6 @@
 
 		$count = $statement->fetch(PDO::FETCH_ASSOC);
 		foreach($count as $c) {
-		if($c != "0") {
 		echo $c . " ";
-			}
 		}
 ?>
