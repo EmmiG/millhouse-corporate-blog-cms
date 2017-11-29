@@ -3,6 +3,7 @@
 		require 'partials/head.php';
 		require 'partials/fetch_entries.php';
 ?>
+   <script src="js/modernizr.custom.js"></script>
     <div class="main_wrap">
         <div class="jumbotron jumbo_start">
             <img src="images/millhouse_white_logo.svg">
@@ -29,13 +30,14 @@
                                 <input type="submit" value="<?php require 'partials/fetch_comment_count.php'; ?>comments" class="btn btn-primary"/>
                             </form>
                             
-                            <form action="partials/like.php" method="post">
+                            <form id="like" action="partials/like.php" method="post">
                                 <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                                <input type="submit" value="<?php require 'partials/fetch_like_count.php'?>like" class="btn btn-primary"/>
+                                <input type="submit" value="<?php require 'partials/fetch_like_count.php'?>likes" class="btn btn-primary"/>
                             </form>
-                            
-                            <hr>
-                        </div> 
+                        </div>
+                        
+                        <hr>
+                        
                 <?php } ?>  
             </article>
             <?php

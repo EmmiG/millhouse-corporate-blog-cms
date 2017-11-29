@@ -18,13 +18,12 @@
                         <h4><?= $post['title'] ?></h4>
                         <h5><?= $post['time'] ?></h5>
                         <p><?= $post['content'] ?></p>
-                        <!--<p> <?= $c['email'] ?></p>-->
                     </div>
                     <div class="col-sm-3">
                         <?php if(isset($_SESSION["user"]["username"])) {?> 
                     <form action="comment.php" method="get">
                         <input type="hidden" value="<?= $post['postID'] ?>" name="postID"/>
-                        <input type="submit" value="show post" class="btn btn-primary"/>
+                        <input type="submit" value="show post" class="btn btn-primary btn_card"/>
                     </form>
                       <form action="partials/delete_entry.php" method="post">
                         <input type="hidden" value="<?=$post["postID"] ?>" name="postID"/>
@@ -41,6 +40,10 @@
             </div>
         </div>
     </div>
+        
+    <?php
+        require 'partials/paginator_profile_vposts.php';
+    ?>
 </div>  
 
 

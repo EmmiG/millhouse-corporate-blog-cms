@@ -353,12 +353,18 @@ border-width: 0;
     display: none;
 }
 
-/*********SHORTCUT BOX***********/    
+/*********SHORTCUT BOX***********/
+
+.shortcut {
+    flex-flow: row wrap;
+    padding: 0;
+}
+
 a.shortcut_box {
     background-color: #00C59E;
-    margin-left: 8px;
     margin-top: 8px;
-    width: 120px;
+    margin-left: 8px;
+    width: 25%;
     height: 120px;
     display: block;
     text-decoration: none;
@@ -393,8 +399,12 @@ a.shortcut_box {
 
 /*********CONTENT***********/  
 
-#content {
+#profile_body {
     background-color: #F1F2F7;
+    padding: 0;
+}
+
+#content {
     transition: all 0.3s;
 }
 

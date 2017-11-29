@@ -12,8 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
   
-<body> 
-
+<body id="profile_body"> 
 <nav id="sidebar">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar_collapsed" aria-expanded"false">
@@ -40,8 +39,8 @@
             <li>       
                 <a href="#pages_submenu" data-toggle="collapse" aria-expanded="false"><img src="../images/comments.svg">Comments</a>
                 <ul class="collapse list-unstyled" id="pages_submenu">
-                    <li><a href="#">View comments</a></li>
-                    <li><a href="#">Delete comment</a></li>
+                    <li><a href="profile_viewcomments.php">View comments</a></li>
+                    <li><a href="profile_deletecomment.php">Delete comment</a></li>
                 </ul>
             </li>
             
