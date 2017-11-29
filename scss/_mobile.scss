@@ -514,3 +514,43 @@ a.shortcut_box {
         transition: 0.2s;
     }
 }
+
+/*-----------------------------------------
+                ABOUT
+------------------------------------------*/
+
+
+.about_wrap {
+    padding-bottom: 50px;
+    
+}
+  
+.about_text {
+        margin-left: 20px; 
+        margin-right: 20px;
+        padding-bottom: 40px; 
+}
+
+.about_image {
+        height: 340px;
+        margin-left: 10px; 
+        margin-right: 10px;      
+}
+.about_image img {
+        overflow: hidden;
+        max-height:100%;
+        margin: auto;
+        display: block;       
+}
+
+.about_wrap h1{
+        text-align: center;
+        font-size: 20px;
+        padding-top: 90px;
+        padding-bottom: 30px;            
+}
+   
+.about_row{
+        padding-bottom: 30px;        
+}
+

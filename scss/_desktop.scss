@@ -185,3 +185,30 @@ a.shortcut_box {
 .clear {
     clear:both;
 }
+
+/*-----------------------------------------
+                ABOUT
+------------------------------------------*/
+
+.about_wrap {
+    padding-bottom: 50px;
+    margin-left: 200px;
+}
+.about_text {
+        margin: 0 auto;  
+        max-width: 490px;
+        font-size: 16px;
+}
+
+.about_image {
+        height: 400px;
+        max-width: 450px;
+}
+
+.about_wrap h1{
+        font-size: 25px;
+        padding-top: 45px; 
+}
+.about_row{
+        padding-bottom: 30px;        
+}
