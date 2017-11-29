@@ -6,13 +6,7 @@
         <div class="content_wrap">
 <?php
     if(isset($_GET["postID"])) {
-        $statement = $pdo->prepare("SELECT * FROM posts WHERE postID = :postID");
-        $statement->execute(array(
-            ":postID"     => $_GET["postID"]
-        ));
-
-			$indivudual_post = $statement->fetchAll(PDO::FETCH_ASSOC);
-
+			require 'partials/fetch_individual_entry.php';
 			foreach($indivudual_post as $post) { ?>
 				<div class="entry_box">
                     <h5>Skapad: <?= $post['time'] ?></h5>
@@ -53,15 +47,8 @@
 		
 		<h2><?php require 'partials/fetch_comment_count.php'; ?> Comments</h2>
 		
-		<?php	
-			$statement = $pdo->prepare("SELECT * FROM comments WHERE postID = :postID order by id DESC");
-
-			$statement->execute(array(
-				":postID"     => $_GET["postID"]
-				));
-
-			$comments = $statement->fetchAll(PDO::FETCH_ASSOC);
-			
+		<?php
+			require 'partials/fetch_comments_comment.php';
 			foreach($comments as $comment) { ?>
 				<div class="entry_box">
 				<p>Namn: <?= $comment["name"]; ?></p>

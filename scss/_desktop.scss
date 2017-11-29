@@ -2,7 +2,9 @@ body {
     padding-top: 50px;
 }
 
-/*-------------------NAVBAR-------------------*/
+/*--------------------------------------
+        NAVBAR
+--------------------------------------*/
 //.navbar-brand {
 //    padding-top: 4px;
 //
@@ -30,13 +32,17 @@ body {
 .navbar-default .navbar-nav>li{
     padding-right: 24px;
 }
-/*-------------------LOG IN-------------------*/
+/*--------------------------------------
+        LOG IN
+--------------------------------------*/
 
 .login_box {
     margin-top: 5vh;
 }
 
-/*-------------------BLOG LANDING PAGE-------------------*/
+/*--------------------------------------
+        START PAGE
+--------------------------------------*/
 
 .jumbo_start {
     background-image: url(../images/watch@1440px.jpg);
@@ -52,22 +58,28 @@ body {
 }
 
 
-/*-------------------BLOG PAGE-------------------*/
+/*--------------------------------------
+        BLOG
+--------------------------------------*/
 
 .content_wrap {
     margin-top: 50px;
     width: 960px;
 }
 
-/*-------------------COMMENT PAGE-------------------*/
+/*--------------------------------------
+        COMMENT
+--------------------------------------*/
 
 .comment_field:nth-child(2){
     padding-left: 15px;
 }
 
+/*--------------------------------------
+        ADMIN/PROFILE
+--------------------------------------*/
 
-
-/* ----------------SIDEBAR------------------- */
+/*********SIDE BAR***********/ 
 #sidebar {
     width: 250px;
     top: 0;
@@ -102,14 +114,15 @@ body {
     }
 }
 
-/* -------CONTENT STYLE----------*/
+/*********CONTENT PROFILE***********/ 
 #content {
     width: calc(100% - 250px);
-    padding: 30px;
+    max-width: 1024px;
+    padding: 0 30px 30px 30px;
     min-height: 100vh;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 250px;
 }
 
 #content.active {
@@ -127,15 +140,22 @@ body {
     width: 100%;
 } 
 
-
-/*********SHORTCUT BOX***********/ 
 #content>.row {
     margin-top: 30px;
 }
 
+/*********SHORTCUT BOX***********/ 
+
+.shortcut{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-flow: nowrap;
+}
+
 a.shortcut_box {
-    width: 180px;
-    height: 180px;
+    width: 25%;
+    min-height: 180px;
     
     img {
         padding-top: 42px;
@@ -148,16 +168,32 @@ a.shortcut_box {
         -webkit-transform: scale(1.02);
         transform: scale(1.02);  
     }
+    
+    &:nth-child(1){
+        margin-left: 0;
+    }
+    
+    
+    &:nth-child(2){
+        background-color: #00B0C8;
+    }
+    
+    &:nth-child(3){
+        background-color: #FF6C58;
+    }
+    
+    &:nth-child(4){
+        background-color: #F69C35;
+    }
 }
 
+/*********TOP NAVBAR***********/ 
 .top_nav {
     display: block;
     height: 60px;
+    margin-bottom: 22px;
     border-bottom: 1px solid black;
-    position:absolute;
-    margin: -30px;
-    width: 100%;
-    
+
     h3 {
         float: right;
         margin-right: 30px;   
@@ -167,7 +203,6 @@ a.shortcut_box {
         border: 2px solid rgba(0,160,80,0);
         color: #333; 
         float: left;
-        margin-left: 30px; 
         
         &:hover {
             color: #0b7;

@@ -1,18 +1,20 @@
 <?php
     require 'database.php';
-		require 'duplet_checker.php';
+		require 'functions.php';
 			
-		if(duplet() == false) {
+		if(duplet() == false && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 			$password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 			$username = $_POST["username"];
+			$email = $_POST["email"];
 
 			$statement = $pdo->prepare("
-				INSERT INTO users (username, password)
-				VALUES (:username, :password)");
+				INSERT INTO users (username, password, email)
+				VALUES (:username, :password, :email)");
 
 			$statement->execute(array(
 				":username" => $username,
-				":password" => $password
+				":password" => $password,
+				":email" => $email
 			)); 
 
 			header("Location: ../landing.php?success=true");
