@@ -2,9 +2,9 @@
         session_start();
         require 'partials/database.php';
         require 'partials/head_profile.php';
-		require 'partials/functions.php';
-
+				require 'partials/functions.php';
 ?>   
+
 <div id="content">
     <div class="top_nav">
         <a href="index.php">
@@ -42,6 +42,7 @@
             <div class="card_content">
                 <div class="row">
                     <div class="col-xs-6 col-sm-3">
+
                         <p>Total posts: <?= count_posts(); ?></p>
                     </div>
                     <div class="col-xs-6 col-sm-3">
@@ -52,6 +53,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <p>My comments: <?= count_user_comments(); ?></p>
+
                     </div>
                 </div>
             </div>
@@ -69,6 +71,7 @@
                     <div class="card_content">
                     <?php 
                     require 'partials/fetch_entries_profile.php';
+
                     foreach($count as $c) { ?>
                         <div class="recent_loop row">
                             <h5> <?= $c['time'] ?> </h5>

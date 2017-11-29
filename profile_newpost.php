@@ -52,4 +52,3 @@
 <?php } 
 
 require 'partials/footer_profile.php'; ?>
-
