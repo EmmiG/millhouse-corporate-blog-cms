@@ -17,20 +17,19 @@
         <div class="form-group">
             <label for="password"> Content </label>
             <textarea type="text" name="content" id="summernote" rows="15"></textarea>
-        
 			    <script>
                     $(document).ready(function() {
-                            $('#summernote').summernote({
-                                height: 300,
-																toolbar: [
-																	['style', ['bold', 'italic', 'underline', 'clear']],
-																	['fontsize', ['fontsize']],
-																	['color', ['color']],
-																	['para', ['ul', 'ol', 'paragraph']],
-																	['height', ['height']],
-																	['insert', ['link', 'picture']]
-																],
-                            });
+                    $('#summernote').summernote({
+                        height: 300,
+                        toolbar: [
+                        ['style', ['bold', 'italic', 'underline', 'clear']],
+                        ['fontsize', ['fontsize']],
+                        ['color', ['color']],
+                        ['para', ['ul', 'ol', 'paragraph']],
+                        ['height', ['height']],
+                        ['insert', ['link', 'picture']]
+                        ],
+                        });
                     });
                 </script>
         </div>
@@ -53,4 +52,3 @@
 <?php } 
 
 require 'partials/footer_profile.php'; ?>
-

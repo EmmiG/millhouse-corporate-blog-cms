@@ -8,5 +8,5 @@ require 'database.php';
 			$statement->execute(array(
 			":postID"        => $_POST["postID"],
 			));
-			header("Location: ../index.php?post=liked");
+			header("Location: ../index.php?postID=".$_POST['postID']."#like");
 ?>

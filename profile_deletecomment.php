@@ -7,23 +7,22 @@
     <div class="row">
         <div class="col-sm-12">      
             <div class="card_header">
-                <h3>Which post would you like to delete?</h3>    
+                <h3>Which comment would you like to delete?</h3>    
             </div>
             <div class="card_content">
             <?php 
-						require 'partials/fetch_individual_entries_profile.php';
-            foreach($indivudual_post_profile as $post) { ?>
+                require 'partials/fetch_individual_comments_profile.php';
+            foreach($indivudual_comment_profile as $comment) { ?>
                 <div class="recent_loop row">
                     <div class="col-sm-9">
-                        <h4><?= $post['title'] ?></h4>
-                        <h5><?= $post['time'] ?></h5>
-                        <p><?= $post['content'] ?></p>
-                        <!--<p> <?= $c['email'] ?></p>-->
+<!--                        <h4><?= $comment['title'] ?></h4>-->
+                        <h5><?= $comment['time'] ?></h5>
+                        <p><?= $comment['content'] ?></p>
                     </div>
                     <div class="col-sm-3">
                         <?php if(isset($_SESSION["user"]["username"])) {?>      
-                        <form action="partials/delete_entry.php" method="post">
-                            <input type="hidden" value="<?=$post["postID"] ?>" name="postID"/>
+                        <form action="partials/delete_comment.php" method="post">
+                            <input type="hidden" value="<?=$comment["postID"] ?>" name="postID"/>
                             <input type="submit" value="delete" class="btn btn-primary btn_card"/>
                         </form>
                     </div> 
