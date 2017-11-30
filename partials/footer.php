@@ -12,25 +12,25 @@
                 <div class="col-xs-4 col-sm-2">
                     <h3>Home</h3>
                     <ul>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                        <li><a href="#">Lorem</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-4 col-sm-2">
-                    <h3>About us</h3>
+                    <h3>About</h3>
                     <ul>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                        <li><a href="#">Lorem</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-4 col-sm-2">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                        <li><a href="#">Lorem</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-3">
@@ -38,9 +38,6 @@
                         <a href="#" class="twitter" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         <a href="#" class="facebook" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         <a href="#" class="instagram" aria-label="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="text-center">
-                        <a href="_stores.html"><button type="button" class="btn">Contact us</button></a>
                     </div>
                 </div>
             </div><!--main row-->
