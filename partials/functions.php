@@ -65,5 +65,27 @@ function duplet() {
 	}
 }
 
+function postamount_individual() {
+		require 'partials/database.php';
+		$statement = $pdo->prepare("SELECT COUNT(*) FROM posts where userID = :userID");
+		$statement->execute(array(
+		":userID" => $_SESSION["user"]["userID"]
+		)); 
+		$count = $statement->fetch(PDO::FETCH_ASSOC);
+		foreach($count as $c) {
+				return $c;
+	}
+}
+
+function postamount() {
+	require 'partials/database.php';
+	$statement = $pdo->prepare("SELECT COUNT(*) FROM posts");
+	$statement->execute();
+	$count = $statement->fetch(PDO::FETCH_ASSOC);
+	foreach($count as $c) {
+		return $c;
+	}
+}
+
 
 ?>

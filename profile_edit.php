@@ -2,6 +2,7 @@
         session_start();
         require 'partials/database.php';
         require 'partials/head_profile.php';
+				require 'partials/functions.php';
 ?>
 <div id="content" class="container">
     <div class="row">
@@ -34,7 +35,8 @@
     </div>
     
     <?php
-        require 'partials/paginator_profile_editpost.php';
+				$total_records = postamount_individual();
+        require 'partials/pagination_pages.php';
     ?>
         
 </div>  

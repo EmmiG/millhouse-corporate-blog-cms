@@ -3,6 +3,7 @@
         require 'partials/database.php';
         require 'partials/head_profile.php';
         require 'partials/fetch_entries.php';
+				require 'partials/functions.php';
 ?>
 <div id="content" class="container">
     <div class="row">
@@ -42,7 +43,8 @@
     </div>
         
     <?php
-        require 'partials/paginator_profile_vposts.php';
+       	$total_records = postamount();
+        require 'partials/pagination_pages.php';
     ?>
 </div>  
 
