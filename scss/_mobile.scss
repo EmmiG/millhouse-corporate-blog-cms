@@ -72,7 +72,7 @@ article {
 --------------------------------------*/
 
 .navbar {
-    background-color: #0F3248;
+    background-color: $brandColorBlue;
     margin-bottom: 0;
 }
 
@@ -293,7 +293,7 @@ border-width: 0;
 /*********SIDEBAR***********/
  #sidebar {
     color: #fff;
-    background: #0F3248; 
+    background: $brandColorBlue; 
     height: 60px;
     width: 100%;
     z-index: 999;
@@ -335,7 +335,7 @@ border-width: 0;
 }
 
 #sidebar .navbar-collapse {
-    background-color: #0F3248;
+    background-color: $brandColorBlue;
     padding: 0;
     border: none;
 }
@@ -409,7 +409,7 @@ a.shortcut_box {
 }
 
 .card_header {
-    background-color: #0F3248;
+    background-color: $brandColorBlue;
     padding: 2px 20px;
     
     h3 {

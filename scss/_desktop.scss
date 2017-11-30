@@ -1,5 +1,11 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     padding-top: 50px;
+    margin-bottom: 258px;
 }
 
 /*--------------------------------------
@@ -217,19 +223,14 @@ a.shortcut_box {
    
 }         
 
-.clear {
-    
+.clear {   
+    clear:both;
+}
+
 /*-----------------------------------------
                 FOOTER
 ------------------------------------------*/
-html{
-    position: relative;
-    min-height: 100%;
-}
 
-body {
-    margin-bottom: 258px;
-}
 .main_wrap, .conten_wrap{
     min-height: 100%;
 }
@@ -249,6 +250,4 @@ body {
         margin-top: 30px;
         padding-top: 30px;
     }
-}    
-    clear:both;
 }

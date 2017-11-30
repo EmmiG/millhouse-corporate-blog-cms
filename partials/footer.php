@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-3">
-                    <a href="index.html"><img src="images/millhouse_white_logo.svg" alt="millhouse footer logo"></a>
+                    <a href="index.php"><img src="images/millhouse_white_logo.svg" alt="millhouse footer logo"></a>
                 </div>
                 <div class="col-xs-4 col-sm-2">
                     <h3>Home</h3>
