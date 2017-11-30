@@ -70,26 +70,84 @@ article {
 /*--------------------------------------
         NAVBAR
 --------------------------------------*/
-
-.navbar {
-    background-color: $brandColorBlue;
-    margin-bottom: 0;
-}
-
-.navbar-default .navbar-nav>li>a{
-    color: #FFF;
-}
-
 .navbar-default {
+    background-color: $brandColorBlue;
     color: #FFF;
     display: inline-block;
     margin: 0 auto;
+    boder: 0;
+    
+    .navbar-toggle {
+        border: none;
+
+            &:hover{
+              background-color: #2c6284;  
+            }
+    }
+    
+    .navbar-nav {
+        margin: 0px -15px;
+    
+        li>a{
+        color: #FFF;
+
+            &:hover{
+                color: #FFF;
+                background-color: #2c6284;
+            }
+            
+            &:focus {
+              color: #FFF;  
+            }
+        }
+    }
 }
+
+
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #2c6284;
+    left: 12px;
+    
+    a {
+        color: #FFF;
+        text-decoration: none;
+        
+        &:hover {
+            background-color: $brandColorBlue;
+        }
+    }
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    color: #FFF;
+    background-color: #2c6284;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #FFF;
+    
+    &:hover {
+        color: #FFF;
+        background-color: $brandColorBlue;
+    }
+}
+
+#bs-example-navbar-collapse-1 > ul:nth-child(3) > li.dropdown.open > ul {
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
 
 .navbar-fixed-top {
 border-width: 0;
 }
-    
+
+#nav-logo{
+    display: none;
+}
     
 #blog:before { 
   display: block; 
@@ -98,6 +156,8 @@ border-width: 0;
   height: 50px; 
   visibility: hidden; 
 }
+
+
 
 /*--------------------------------------
         JUMBOTRON
@@ -309,6 +369,7 @@ border-width: 0;
         padding: 20px;
         font-size: 1.1em;
         display: block;
+        text-decoration: none;
     }
      
     ul li.active > a {
@@ -319,6 +380,11 @@ border-width: 0;
     img {
         width:2em;
         margin-right: 8px;
+    }
+     
+    ul li a:hover{
+        color: #FFF;
+        background: #2c6284;
     }
 }
 
@@ -347,6 +413,8 @@ border-width: 0;
 
 .logout{
     background-color: #3D4B5B;
+    
+
 } 
 
 .top_nav {
