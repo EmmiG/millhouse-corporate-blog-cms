@@ -18,25 +18,28 @@
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <i class="glyphicon glyphicon-align-center"></i>
+                </button>
               
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav ta-bort">
                     <li><a href="index.php">HOME</a></li>                   
                     <li><a href="about.php">ABOUT</a></li>
-                </ul>
-                <a class="navbar-brand" href="index.php">MILLHOUSE</a>
-                <ul class="nav navbar-nav">
-                    <li><a href="category.php">CATEGORY</a></li>                   
-                    <li><a href="archive.php">ARCHIVE</a></li>
+                
+                    <li><a id="nav-logo" href="index.php"><img src="../images/millhouse_white_logo.svg"></a></li>
+              
+                    <li><a href="category.php">CATEGORY</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" name="month" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">ARCHIVE <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="archive.php?month=November#archive">November 2017</a></li>
+                            <li><a class="dropdown-item" href="archive.php?month=December#archive">December 2017</a></li>
+                        </ul>
+                    </li>  
                 </ul>
                 <?php if(isset($_SESSION["user"]["username"])) {?>    
                 <ul class="nav navbar-nav navbar-right">    

@@ -11,17 +11,39 @@ body {
 /*--------------------------------------
         NAVBAR
 --------------------------------------*/
-//.navbar-brand {
-//    padding-top: 4px;
-//
-//    img {
-//        margin: 0 auto;
-//        display: block;
-//        max-width: 80px;
-//    }
-//}
 
-.navbar .navbar-nav, .navbar-brand {
+
+#nav-logo {
+    padding-top: 4px;
+    padding-bottom:4px;
+    display: block;
+    
+    img {
+//        margin-left: 12px;
+        display: block;
+        max-height: 40px;
+    }
+    
+    a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.ta-bort {
+    margin-left: 45px !important;
+}
+
+.navbar-default .navbar-nav>li{
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.navbar-nav {
+    margin: 7.5px -15px;
+}
+
+.navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
@@ -33,11 +55,9 @@ body {
 
 .navbar-right {
     position: absolute;
+    right: 8px;
 }
 
-.navbar-default .navbar-nav>li{
-    padding-right: 24px;
-}
 /*--------------------------------------
         LOG IN
 --------------------------------------*/
@@ -112,11 +132,6 @@ body {
         h3 {
             display: inline-block;
         }
-    }
-    
-    ul li a:hover{
-        color: #8C8E92;
-        background: #fff;
     }
 }
 
