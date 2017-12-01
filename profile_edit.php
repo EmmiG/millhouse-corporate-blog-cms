@@ -18,7 +18,6 @@
                     <div class="col-sm-9">
                         <h4><?= $post['title'] ?></h4>
                         <h5><?= $post['time'] ?></h5>
-                        <p><?= $post['content'] ?></p>
                     </div>
                     <div class="col-sm-3">
                         <?php if(isset($_SESSION["user"]["username"])) {?> 

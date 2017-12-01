@@ -10,15 +10,15 @@
            <?php
 
         if(isset($_SERVER['HTTP_REFERER'])) {
-            echo "<h1><a href=".$_SERVER['HTTP_REFERER'].">Gå tillbaka</a></h1>";
+            echo "<h1 style='text-align: left;'><a style='color: #013249;' href=".$_SERVER['HTTP_REFERER']."><i class='fa fa-caret-left' aria-hidden='true'></i> go back</a></h1>";
             }
         ?>
-            <div class="entry_box">
+            <div class="entry_box edit_box">
                 <h4>Edit post</h4>
                 <form action="partials/edit_entry.php" method="POST">
                     <div class="comment_field col-sm-12">
                         <div class="form-group">
-                            <label for="title"> Titel </label>
+                            <label for="title"> Title </label>
                             <input type="text" name="title" class="form-control" value="<?= $post["title"]; ?>" required>
                         </div>
                     </div>
