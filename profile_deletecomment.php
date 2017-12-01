@@ -17,6 +17,7 @@
                 <div class="recent_loop row">
                     <div class="col-sm-9">
 <!--                        <h4><?= $comment['title'] ?></h4>-->
+                        <h3><?= $comment['name'] ?></h3>
                         <h5><?= $comment['time'] ?></h5>
                         <p><?= $comment['content'] ?></p>
                     </div>
@@ -38,8 +39,6 @@
 			require 'partials/pagination_pages.php';
 		?>
 </div>  
-
-
 
 
 <?php

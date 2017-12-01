@@ -10,7 +10,7 @@
                     <a href="index.php"><img src="images/millhouse_white_logo.svg" alt="millhouse footer logo"></a>
                 </div>
                 <div class="col-xs-4 col-sm-2">
-                    <h3>Home</h3>
+                    <h3>Shop</h3>
                     <ul>
                         <li><a href="#">Lorem</a></li>
                         <li><a href="#">Ipsum</a></li>
@@ -26,7 +26,7 @@
                     </ul>
                 </div>
                 <div class="col-xs-4 col-sm-2">
-                    <h3>Support</h3>
+                    <h3>Contact</h3>
                     <ul>
                         <li><a href="#">Lorem</a></li>
                         <li><a href="#">Ipsum</a></li>

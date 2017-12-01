@@ -61,7 +61,7 @@ $(document).ready(function(){
 
                                 <form id="like" action="partials/like.php" method="post">
                                     <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                                    <input type="submit" value="<?php require 'partials/fetch_like_count.php'?>likes &#9829;" class="btn btn_ghost"/>
+                                    <input href="like" type="submit" value="<?php require 'partials/fetch_like_count.php'?>likes &#9829;" class="btn btn_ghost"/>
                                 </form>
                                 <div class="clear"></div>
                             </div>

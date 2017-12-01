@@ -12,14 +12,13 @@
             </div>
             <div class="card_content">
             <?php 
-						require 'partials/fetch_individual_entries_profile.php';
+            require 'partials/fetch_individual_entries_profile.php';
             foreach($indivudual_post_profile as $post) { ?>
                 <div class="recent_loop row">
                     <div class="col-sm-9">
                         <h4><?= $post['title'] ?></h4>
                         <h5><?= $post['time'] ?></h5>
                         <p><?= $post['content'] ?></p>
-                        <!--<p> <?= $c['email'] ?></p>-->
                     </div>
                     <div class="col-sm-3">
                         <?php if(isset($_SESSION["user"]["username"])) {?>      
@@ -35,7 +34,7 @@
         </div>
     </div>
     <?php
-				$total_records = postamount_individual();
+        $total_records = postamount_individual();
         require 'partials/pagination_pages.php';
 		?>
 </div>  

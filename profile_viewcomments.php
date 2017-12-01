@@ -2,7 +2,7 @@
         session_start();
         require 'partials/database.php';
         require 'partials/head_profile.php';
-				require 'partials/functions.php';
+        require 'partials/functions.php';
 ?>
 <div id="content" class="container">
     <div class="row">
@@ -16,12 +16,11 @@
                 foreach($count as $c) { ?>
                 <div class="recent_loop row">
                     <div class="col-sm-9">
-                        <p> <?= $c['time'] ?></p>
-                        <p> <?= $c['name'] ?></p>
+                        <h3> <?= $c['name'] ?></h3>                       
+                        <h5> <?= $c['time'] ?></h5>
                         <p> <?= $c['content']; ?> </p> 
                         <!--<p> <?= $c['email'] ?></p>-->
                     </div>
-
 
                     <div class="col-sm-3">
                         <?php if(isset($_SESSION["user"]["username"])) {?> 
