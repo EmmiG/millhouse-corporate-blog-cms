@@ -33,7 +33,7 @@
                     </div>
                     <p class="p_forgot"><a href="#">Forgot details?</a></p>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary">
+                        <input type="submit" value="log in" class="btn btn-primary">
                     </div>
                     <div class="register_text">
                         <p>Don't have an account?</p>

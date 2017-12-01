@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<div class="main_wrap">
     <header>
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">

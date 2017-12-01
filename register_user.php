@@ -20,7 +20,7 @@
                         <input type="email" name="email" class="form-control" placeholder="Example@example.com">
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary">
+                        <input type="submit" value="register" class="btn btn-primary">
                     </div>
                     <div class="register_text">
                         <p>Already have an account?</p>

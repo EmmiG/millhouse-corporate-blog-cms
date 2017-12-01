@@ -1,8 +1,8 @@
 <?php
-        session_start();
-        require 'partials/database.php';
-        require 'partials/head_profile.php';
-				require 'partials/functions.php';
+    session_start();
+    require 'partials/database.php';
+    require 'partials/head_profile.php';
+    require 'partials/functions.php';
 ?>   
 
 <div id="content">
@@ -10,7 +10,7 @@
         <a href="index.php">
             <h3>Shortcut blog</h3>
         </a>
-        <?php if(isset($_SESSION["user"]["username"])) {?><h3>
+        <?php if(isset($_SESSION["user"]["username"])) {?><h3 id="profile_avatar"><img src="../images/avatar.svg">
         LOGGED IN: <?=  $_SESSION["user"]["username"]; }?></h3>
     </div>
     <div class="clear"></div>
@@ -39,20 +39,23 @@
             <div class="card_header">          
                 <h3>Overview</h3>
             </div>       
-            <div class="card_content">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-3">
-
-                        <p>Total posts: <?= count_posts(); ?></p>
+            <div class="overview_content card_content">
+                <div class="overview_wrap row">
+                    <div class="overview_box col-xs-6 col-sm-3">
+                       <h1><?= count_posts(); ?></h1>
+                        <h3>Total posts</h3>
                     </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <p>My posts: <?= user_posts(); ?></p>
+                    <div class="overview_box col-xs-6 col-sm-3">
+                        <h1><?= user_posts(); ?></h1>
+                        <h3>My posts</h3>
                     </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <p>Total comments: <?= count_comments(); ?></p>
+                    <div class="overview_box col-xs-6 col-sm-3">
+                       <h1><?= count_comments(); ?></h1>
+                        <h3>Total comments</h3>
                     </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <p>My comments: <?= count_user_comments(); ?></p>
+                    <div class="overview_box col-xs-6 col-sm-3">
+                        <h1><?= count_user_comments(); ?></h1>
+                        <h3>My comments</h3>
 
                     </div>
                 </div>
@@ -74,10 +77,12 @@
 
                     foreach($count as $c) { ?>
                         <div class="recent_loop row">
-                            <h5> <?= $c['time'] ?> </h5>
-                            <h3>Author: <?= $c['name'] ?></h3>
                             <h3> <?= $c['title'] ?></h3>
-                            <p><?= $c['content'] ?></p>
+                            <h5> <?= $c['time'] ?> | Author: <?= $c['name'] ?></h5>
+                            <a href="comment.php?postID=<?= $c['postID'] ?>">
+                                <img id="view_svg" src="../images/eye.svg">
+                            </a>
+                            <div class="clear"></div>
                         </div>        
                     <?php } ?>
                     </div>
@@ -91,12 +96,12 @@
                     <div class="card_content">
                     <?php
                     require 'partials/fetch_comments_profile.php';
+                        
                     foreach($count as $c) { ?>
                     <div class="recent_loop row">
-                        <h5> <?= $c['time'] ?></h5>
                         <h3> <?= $c['name'] ?></h3>
-                        <p> <?= $c['content']; ?> </p> 
-                        <!--<p> <?= $c['email'] ?></p>-->
+                        <h5> <?= $c['time'] ?></h5>
+                        <p> <?= $c['content']; ?> </p>
                     </div>
                     <?php } ?>
                     </div>
