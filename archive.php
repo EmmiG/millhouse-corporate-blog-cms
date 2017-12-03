@@ -15,6 +15,12 @@
     color:white;
 }
 
+.archive_box {
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid #333;
+}
 
 </style>
 <div id="content_archive" class="main_wrap">
@@ -25,24 +31,29 @@
                     <div class="card_header">
                         <h3><?=$_GET['month']?></h3>
                     </div>
-                    <div class="card_content">
+                    <div id="blog" class="card_content">
+                    <article>
                     <?php 
+
                     if(isset($_GET['month'])) {
                         require 'partials/sort_months.php';
                         foreach($selected_posts as $selpost) { ?>
-                        <div class="recent_loop row">
-                            <div class="col-sm-9">
+                        <div class="archive_box">
+                          
                                 <h4><?= $selpost['title'] ?></h4>
                                 <h5><?= $selpost['time'] ?></h5>
-                                <p><?= $selpost['content'] ?></p>
+                                <article><?= $selpost['content'] ?></article>
                                 <p><?= $selpost['email'] ?></p>
                             </div>
                    
-                        </div>  
+                         
                      <?php }} ?>
+                      </article>
                     </div>
                 </div>
+
             </div>
+
         </div><!--stänger content_wrap-->
     </div><!--stänger container-->
 </div><!--stänger main_wrap-->
