@@ -8,5 +8,5 @@ if(isset($_GET["page"])) {
 $start_from = ($page-1) * $limit; 
 $statement = $pdo->prepare("SELECT * FROM comments order by ID DESC LIMIT 5");
 $statement->execute(); 
-$posts = $statement->fetchAll(PDO::FETCH_ASSOC);
+$count = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
