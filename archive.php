@@ -4,13 +4,26 @@
     require 'partials/fetch_months.php';
 ?>
 
-<div class="main_wrap">
+<style>
+    
+
+#content_archive {
+   background:#F1F2F7;
+}
+
+.card_header {
+    color:white;
+}
+
+
+</style>
+<div id="content_archive" class="main_wrap">
     <div class="container">
         <div id="archive" class="content_wrap">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 posts_wrap">
                     <div class="card_header">
-                        <h3>View all posts</h3>
+                        <h3><?=$_GET['month']?></h3>
                     </div>
                     <div class="card_content">
                     <?php 
