@@ -4,22 +4,6 @@
 ?>
 
 <div id="category" class="content_wrap">
-    <div class="buttons">
-        <form action="#category" method="get">
-            <input type="hidden" value="kläder" name="category"/>
-            <input type="submit" value="kläder" class="btn btn-primary"/>
-        </form>
-
-        <form action="#category" method="get">
-            <input type="hidden" value="verktyg" name="category"/>
-            <input type="submit" value="verktyg" class="btn btn-primary"/>
-        </form>
-
-        <form action="#category" method="get">
-            <input type="hidden" value="frukter" name="category"/>
-            <input type="submit" value="frukter" class="btn btn-primary"/>
-        </form>
-    </div>
         
     <h1>Category</h1>
     <div class="card-wrap">   

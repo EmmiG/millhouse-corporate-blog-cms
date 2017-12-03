@@ -33,14 +33,28 @@
                 
                     <li><a id="nav-logo" href="index.php"><img src="../images/millhouse_white_logo.svg"></a></li>
               
-                    <li><a href="category.php">CATEGORY</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" name="month" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">ARCHIVE <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="archive.php?month=November#archive">November 2017</a></li>
-                            <li><a class="dropdown-item" href="archive.php?month=December#archive">December 2017</a></li>
-                        </ul>
-                    </li>  
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORY <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="category.php?category=kläder">Kläder</a></li>
+                        <li><a href="category.php?category=verktyg">Verktyg</a></li>
+                        <li><a href="category.php?category=frukter">Frukter</a></li>
+                      </ul>
+                    </li> 
+                    
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ARCHIVE <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <?php
+                        require 'fetch_months.php';
+                        foreach ($months as $value) {
+                            if($value > 0) {
+                                $date = date("F", mktime(0, 0, 0, $value, 10));
+                        ?>
+                        <li><a href="archive.php?month=<?= $date ?>"><?= $date ?></a></li>
+                        <?php } } ?>
+                      </ul>
+                    </li> 
                 </ul>
                 <?php if(isset($_SESSION["user"]["username"])) {?>    
                 <ul class="nav navbar-nav navbar-right">    
