@@ -1,8 +1,9 @@
 <?php
-    session_start();
-    require 'partials/database.php';
-    require 'partials/head_profile.php';
-    require 'partials/functions.php';
+	session_start();
+	if(isset($_SESSION['user'])) {
+	require 'partials/database.php';
+	require 'partials/head_profile.php';
+	require 'partials/functions.php';
 ?>   
 
 <div id="content">
@@ -10,8 +11,8 @@
         <a href="index.php">
             <h3>Shortcut blog</h3>
         </a>
-        <?php if(isset($_SESSION["user"]["username"])) {?><h3 id="profile_avatar"><img src="../images/avatar.svg">
-        LOGGED IN: <?=  $_SESSION["user"]["username"]; }?></h3>
+        <h3 id="profile_avatar"><img src="../images/avatar.svg">
+        LOGGED IN: <?=  $_SESSION["user"]["username"]; ?></h3>
     </div>
     <div class="clear"></div>
  
@@ -110,5 +111,9 @@
 </div> <!--END CONTENT-->
 
 <?php
-        require 'partials/footer_profile.php';
+	require 'partials/footer_profile.php';
+	}
+	else {
+		header('Location: landing.php?logged_in=false');
+	}
 ?>

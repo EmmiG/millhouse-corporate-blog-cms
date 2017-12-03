@@ -1,9 +1,10 @@
 <?php
-        session_start();
-        require 'partials/database.php';
-        require 'partials/head_profile.php';
-        require 'partials/fetch_entries.php';
-				require 'partials/functions.php';
+    session_start();
+    if(isset($_SESSION['user'])) {
+    require 'partials/database.php';
+    require 'partials/head_profile.php';
+    require 'partials/fetch_entries.php';
+    require 'partials/functions.php';
 ?>
 <div id="content" class="container">
     <div class="row">
@@ -20,13 +21,13 @@
                         <h5><?= $post['time'] ?></h5>
                         <?= $post['content'] ?>
                     </div>
-                    <div class="col-sm-3">
-                        <?php if(isset($_SESSION["user"]["username"])) {?> 
+                    <div class="col-sm-3"> 
                     <form action="comment.php" method="get">
                         <input type="hidden" value="<?= $post['postID'] ?>" name="postID"/>
                         <input type="submit" value="show post" class="btn btn-primary btn_card"/>
                     </form>
-                      <form action="partials/delete_entry.php" method="post">
+                    <?php if($_SESSION["user"]["username"] == $post['name'] or $_SESSION["user"]["username"] == "admin") {?> 
+                    <form action="partials/delete_entry.php" method="post">
                         <input type="hidden" value="<?=$post["postID"] ?>" name="postID"/>
                         <input type="submit" value="delete" class="btn btn-primary btn_card"/>
                     </form>
@@ -34,10 +35,11 @@
                         <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
                         <input type="submit" value="edit" class="btn btn-primary btn_card"/>
                     </form>
+                    <?php } ?>
                     </div> 
                 </div>  
  
-            <?php }} ?>
+            <?php } ?>
             </div>
         </div>
     </div>
@@ -52,5 +54,9 @@
 
 
 <?php
-        require 'partials/footer_profile.php';
+  require 'partials/footer_profile.php';
+  }
+  else {
+	header('Location: landing.php?logged_in=false');
+  }
 ?>

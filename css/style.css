@@ -1,1 +1,2139 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:0.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}body{padding-top:50px}h1,h2,h3,h4,h5{letter-spacing:1.5px;text-transform:uppercase}h1{font-size:2em;text-align:center}h2{font-size:1.6em}h3{font-size:1em}h5{font-size:0.8em;font-weight:300;letter-spacing:2.2px}p{color:#555;text-align:left}a{color:#FFF;text-decoration:none}a:focus{color:#FFF}article{text-align:left}.btn-primary{font-size:1em;color:#fff;text-transform:uppercase;font-weight:600;letter-spacing:1.5px;padding:0.8em 1.8em;border-radius:10em;border:0;cursor:pointer;background-color:#F69C35;display:block;margin:auto}.btn-primary:hover{color:#FFF}.btn-primary.btn-login{background-color:#FF5860}.content_wrap{padding:0 12px}.btn_ghost{font-weight:700;float:right;text-transform:uppercase}.btn_ghost:hover{text-decoration:underline}.btn_ghost a{color:#222;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;transition:all 0.2s}.pagination{float:right}.navbar-default{background-color:#0F3248;color:#FFF;display:inline-block;margin:0 auto;boder:0}.navbar-default .navbar-toggle{border:none}.navbar-default .navbar-toggle:hover{background-color:#2c6284}.navbar-default .navbar-nav{margin:0px -15px}.navbar-default .navbar-nav li>a{color:#FFF}.navbar-default .navbar-nav li>a:hover{color:#FFF;background-color:#2c6284}.navbar-default .navbar-nav li>a:focus{color:#FFF}.navbar-default .navbar-nav>li>.dropdown-menu{background-color:#2c6284;left:12px}.navbar-default .navbar-nav>li>.dropdown-menu a{color:#FFF;text-decoration:none}.navbar-default .navbar-nav>li>.dropdown-menu a:hover{background-color:#0F3248}.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover{color:#FFF;background-color:#2c6284}.navbar-default .navbar-nav .open .dropdown-menu>li>a{color:#FFF}.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{color:#FFF;background-color:#0F3248}#bs-example-navbar-collapse-1>ul:nth-child(3)>li.dropdown.open>ul{padding:0}.navbar{margin-bottom:0}.navbar-fixed-top{border-width:0}#nav-logo{display:none}#blog:before{display:block;content:" ";margin-top:-50px;height:50px;visibility:hidden}.jumbotron{background-size:cover;background-repeat:no-repeat;background-color:#064410;height:100vh;margin:0;background-attachment:fixed}.jumbotron a:hover,.jumbotron a:focus,.jumbotron .fa-angle-down:active{color:#FFF}.jumbo_start{background-color:#D9DEE4;background-image:url(../images/watch@500px.jpg)}.jumbo_start img{width:300px;display:block;margin:auto;margin-top:12vh}.jumbo_login{background-image:url(../images/login_background@500px.jpg)}#arrow_down{-webkit-animation-name:arrow_down;animation-name:arrow_down;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;transition:height 0.6s ease-in-out;font-size:5em;text-align:center;margin-top:5%}@-webkit-keyframes arrow_down{0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}100%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}}#blog{-webkit-transition:all 0.5s ease}.jumbo_login{background-color:#C4CDD6;padding-top:0}.login_box{color:#FFF;margin:0 auto;margin-bottom:56px;max-width:480px;padding:48px 56px;background:rgba(15,50,72,0.8);border-radius:2px}.login_box h3{font-size:2em;text-align:center}.login_box p{color:#FFF;font-size:1.1em;margin-bottom:8px}.login_box a{color:#FFF;text-decoration:none}.login_box a:hover{color:#D8D8D8}.login_box img{width:240px;display:block;margin:auto}.login_box .register_text p{text-align:center}.login_box .register_text p:nth-child(2){font-weight:500;margin-bottom:0}.login_box .p_forgot{text-decoration:underline;text-align:right}@media screen and (min-width: 500px){.login_box{margin-top:5vh}}.entry_box{text-align:center;margin-top:54px;margin-bottom:48px}.entry_box article{padding-top:16px}.entry_box img{width:378px}.comment_field{padding:0}.comment_box{text-align:left}.comment_box p{padding-top:12px}.comment_box h3,.comment_box h5{padding:0}.about_wrap img{overflow:hidden;max-height:480px;display:block;margin:auto}#category{text-align:center}#category .buttons{display:flex;align-items:center;justify-content:center;margin:32px 0 48px}#category .buttons .btn-primary{margin:0 8px}.card-wrap{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex;-webkit-flex-flow:wrap row;flex-flow:wrap row;align-items:center;justify-content:center;padding-bottom:40px}.card{overflow:hidden;max-height:390px;width:30rem;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);border-radius:2px;margin:4px}.card:hover{box-shadow:0 5px 15px rgba(0,0,0,0.3);-ms-transform:scale(1.02);-webkit-transform:scale(1.02);transform:scale(1.02)}.card img{border-radius:2px 2px 0 0;display:block;position:relative;max-width:100%}.card a{text-decoration:none}.card p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;text-overflow:ellipsis}.card p:nth-of-type(n){display:none}.card-body{position:relative;-ms-flex:1 1 auto;-webkit-box-flex:1;-webkit-flex:1 1 auto;flex:1 1 auto;padding:1.25rem}.card-body a{color:#000;text-align:right}#category>div.card-wrap>div:nth-child(1)>div>p:nth-child(5)>img{display:none}#category>div.card-wrap>div:nth-child(5)>div>p.card-text>a>img{display:none}.card_h3{text-transform:none}.card-text{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}#sidebar{color:#fff;background:#0F3248;height:60px;width:100%;z-index:999;transition:all 0.3s;position:relative}#sidebar ul p{color:#fff;padding:10px}#sidebar ul li a{padding:20px;font-size:1.1em;display:block;text-decoration:none}#sidebar ul li.active>a{color:#fff;background:#8C8E92}#sidebar img{width:2em;margin-right:8px}#sidebar ul li a:hover{color:#FFF;background:#2c6284}#sidebar .sidebar_header{display:none}#sidebar ul ul a{padding-left:30px;background:#2c6284;color:#fff}#sidebar .navbar-collapse{background-color:#0F3248;padding:0;border:none}#sidebar ul ul a:hover{color:#0F3248;background-color:#FFF}#sidebar .navbar-collapse ul{margin-bottom:0}.logout{background-color:#3D4B5B}.top_nav{display:none}.shortcut{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex;-webkit-flex-flow:wrap row;flex-flow:wrap row;padding:0;align-items:center;justify-content:center;margin-bottom:8px}a.shortcut_box{background-color:#00C59E;margin-top:8px;margin-left:8px;width:25%;min-width:150px;height:120px;display:block;text-decoration:none;box-sizing:border-box}a.shortcut_box p{color:#FFF;text-align:center}a.shortcut_box:nth-child(2){background-color:#00B0C8}a.shortcut_box:nth-child(3){background-color:#FF6C58}a.shortcut_box:nth-child(4){background-color:#F69C35}a.shortcut_box img{padding-top:32px;display:block;width:3em;margin:auto}#profile_body{background-color:#F1F2F7;padding:0}#content{transition:all 0.3s}.card_header{background-color:#0F3248;padding:2px 20px;margin-top:12px}.card_header h3{color:#fff}.card_content{background-color:#fff;padding:20px}.recent_loop{padding:0 8px 24px;margin-bottom:24px;border-bottom:1px solid #333}.recent_loop img{width:3em}.recent_loop p{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;padding-top:8px}.recent_loop p span{color:#555 !important}.recent_loop:last-child{border-bottom:none;margin-bottom:0px}.recent_loop #view_svg{float:right}.overview_wrap{text-align:center}.overview_content{padding:8px 16px 16px}.overview_box{border-right:dotted #e3e3e3}.overview_box:nth-child(2){border:none}.overview_box:nth-child(4){border:none}.edit_box{text-align:left}.all_posts img{display:none}#footer{background-color:#0F3248;color:#fff;padding:30px 0;text-align:center}#footer .row{margin-bottom:60px}#footer .navbar-brand{margin-top:45px;height:65px}#footer ul{list-style-type:none;padding-left:0;line-height:1.7}#footer h3{font-size:18px;font-weight:bold;margin-top:30px}#footer a{color:#fff;text-decoration:none}#footer a:hover,#footer a:focus{text-decoration:none;color:#EC9E0C}#footer .btn{background-color:#B4B5BB}#footer .btn:hover{background:#EC9E0C}#footer .btn a:hover{color:#fff}#footer img{margin:0 auto;display:block}.social_networks{text-align:center;padding-top:10px;padding-bottom:16px}.social_networks a{font-size:2.4em;color:#f9f9f9;padding:10px;transition:0.2s}.clear{clear:both}/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:0.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}@media screen and (min-width: 500px){.jumbo_start img{width:400px;margin-top:8vh}.entry_box img{width:500px}}@media screen and (min-width: 768px){html{position:relative;min-height:100%}body{margin-bottom:258px}#nav-logo{padding-top:4px;padding-bottom:4px;display:block}#nav-logo img{display:block;max-height:40px}#nav-logo a{padding-top:0px;padding-bottom:0px}.ta-bort{margin-left:45px !important}.navbar-default .navbar-nav>li{padding-right:12px;padding-left:12px}.navbar-nav{margin:7.5px -15px}.navbar .navbar-nav{display:inline-block;float:none;vertical-align:top}.navbar .navbar-collapse{text-align:center}.navbar-right{position:absolute;right:8px}.login_box{margin-top:5vh}.jumbo_start{background-image:url(../images/watch@1440px.jpg)}.jumbo_start>img{width:700px;margin-top:8vh}.jumbo_login{background-image:url(../images/login_background@1440px.jpg)}.content_wrap{margin:0 auto;width:960px}entry_box img{width:960px}.comment_field:nth-child(2){padding-left:15px}.about_wrap{padding:48px 0}.about_wrap h1{margin:0 0 32px}#sidebar{width:250px;top:0;left:0;height:100vh;position:fixed}#sidebar a,#sidebar a:hover,#sidebar a:focus{color:inherit;text-decoration:none;transition:all 0.3s}#sidebar .sidebar_header{display:block;padding:20px;background:#0F3248}#sidebar .sidebar_header img{width:6em;margin:0}#sidebar .sidebar_header h3{display:inline-block}#content{width:calc(100% - 250px);max-width:1024px;padding:0 30px 30px 30px;min-height:100vh;position:absolute;top:0;left:250px}#content.active{width:100%}.btn_card{width:100%;margin:10px 0px}.logout{position:absolute;bottom:0;width:100%}#content>.row{margin-top:30px}.shortcut{display:flex;width:100%;align-items:center;flex-flow:nowrap}a.shortcut_box{width:25%;min-height:180px}a.shortcut_box img{padding-top:42px;width:5em}a.shortcut_box:hover{box-shadow:0 5px 15px rgba(0,0,0,0.3);-ms-transform:scale(1.02);-webkit-transform:scale(1.02);transform:scale(1.02)}a.shortcut_box:nth-child(1){margin-left:0}a.shortcut_box:nth-child(2){background-color:#00B0C8}a.shortcut_box:nth-child(3){background-color:#FF6C58}a.shortcut_box:nth-child(4){background-color:#F69C35}.overview_box:nth-child(2){border-right:dotted #e3e3e3}.top_nav{display:block;height:60px;margin-bottom:22px;border-bottom:1px solid black}.top_nav h3{float:right;margin-right:30px}.top_nav a{border:2px solid rgba(0,160,80,0);color:#333;float:left}.top_nav a:hover{color:#0b7;height:60px;text-align:center;-webkit-transition:0.5s;transition:0.5s;padding:0 20px;border:2px solid #0b7}.top_nav img{width:4em}#profile_avatar{margin-top:0}.main_wrap,.conten_wrap{min-height:100%}#footer{margin-top:-258px;position:absolute;left:0;bottom:0px;width:100%;height:258px}#footer img{padding-top:32px}#footer .social_networks{margin-top:30px;padding-top:30px}.clear{clear:both}}
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* line 12, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 25, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 33, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 47, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 60, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 70, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 79, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 90, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 103, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 113, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 123, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 132, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 142, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 153, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 161, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 170, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 179, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 187, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 191, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 202, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 211, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 220, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 228, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 240, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 256, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 266, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 277, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 288, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 300, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 311, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 322, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 336, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 345, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 354, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 364, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 374, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 383, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 393, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 406, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 415, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 426, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 434, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 445, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 5, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 9, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+h1, h2, h3, h4, h5 {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* line 14, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+/* line 19, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+h2 {
+  font-size: 1.6em;
+}
+
+/* line 23, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+h3 {
+  font-size: 1em;
+}
+
+/* line 27, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+h5 {
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 2.2px;
+}
+
+/* line 34, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+p {
+  color: #555;
+  text-align: left;
+}
+
+/* line 39, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* line 43, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+a:focus {
+  color: #FFF;
+}
+
+/* line 48, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+article {
+  text-align: left;
+}
+
+/* line 52, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.btn-primary {
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 0.8em 1.8em;
+  border-radius: 10em;
+  border: 0;
+  cursor: pointer;
+  background-color: #F69C35;
+  display: block;
+  margin: auto;
+}
+
+/* line 66, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.btn-primary:hover {
+  color: #FFF;
+}
+
+/* line 71, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.btn-primary.btn-login {
+  background-color: #FF5860;
+}
+
+/* line 75, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.content_wrap {
+  padding: 0 12px;
+}
+
+/* line 79, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.btn_ghost {
+  font-weight: 700;
+  float: right;
+  text-transform: uppercase;
+}
+
+/* line 84, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.btn_ghost:hover {
+  text-decoration: underline;
+}
+
+/* line 88, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.btn_ghost a {
+  color: #222;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 97, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.pagination {
+  float: right;
+}
+
+/*--------------------------------------
+        NAVBAR
+--------------------------------------*/
+/* line 103, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default {
+  background-color: #0F3248;
+  color: #FFF;
+  display: inline-block;
+  margin: 0 auto;
+  boder: 0;
+}
+
+/* line 110, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+/* line 113, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-toggle:hover {
+  background-color: #2c6284;
+}
+
+/* line 118, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-nav {
+  margin: 0px -15px;
+}
+
+/* line 121, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-nav li > a {
+  color: #FFF;
+}
+
+/* line 124, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-nav li > a:hover {
+  color: #FFF;
+  background-color: #2c6284;
+}
+
+/* line 129, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-nav li > a:focus {
+  color: #FFF;
+}
+
+/* line 137, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #2c6284;
+  left: 12px;
+}
+
+/* line 141, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-nav > li > .dropdown-menu a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* line 145, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-nav > li > .dropdown-menu a:hover {
+  background-color: #0F3248;
+}
+
+/* line 151, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  color: #FFF;
+  background-color: #2c6284;
+}
+
+/* line 156, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #FFF;
+}
+
+/* line 159, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+  color: #FFF;
+  background-color: #0F3248;
+}
+
+/* line 165, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#bs-example-navbar-collapse-1 > ul:nth-child(3) > li.dropdown.open > ul {
+  padding: 0;
+}
+
+/* line 169, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* line 174, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.navbar-fixed-top {
+  border-width: 0;
+}
+
+/* line 178, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#nav-logo {
+  display: none;
+}
+
+/* line 182, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#blog:before {
+  display: block;
+  content: " ";
+  margin-top: -50px;
+  height: 50px;
+  visibility: hidden;
+}
+
+/*--------------------------------------
+        JUMBOTRON
+--------------------------------------*/
+/* line 196, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.jumbotron {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #064410;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+/* line 204, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.jumbotron a:hover, .jumbotron a:focus, .jumbotron .fa-angle-down:active {
+  color: #FFF;
+}
+
+/* line 210, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.jumbo_start {
+  background-color: #D9DEE4;
+  background-image: url(../images/watch@500px.jpg);
+}
+
+/* line 214, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.jumbo_start img {
+  width: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 12vh;
+}
+
+/* line 222, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.jumbo_login {
+  background-image: url(../images/login_background@500px.jpg);
+}
+
+/*--------------------------------------
+        ARROW DOWN ANIMATION
+--------------------------------------*/
+/* line 230, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#arrow_down {
+  -webkit-animation-name: arrow_down;
+  animation-name: arrow_down;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  transition: height 0.6s ease-in-out;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 5%;
+}
+
+@-webkit-keyframes arrow_down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+/* line 258, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#blog {
+  -webkit-transition: all 0.5s ease;
+}
+
+/*--------------------------------------
+        LOG IN
+--------------------------------------*/
+/* line 266, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.jumbo_login {
+  background-color: #C4CDD6;
+  padding-top: 0;
+}
+
+/* line 271, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.login_box {
+  color: #FFF;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  max-width: 480px;
+  padding: 48px 56px;
+  background: rgba(15, 50, 72, 0.8);
+  border-radius: 2px;
+}
+
+/* line 280, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.login_box h3 {
+  font-size: 2em;
+  text-align: center;
+}
+
+/* line 285, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.login_box p {
+  color: #FFF;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+/* line 291, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.login_box a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* line 295, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.login_box a:hover {
+  color: #D8D8D8;
+}
+
+/* line 300, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.login_box img {
+  width: 240px;
+  display: block;
+  margin: auto;
+}
+
+/* line 310, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.login_box .register_text p {
+  text-align: center;
+}
+
+/* line 314, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.login_box .register_text p:nth-child(2) {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+/* line 320, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.login_box .p_forgot {
+  text-decoration: underline;
+  text-align: right;
+}
+
+/* line 324, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.login_box .p_login {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 332, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+  .login_box {
+    margin-top: 5vh;
+  }
+}
+
+/*--------------------------------------
+        BLOG 
+--------------------------------------*/
+/* line 343, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.entry_box {
+  text-align: center;
+  margin-top: 54px;
+  margin-bottom: 48px;
+}
+
+/* line 348, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.entry_box article {
+  padding-top: 16px;
+}
+
+/* line 352, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.entry_box img {
+  width: 378px;
+}
+
+/*--------------------------------------
+        COMMENT 
+--------------------------------------*/
+/* line 361, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.comment_field {
+  padding: 0;
+}
+
+/* line 365, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.comment_box {
+  text-align: left;
+}
+
+/* line 368, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.comment_box p {
+  padding-top: 12px;
+}
+
+/* line 372, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.comment_box h3, .comment_box h5 {
+  padding: 0;
+}
+
+/*-----------------------------------------
+                ABOUT
+------------------------------------------*/
+/* line 383, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.about_wrap img {
+  overflow: hidden;
+  max-height: 480px;
+  display: block;
+  margin: auto;
+}
+
+/*--------------------------------------
+        CATEGORY
+--------------------------------------*/
+/* line 413, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#category {
+  text-align: center;
+}
+
+/* line 416, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#category .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0 48px;
+}
+
+/* line 422, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#category .buttons .btn-primary {
+  margin: 0 8px;
+}
+
+/* line 429, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: wrap row;
+  flex-flow: wrap row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+/* line 443, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card {
+  overflow: hidden;
+  max-height: 390px;
+  width: 30rem;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  margin: 4px;
+}
+
+/* line 452, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -ms-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+/* line 459, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card img {
+  border-radius: 2px 2px 0 0;
+  display: block;
+  position: relative;
+  max-width: 100%;
+}
+
+/* line 466, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card a {
+  text-decoration: none;
+}
+
+/* line 470, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+/* line 478, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card p:nth-of-type(n) {
+  display: none;
+}
+
+/* line 485, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+/* line 493, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card-body a {
+  color: #000;
+  text-align: right;
+}
+
+/* line 499, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#category > div.card-wrap > div:nth-child(1) > div > p:nth-child(5) > img {
+  display: none;
+}
+
+/* line 503, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#category > div.card-wrap > div:nth-child(5) > div > p.card-text > a > img {
+  display: none;
+}
+
+/* line 507, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card_h3 {
+  text-transform: none;
+}
+
+/* line 511, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/*--------------------------------------
+        ADMIN/PROFILE
+--------------------------------------*/
+/*********SIDEBAR***********/
+/* line 522, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar {
+  color: #fff;
+  background: #0F3248;
+  height: 60px;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s;
+  position: relative;
+}
+
+/* line 531, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+/* line 536, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar ul li a {
+  padding: 20px;
+  font-size: 1.1em;
+  display: block;
+  text-decoration: none;
+}
+
+/* line 543, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar ul li.active > a {
+  color: #fff;
+  background: #8C8E92;
+}
+
+/* line 548, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar img {
+  width: 2em;
+  margin-right: 8px;
+}
+
+/* line 553, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar ul li a:hover {
+  color: #FFF;
+  background: #2c6284;
+}
+
+/* line 559, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar .sidebar_header {
+  display: none;
+}
+
+/* line 565, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar ul ul a {
+  padding-left: 30px;
+  background: #2c6284;
+  color: #fff;
+}
+
+/* line 571, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar .navbar-collapse {
+  background-color: #0F3248;
+  padding: 0;
+  border: none;
+}
+
+/* line 579, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar ul ul a:hover {
+  color: #0F3248;
+  background-color: #FFF;
+}
+
+/* line 588, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#sidebar .navbar-collapse ul {
+  margin-bottom: 0;
+}
+
+/* line 593, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.logout {
+  background-color: #3D4B5B;
+}
+
+/* line 599, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.top_nav {
+  display: none;
+}
+
+/*********SHORTCUT BOX***********/
+/* line 605, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.shortcut {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: wrap row;
+  flex-flow: wrap row;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+/* line 620, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+a.shortcut_box {
+  background-color: #00C59E;
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 25%;
+  min-width: 150px;
+  height: 120px;
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* line 631, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+a.shortcut_box p {
+  color: #FFF;
+  text-align: center;
+}
+
+/* line 636, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+a.shortcut_box:nth-child(2) {
+  background-color: #00B0C8;
+}
+
+/* line 640, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+a.shortcut_box:nth-child(3) {
+  background-color: #FF6C58;
+}
+
+/* line 644, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+a.shortcut_box:nth-child(4) {
+  background-color: #F69C35;
+}
+
+/* line 648, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+a.shortcut_box img {
+  padding-top: 32px;
+  display: block;
+  width: 3em;
+  margin: auto;
+}
+
+/*********CONTENT***********/
+/* line 660, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#profile_body {
+  background-color: #F1F2F7;
+  padding: 0;
+}
+
+/* line 665, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#content {
+  transition: all 0.3s;
+}
+
+/* line 669, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card_header {
+  background-color: #0F3248;
+  padding: 2px 20px;
+  margin-top: 12px;
+}
+
+/* line 674, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card_header h3 {
+  color: #fff;
+}
+
+/* line 679, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.card_content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* line 684, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.recent_loop {
+  padding: 0 8px 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #333;
+}
+
+/* line 689, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.recent_loop img {
+  width: 3em;
+}
+
+/* line 693, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.recent_loop p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 8px;
+}
+
+/* line 699, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.recent_loop p span {
+  color: #555 !important;
+}
+
+/* line 704, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.recent_loop:last-child {
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+
+/* line 709, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.recent_loop #view_svg {
+  float: right;
+}
+
+/*********RECENT POSTS & COMMENTS***********/
+/* line 716, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.overview_wrap {
+  text-align: center;
+}
+
+/* line 720, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.overview_content {
+  padding: 8px 16px 16px;
+}
+
+/* line 724, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.overview_box {
+  border-right: dotted #e3e3e3;
+}
+
+/* line 727, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.overview_box:nth-child(2) {
+  border: none;
+}
+
+/* line 731, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.overview_box:nth-child(4) {
+  border: none;
+}
+
+/*********EDIT PAGE***********/
+/* line 737, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.edit_box {
+  text-align: left;
+}
+
+/*********VIEW ALL POST ***********/
+/* line 745, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.all_posts img {
+  display: none;
+}
+
+/*-----------------------------------------
+                FOOTER
+------------------------------------------*/
+/* line 754, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer {
+  background-color: #0F3248;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* line 760, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer .row {
+  margin-bottom: 60px;
+}
+
+/* line 764, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer .navbar-brand {
+  margin-top: 45px;
+  height: 65px;
+}
+
+/* line 769, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.7;
+}
+
+/* line 775, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/* line 781, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 785, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer a:hover, #footer a:focus {
+  text-decoration: none;
+  color: #EC9E0C;
+}
+
+/* line 792, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer .btn {
+  background-color: #B4B5BB;
+}
+
+/* line 794, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer .btn:hover {
+  background: #EC9E0C;
+}
+
+/* line 798, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer .btn a:hover {
+  color: #fff;
+}
+
+/* line 803, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+#footer img {
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 810, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.social_networks {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 16px;
+}
+
+/* line 815, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.social_networks a {
+  font-size: 2.4em;
+  color: #f9f9f9;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+/*--------------*/
+/* line 825, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_mobile.scss */
+.clear {
+  clear: both;
+}
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* line 12, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 25, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 33, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 47, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 60, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 70, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 79, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 90, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 103, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 113, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 123, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 132, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 142, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 153, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 161, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 170, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 179, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 187, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 191, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 202, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 211, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 220, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 228, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 240, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 256, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 266, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 277, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 288, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 300, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 311, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 322, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 336, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 345, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 354, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 364, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 374, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 383, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 393, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 406, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 415, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 426, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 434, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 445, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 1, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_tablet.scss */
+  .jumbo_start img {
+    width: 400px;
+    margin-top: 8vh;
+  }
+  /* line 8, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_tablet.scss */
+  .entry_box img {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 1, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  /* line 6, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  body {
+    margin-bottom: 258px;
+  }
+  /*--------------------------------------
+        NAVBAR
+--------------------------------------*/
+  /* line 15, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #nav-logo {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: block;
+  }
+  /* line 20, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #nav-logo img {
+    display: block;
+    max-height: 40px;
+  }
+  /* line 26, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #nav-logo a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  /* line 32, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .ta-bort {
+    margin-left: 45px !important;
+  }
+  /* line 36, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .navbar-default .navbar-nav > li {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  /* line 41, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .navbar-nav {
+    margin: 7.5px -15px;
+  }
+  /* line 45, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  /* line 51, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  /* line 55, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .navbar-right {
+    position: absolute;
+    right: 8px;
+  }
+  /*--------------------------------------
+        LOG IN
+--------------------------------------*/
+  /* line 64, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .login_box {
+    margin-top: 5vh;
+  }
+  /*--------------------------------------
+        START PAGE
+--------------------------------------*/
+  /* line 72, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .jumbo_start {
+    background-image: url(../images/watch@1440px.jpg);
+  }
+  /* line 76, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .jumbo_start > img {
+    width: 700px;
+    margin-top: 8vh;
+  }
+  /* line 81, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .jumbo_login {
+    background-image: url(../images/login_background@1440px.jpg);
+  }
+  /*--------------------------------------
+        BLOG
+--------------------------------------*/
+  /* line 90, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .content_wrap {
+    margin: 0 auto;
+    width: 960px;
+  }
+  /* line 97, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  entry_box img {
+    width: 960px;
+  }
+  /*--------------------------------------
+        COMMENT
+--------------------------------------*/
+  /* line 106, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .comment_field:nth-child(2) {
+    padding-left: 15px;
+  }
+  /*-----------------------------------------
+                ABOUT
+------------------------------------------*/
+  /* line 115, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .about_wrap {
+    padding: 48px 0;
+  }
+  /* line 118, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .about_wrap h1 {
+    margin: 0 0 32px;
+  }
+  /*--------------------------------------
+        ADMIN/PROFILE
+--------------------------------------*/
+  /*********SIDE BAR***********/
+  /* line 129, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #sidebar {
+    width: 250px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+  }
+  /* line 136, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #sidebar a, #sidebar a:hover, #sidebar a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  /* line 142, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #sidebar .sidebar_header {
+    display: block;
+    padding: 20px;
+    background: #0F3248;
+  }
+  /* line 147, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #sidebar .sidebar_header img {
+    width: 6em;
+    margin: 0;
+  }
+  /* line 152, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #sidebar .sidebar_header h3 {
+    display: inline-block;
+  }
+  /*********CONTENT PROFILE***********/
+  /* line 159, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #content {
+    width: calc(100% - 250px);
+    max-width: 1024px;
+    padding: 0 30px 30px 30px;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 250px;
+  }
+  /* line 169, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #content.active {
+    width: 100%;
+  }
+  /* line 173, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .btn_card {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  /* line 178, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .logout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  /* line 184, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #content > .row {
+    margin-top: 30px;
+  }
+  /*********SHORTCUT BOX***********/
+  /* line 190, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .shortcut {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-flow: nowrap;
+  }
+  /* line 197, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  a.shortcut_box {
+    width: 25%;
+    min-height: 180px;
+  }
+  /* line 201, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  a.shortcut_box img {
+    padding-top: 42px;
+    width: 5em;
+  }
+  /* line 206, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  a.shortcut_box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+  /* line 213, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  a.shortcut_box:nth-child(1) {
+    margin-left: 0;
+  }
+  /* line 218, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  a.shortcut_box:nth-child(2) {
+    background-color: #00B0C8;
+  }
+  /* line 222, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  a.shortcut_box:nth-child(3) {
+    background-color: #FF6C58;
+  }
+  /* line 226, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  a.shortcut_box:nth-child(4) {
+    background-color: #F69C35;
+  }
+  /* line 233, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .overview_box:nth-child(2) {
+    border-right: dotted #e3e3e3;
+  }
+  /*********TOP NAVBAR***********/
+  /* line 239, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .top_nav {
+    display: block;
+    height: 60px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid black;
+  }
+  /* line 245, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .top_nav h3 {
+    float: right;
+    margin-right: 30px;
+  }
+  /* line 250, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .top_nav a {
+    border: 2px solid rgba(0, 160, 80, 0);
+    color: #333;
+    float: left;
+  }
+  /* line 255, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .top_nav a:hover {
+    color: #0b7;
+    height: 60px;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 0 20px;
+    border: 2px solid #0b7;
+  }
+  /* line 266, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .top_nav img {
+    width: 4em;
+  }
+  /* line 271, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #profile_avatar {
+    margin-top: 0;
+  }
+  /*-----------------------------------------
+                FOOTER
+------------------------------------------*/
+  /* line 278, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .main_wrap, .conten_wrap {
+    min-height: 100%;
+  }
+  /* line 282, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #footer {
+    margin-top: -258px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 258px;
+  }
+  /* line 290, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #footer img {
+    padding-top: 32px;
+  }
+  /* line 293, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  #footer .social_networks {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+  /*--------------*/
+  /* line 301, /Users/hermanbystrom/Documents/MEDIEINSTITUTET/dynweb/Projektarbete/scss/_desktop.scss */
+  .clear {
+    clear: both;
+  }
+}
+
+/*# sourceMappingURL=../css/style.map */
