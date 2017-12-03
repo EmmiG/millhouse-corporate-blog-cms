@@ -47,12 +47,12 @@
                       <ul class="dropdown-menu">
                         <?php
                         require 'fetch_months.php';
-                        foreach ($months as $value) {
-                            if($value > 0) {
-                                $date = date("F", mktime(0, 0, 0, $value, 10));
+                        require 'fetch_years.php';
+                        foreach ($months as $index => $value) {
+                                $month = date("F", mktime(0, 0, 0, $months[$index], 10));
                         ?>
-                        <li><a href="archive.php?month=<?= $date ?>"><?= $date ?></a></li>
-                        <?php } } ?>
+                        <li><a href="archive.php?month=<?= $month ?>&year=<?= $years[$index] ?>"><?= $month, " " . $years[$index] ?></a></li>
+                        <?php } ?>
                       </ul>
                     </li> 
                 </ul>

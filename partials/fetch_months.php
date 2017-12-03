@@ -1,9 +1,10 @@
 <?php    
    	require 'partials/database.php';
 
-		$statement = $pdo->prepare("SELECT MONTH(time) AS month, COUNT(MONTH(time)) FROM posts group by month");
+		$statement = $pdo->prepare("SELECT MONTH(time) AS month, YEAR(time) as year, UNIX_TIMESTAMP(time) as DATE FROM posts group by month, year ORDER BY date DESC");
 
 		$statement->execute();
 
-		$months = $statement->fetchAll(PDO::FETCH_COLUMN);
+		$months = $statement->fetchAll(PDO::FETCH_COLUMN, 0);
+
 ?>
