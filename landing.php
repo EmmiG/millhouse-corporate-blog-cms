@@ -2,24 +2,15 @@
     session_start();
     require 'partials/head.php';
     require 'partials/database.php';
-
-
-    if(isset($_SESSION["user"])){
-      echo "<h1 class='text-center'>" . 
-              $_SESSION["user"]["username"] . 
-            "</h1>";
-    }
-    if(isset($_GET["error"])){
-      echo "<h1 class='alert alert-danger'>" . 
-              $_GET["error"] . 
-            "</h1>";
-    }
-
 ?>
 
     <div class="jumbotron jumbo_login"> 
         <div class="row">
             <div class="login_box">
+             	<?php if(isset($_GET['logged_in'])) { 
+					  	echo "<p class='p_login'>Please login in order to access your dashboard</p>";
+					  } 				
+				?>
                 <img src="images/millhouse_white_logo.svg">
                 <h3>LOGIN</h3>
                 <form action="partials/login.php" method="POST">

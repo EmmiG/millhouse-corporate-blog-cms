@@ -1,9 +1,8 @@
 <?php
-        session_start();
-        require 'partials/database.php';
-        require 'partials/head_profile.php';
-
-        if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
+    session_start();
+    if(isset($_SESSION['user'])) {
+    require 'partials/database.php';
+    require 'partials/head_profile.php';
 ?>
 
 <div id="content" class="container">
@@ -49,6 +48,10 @@
     </form>
 </div>
 
-<?php } 
-
-require 'partials/footer_profile.php'; ?>
+<?php  
+    require 'partials/footer_profile.php';
+    }
+    else {
+    header('Location: landing.php?logged_in=false');
+    }
+?>
