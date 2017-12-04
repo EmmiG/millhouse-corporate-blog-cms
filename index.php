@@ -3,7 +3,8 @@
 		require 'partials/head.php';
 		require 'partials/fetch_entries.php';
 		require 'partials/functions.php';
-?>   
+?>
+
         <div class="jumbotron jumbo_start">
             <img src="images/millhouse_white_logo.svg">
             <a href="#blog">
