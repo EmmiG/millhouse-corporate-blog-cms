@@ -4,25 +4,6 @@
     require 'partials/fetch_months.php';
 ?>
 
-<style>
-    
-
-#content_archive {
-   background:#F1F2F7;
-}
-
-.card_header {
-    color:white;
-}
-
-.archive_box {
-    text-align: center;
-    margin-top: 54px;
-    margin-bottom: 48px;
-    border-bottom: 1px solid #333;
-}
-
-</style>
 <div id="content_archive" class="main_wrap">
     <div class="container">
         <div id="archive" class="content_wrap">
