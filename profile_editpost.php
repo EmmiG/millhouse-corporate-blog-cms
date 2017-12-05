@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    require_once 'partials/session_start.php';
     if(isset($_SESSION['user'])) {
     require 'partials/database.php';
     require 'partials/head_profile.php';
@@ -15,7 +15,7 @@
         }
         ?>
     <div class="entry_box edit_box">
-        <h2>Edit post</h2>
+        <h4>Edit post</h4>
         <form action="partials/edit_entry.php" method="POST">
             <div class="comment_field col-sm-12">
                 <div class="form-group">

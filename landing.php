@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    require_once 'partials/session_start.php';
     require 'partials/head.php';
     require 'partials/database.php';
 ?>
@@ -7,6 +7,7 @@
     <div class="jumbotron jumbo_login"> 
         <div class="row">
             <div class="login_box">
+                <!-- This message will only be present if a user is trying to enter their dashboard without being logged in. -->
              	<?php if(isset($_GET['logged_in'])) { 
 					  	echo "<p class='p_login'>Please login in order to access your dashboard</p>";
 					  } 				

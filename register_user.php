@@ -1,4 +1,4 @@
-<?php	require 'partials/head.php'; ?>
+<?php require 'partials/head.php'; ?>
 
 <div class="jumbotron jumbo_login"> 
     <div class="container">
@@ -35,7 +35,8 @@
 <?php
 	if(isset($_SERVER['HTTP_REFERER'])) {
 		echo "<a href=".$_SERVER['HTTP_REFERER'].">Go back</a>";
-				}
-require 'partials/footer.php'; ?>
+    }
+    require 'partials/footer.php'; 
+?>
 
 

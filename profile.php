@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	require_once 'partials/session_start.php';
 	if(isset($_SESSION['user'])) {
 	require 'partials/database.php';
 	require 'partials/head_profile.php';
@@ -9,10 +9,10 @@
 <div id="content">
     <div class="top_nav">
         <a href="index.php">
-            <h4>Shortcut blog</h4>
+            <h3>Shortcut blog</h3>
         </a>
-        <h4 id="profile_avatar"><img src="../images/avatar.svg">
-        LOGGED IN: <?=  $_SESSION["user"]["username"]; ?></h4>
+        <h3 id="profile_avatar"><img src="../images/avatar.svg">
+        LOGGED IN: <?=  $_SESSION["user"]["username"]; ?></h3>
     </div>
     <div class="clear"></div>
  
@@ -38,25 +38,25 @@
     <div class="row">
         <div class="col-sm-12"> 
             <div class="card_header">          
-                <h4>Overview</h4>
+                <h3>Overview</h3>
             </div>       
             <div class="overview_content card_content">
                 <div class="overview_wrap row">
                     <div class="overview_box col-xs-6 col-sm-3">
                        <h1><?= count_posts(); ?></h1>
-                        <h4>Total posts</h4>
+                        <h3>Total posts</h3>
                     </div>
                     <div class="overview_box col-xs-6 col-sm-3">
                         <h1><?= user_posts(); ?></h1>
-                        <h4>My posts</h4>
+                        <h3>My posts</h3>
                     </div>
                     <div class="overview_box col-xs-6 col-sm-3">
                        <h1><?= count_comments(); ?></h1>
-                        <h4>Total comments</h4>
+                        <h3>Total comments</h3>
                     </div>
                     <div class="overview_box col-xs-6 col-sm-3">
                         <h1><?= count_user_comments(); ?></h1>
-                        <h4>My comments</h4>
+                        <h3>My comments</h3>
 
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                 <div class="col-sm-6">
 
                     <div class="card_header">
-                        <h4>Recent posts</h4>
+                        <h3>Recent posts</h3>
                     </div>    
                     <div class="card_content">
                     <?php 
@@ -78,7 +78,7 @@
 
                     foreach($count as $c) { ?>
                         <div class="recent_loop row">
-                            <h4> <?= $c['title'] ?></h4>
+                            <h3> <?= $c['title'] ?></h3>
                             <h5> <?= $c['time'] ?> | Author: <?= $c['name'] ?></h5>
                             <a href="comment.php?postID=<?= $c['postID'] ?>">
                                 <img id="view_svg" src="../images/eye.svg">
@@ -91,7 +91,7 @@
 
                 <div class="col-sm-6">
                     <div class="card_header">
-                        <h4>Recent comments</h4>
+                        <h3>Recent comments</h3>
                     </div>
 
                     <div class="card_content">
@@ -100,7 +100,7 @@
                         
                     foreach($count as $c) { ?>
                     <div class="recent_loop row">
-                        <h4> <?= $c['name'] ?></h4>
+                        <h3> <?= $c['name'] ?></h3>
                         <h5> <?= $c['time'] ?></h5>
                         <p> <?= $c['content']; ?> </p>
                     </div>

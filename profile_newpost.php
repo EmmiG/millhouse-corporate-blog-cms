@@ -1,10 +1,11 @@
 <?php
-    session_start();
+    require_once 'partials/session_start.php';
+    //This page will only appear if the user is logged in. If not logged in, he/she will be re-directed.
     if(isset($_SESSION['user'])) {
-    require 'partials/database.php';
-    require 'partials/head_profile.php';
+        require 'partials/database.php';
+        require 'partials/head_profile.php';
 ?>
-
+<!-- The new entry partial will gather the data through POST and add it to the SQL-database. -->
 <div id="content" class="container">
     <h2>New post</h2>
     <form action="partials/new_entry.php" method="POST">
@@ -16,6 +17,7 @@
         <div class="form-group">
             <label for="password"> Content </label>
             <textarea type="text" name="content" id="summernote" rows="15"></textarea>
+                <!-- We use the Summernote.js-plugin for WYSIWIG implementation. -->
 			    <script>
                     $(document).ready(function() {
                     $('#summernote').summernote({
@@ -52,6 +54,6 @@
     require 'partials/footer_profile.php';
     }
     else {
-    header('Location: landing.php?logged_in=false');
+        header('Location: landing.php?logged_in=false');
     }
 ?>

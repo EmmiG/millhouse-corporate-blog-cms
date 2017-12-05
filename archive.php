@@ -1,5 +1,5 @@
 <?php 
-    session_start(); 
+    require_once 'partials/session_start.php';
     require 'partials/head.php';
     require 'partials/fetch_months.php';
 ?>
@@ -14,6 +14,7 @@
                     </div>
                     <div class="card_content">
                     <?php 
+                    //If the GET-request is set a foreach loop will iterate through the SQL-request.
                     if(isset($_GET['month'])) {
                         require 'partials/sort_months.php';
                         foreach($selected_posts as $selpost) { ?>
