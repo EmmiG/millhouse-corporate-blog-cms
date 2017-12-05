@@ -1,0 +1,35 @@
+.btn-primary {
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 0.8em 1.8em;
+    border-radius: 10em;
+    border: 0;
+    background-color: #F69C35;
+    display: block;
+    margin: auto;
+
+    &:hover {
+    	color: #FFF;
+    }
+}
+
+.btn_ghost {
+    font-weight: 700;
+    float: right;
+    text-transform: uppercase;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+    
+    a {
+        color: #222;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        
+    }
+}

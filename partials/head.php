@@ -8,7 +8,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
     <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
-    <script src="partials/smooth_scroll.js"></script>
+    <script src="js/smooth_scroll.js"></script>
     <title>PHP PDO</title>
     <!--stylesheet till scss-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -60,7 +60,7 @@
                 <?php if(isset($_SESSION["user"]["username"])) {?>    
                 <ul class="nav navbar-nav navbar-right">    
                     <li><a href="profile.php">
-                    LOGGED IN: <?= $_SESSION["user"]["username"]; }?>
+                        LOGGED IN: <?= $_SESSION["user"]["username"]; }?>
                     </a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->

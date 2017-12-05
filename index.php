@@ -24,21 +24,22 @@
                         <h5><?= $post['name'] ?> | category: <?= $post['category'] ?></h5>
                         <article><?= $post['content'] ?></article>
                             
-                            <div class="btn_wrap">
-                                <form action="comment.php#comments" method="get">
-                                    <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                                    <input type="submit" value="<?php require 'partials/fetch_comment_count.php'; ?>comments" class="btn btn_ghost"/>
-                                </form>
+                        <div class="btn_wrap">
+                            <form action="comment.php#comments" method="get">
+                                <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
+                                <input type="submit" value="<?php require 'partials/fetch_comment_count.php'; ?>comments" class="btn btn_ghost"/>
+                            </form>
 
-                                <form id="like" action="partials/like.php" method="post">
-                                    <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                                    <input type="submit" value="<?php require 'partials/fetch_like_count.php'?>likes &#9829;" class="btn btn_ghost"/>
-                                </form>
-                                <div class="clear"></div>
-                            </div>
+                            <form id="like" action="partials/like.php" method="post">
+                                <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
+                                <input type="submit" value="<?php require 'partials/fetch_like_count.php'?>likes &#9829;" class="btn btn_ghost"/>
+                            </form>
+                            <div class="clear"></div>
                         </div>
                         
-                        <hr>
+                    </div> <!--END ENTRY_BOX-->
+                        
+                    <hr>
                         
                 <?php } ?>  
             </article>
@@ -49,7 +50,8 @@
                     require 'partials/pagination_pages.php';
                 ?> 
             </div>
-            <div class="clear"></div>  
-        </div>
+            <div class="clear"></div> 
+             
+        </div><!--END CONTENT_WRAP-->
 
 <?php require 'partials/footer.php'; ?>

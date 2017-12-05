@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-sm-12">      
             <div class="card_header">
-                <h3>Which comment would you like to delete?</h3>    
+                <h4>Which comment would you like to delete?</h4>    
             </div>
             <div class="card_content">
             <?php 

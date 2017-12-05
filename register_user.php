@@ -5,7 +5,7 @@
         <div class="row">
             <div class="login_box">
                 <img src="images/millhouse_white_logo.svg">
-                <h3>Register</h3>
+                <h1>Register</h1>
                     <form action="partials/register.php" method="POST">
                     <div class="form-group">
                         <label for="username"> Username </label>

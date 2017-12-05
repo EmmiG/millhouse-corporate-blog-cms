@@ -51,7 +51,7 @@
 			foreach($comments as $comment) { ?>
 				<div class="entry_box comment_box">
                     <h5>Time: <?= $comment["time"]; ?></h5>
-                    <h3>Name: <?= $comment["name"]; ?></h3>
+                    <h4>Name: <?= $comment["name"]; ?></h4>
                     <p>Comments: <?= $comment["content"]; ?></p>
                     <hr>
 				</div>

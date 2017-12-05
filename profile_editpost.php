@@ -15,7 +15,7 @@
         }
         ?>
     <div class="entry_box edit_box">
-        <h4>Edit post</h4>
+        <h2>Edit post</h2>
         <form action="partials/edit_entry.php" method="POST">
             <div class="comment_field col-sm-12">
                 <div class="form-group">

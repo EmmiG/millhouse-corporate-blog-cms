@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="card_header">
-                        <h3>View all posts</h3>
+                        <h4>View all posts</h4>
                     </div>
                     <div class="card_content">
                     <?php 

@@ -12,7 +12,7 @@
 					  } 				
 				?>
                 <img src="images/millhouse_white_logo.svg">
-                <h3>LOGIN</h3>
+                <h1>LOGIN</h1>
                 <form action="partials/login.php" method="POST">
                     <div class="form-group">
                         <label for="username"> Username </label>
