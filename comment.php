@@ -3,8 +3,9 @@
     require 'partials/head.php';
     require 'partials/database.php';
 ?>
-        <div class="content_wrap">
+    <div class="content_wrap">
 <?php
+    //The loop will get the postID from GET and fetch the entry.
     if(isset($_GET["postID"])) {
 			require 'partials/fetch_individual_entry.php';
 			foreach($indivudual_post as $post) { ?>
@@ -17,7 +18,7 @@
 			<?php	} ?>
 			
 			
-			
+        <!-- Adding a new comment will lead to another partial that handles that request. -->
 	    <div id="comments">
 			<h2>Leave a comment</h2>
 			<form action="partials/add_comment.php" method="POST">
@@ -45,7 +46,7 @@
 		</div>
 		
 		<h2 style="padding-bottom: 24px;"><?php require 'partials/fetch_comment_count.php'; ?> Comments</h2>
-		
+		<!-- The partial gathers the postID and will find any comment attached to it. Then it will use a foreach-loop to print it onto the website. -->
 		<?php
 			require 'partials/fetch_comments_comment.php';
 			foreach($comments as $comment) { ?>

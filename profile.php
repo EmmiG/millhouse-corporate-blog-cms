@@ -1,11 +1,12 @@
 <?php
 	require_once 'partials/session_start.php';
+    //This page will only appear if the user is logged in. If not logged in, he/she will be re-directed.
 	if(isset($_SESSION['user'])) {
-	require 'partials/database.php';
-	require 'partials/head_profile.php';
-	require 'partials/functions.php';
+        require 'partials/database.php';
+        require 'partials/head_profile.php';
+        require 'partials/functions.php';
 ?>   
-
+<!-- The username of the active user is echoed onto the site. -->
 <div id="content">
     <div class="top_nav">
         <a href="index.php">
@@ -15,7 +16,7 @@
         LOGGED IN: <?=  $_SESSION["user"]["username"]; ?></h3>
     </div>
     <div class="clear"></div>
- 
+    
     <div class="shortcut container">
         <a href="profile_newpost.php" class="shortcut_box">
            <img src="../images/new_post.svg">
@@ -34,7 +35,7 @@
             <p>Delete comment</p>
         </a>       
     </div>
-
+    <!-- Statistics are retreived from the functions-partial. They are then echoed. -->
     <div class="row">
         <div class="col-sm-12"> 
             <div class="card_header">          
@@ -65,49 +66,49 @@
     </div>
 
 
-   <!--Visar fem senaste inlägg och kommentarer-->
-            <div class="row">
-                <div class="col-sm-6">
+    <!--Shows the latest comments and entries through the partials.-->
+    <div class="row">
+        <div class="col-sm-6">
 
-                    <div class="card_header">
-                        <h3>Recent posts</h3>
-                    </div>    
-                    <div class="card_content">
-                    <?php 
+            <div class="card_header">
+                <h3>Recent posts</h3>
+            </div>    
+            <div class="card_content">
+                <?php 
                     require 'partials/fetch_entries_profile.php';
-
-                    foreach($count as $c) { ?>
-                        <div class="recent_loop row">
-                            <h3> <?= $c['title'] ?></h3>
-                            <h5> <?= $c['time'] ?> | Author: <?= $c['name'] ?></h5>
-                            <a href="comment.php?postID=<?= $c['postID'] ?>">
-                                <img id="view_svg" src="../images/eye.svg">
-                            </a>
-                            <div class="clear"></div>
-                        </div>        
-                    <?php } ?>
-                    </div>
-                </div>   
-
-                <div class="col-sm-6">
-                    <div class="card_header">
-                        <h3>Recent comments</h3>
-                    </div>
-
-                    <div class="card_content">
-                    <?php
-                    require 'partials/fetch_comments_profile.php';
-                        
-                    foreach($count as $c) { ?>
-                    <div class="recent_loop row">
-                        <h3> <?= $c['name'] ?></h3>
-                        <h5> <?= $c['time'] ?></h5>
-                        <p> <?= $c['content']; ?> </p>
-                    </div>
-                    <?php } ?>
-                    </div>
-                </div> 
+                    foreach($count as $c) { 
+                ?>
+                <div class="recent_loop row">
+                    <h3> <?= $c['title'] ?></h3>
+                    <h5> <?= $c['time'] ?> | Author: <?= $c['name'] ?></h5>
+                    <a href="comment.php?postID=<?= $c['postID'] ?>">
+                        <img id="view_svg" src="../images/eye.svg">
+                    </a>
+                    <div class="clear"></div>
+                </div>        
+                <?php } ?>
             </div>
+        </div>   
+
+        <div class="col-sm-6">
+            <div class="card_header">
+                <h3>Recent comments</h3>
+            </div>
+
+            <div class="card_content">
+                <?php
+                    require 'partials/fetch_comments_profile.php';
+                    foreach($count as $c) { 
+                ?>
+                <div class="recent_loop row">
+                    <h3> <?= $c['name'] ?></h3>
+                    <h5> <?= $c['time'] ?></h5>
+                    <p> <?= $c['content']; ?> </p>
+                </div>
+                <?php } ?>
+            </div>
+        </div> 
+    </div>
 </div> <!--END CONTENT-->
 
 <?php

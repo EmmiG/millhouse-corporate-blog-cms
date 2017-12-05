@@ -1,11 +1,12 @@
 <?php	
-		require_once 'partials/session_start.php';
-		require 'partials/head.php';
+    require_once 'partials/session_start.php';
+    require 'partials/head.php';
 ?>
 
 <div id="category" class="content_wrap">
         
     <h1>Category</h1>
+    <!-- A button that handles ascending or descending options. Will change depending on the value of GET. -->
     <form action="" method="GET">
         <input type="hidden" value="<?= $_GET['category'] ?>" name="category"/>
         <input type="hidden" value="<?php if(isset($_GET['sorting']) && $_GET['sorting'] == 'desc') { echo 'asc'; } else { echo 'desc'; } ?>" name="sorting"/>
@@ -13,6 +14,7 @@
     </form>
     <div class="card-wrap">   
         <?php
+        //A foreach loop will iterate through a SQL-request depending on the value of GET.
         if(isset($_GET['category'])) {
         include 'partials/sort_category.php';
         foreach($sorted_posts as $post) { ?>  
@@ -23,7 +25,7 @@
                 <hr>
                 <h5><?= $post['time'] ?> | <?= $post['name'] ?></h5>
 <!--                    <p class="card-text"><?= $post['content'] ?></p>-->
-
+                <!-- Using the loop to attach the postID to a hidden form which can take us to the entry itself. -->
                 <form action="comment.php" method="get">
                     <input type="hidden" value="<?= $post['postID'] ?>" name="postID"/>
                     <a href="comment.php?postID=<?= $post['postID'] ?>" class="black-text d-flex flex-row-reverse">

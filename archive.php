@@ -14,6 +14,7 @@
                     </div>
                     <div class="card_content">
                     <?php 
+                    //If the GET-request is set a foreach loop will iterate through the SQL-request.
                     if(isset($_GET['month'])) {
                         require 'partials/sort_months.php';
                         foreach($selected_posts as $selpost) { ?>
