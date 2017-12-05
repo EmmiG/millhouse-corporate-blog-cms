@@ -16,6 +16,7 @@
 
 <div id="blog" class="content_wrap">
     <article>
+    <!-- The fetch_entries partial gathers all entries and the foreach-loop prints them out. -->
     <?php
         foreach($posts as $post) {?>
             <div class="entry_box">
@@ -23,7 +24,7 @@
                 <h1><?= $post['title'] ?></h1>
                 <h5><?= $post['name'] ?> | category: <?= $post['category'] ?></h5>
                 <article><?= $post['content'] ?></article>
-
+                    <!-- The two partials below gather the like/comment-count for each individual post through the hidden postID-values. -->
                     <div class="btn_wrap">
                         <form action="comment.php#comments" method="get">
                             <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
@@ -42,7 +43,7 @@
 
         <?php } ?>  
     </article>
-
+    <!-- The total records variable is needed in order for the pagination to work. The postamount function let's us know how many entries that are present in the database. Then the pagination_pages will print out the pagination results. -->
     <div class="pagination">  
         <?php
             $total_records = postamount();
