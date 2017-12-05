@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	require_once 'partials/session_start.php';
 	if(isset($_SESSION['user'])) {
 	require 'partials/database.php';
 	require 'partials/head_profile.php';

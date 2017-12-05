@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once 'session_start.php';
 require 'database.php';
 
 if(isset($_POST['title'], $_POST['content'], $_POST['category'], $_SESSION['user'])) {
