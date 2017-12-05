@@ -6,6 +6,11 @@
 <div id="category" class="content_wrap">
         
     <h1>Category</h1>
+    <form action="" method="GET">
+        <input type="hidden" value="<?= $_GET['category'] ?>" name="category"/>
+        <input type="hidden" value="<?php if(isset($_GET['sorting']) && $_GET['sorting'] == 'desc') { echo 'asc'; } else { echo 'desc'; } ?>" name="sorting"/>
+        <input type="submit" value="<?php if(isset($_GET['sorting']) && $_GET['sorting'] == 'desc') { echo 'Ascending'; } else { echo 'Descending'; } ?>" class="btn btn-primary"/>
+    </form>
     <div class="card-wrap">   
         <?php
         if(isset($_GET['category'])) {

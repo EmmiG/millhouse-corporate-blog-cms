@@ -1,7 +1,12 @@
 <?php
 	require 'database.php';
-
-	$statement = $pdo->prepare("SELECT * FROM posts WHERE category = :category order by postID DESC"); 
+    if(isset($_GET['sorting'])) {
+        $sorting = $_GET['sorting'];
+    }
+    else {
+        $sorting = "DESC";
+    }
+	$statement = $pdo->prepare("SELECT * FROM posts WHERE category = :category order by postID $sorting"); 
 	$statement->execute(array(
 				":category"     => $_GET["category"]
 				));
