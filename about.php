@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    require_once 'partials/session_start';
     require 'partials/head.php';
 ?>
     <div class="content_wrap">

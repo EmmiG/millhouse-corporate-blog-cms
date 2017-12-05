@@ -1,4 +1,6 @@
-<?php	require 'partials/head.php'; ?>
+<?php
+require 'partials/head.php'; 
+?>
 
 <div class="jumbotron jumbo_login"> 
     <div class="container">
