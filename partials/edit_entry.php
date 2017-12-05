@@ -1,5 +1,4 @@
 <?php
-session_start();
 require 'database.php';
 
 if(isset($_POST['title'], $_POST['content'], $_POST['category'])) {

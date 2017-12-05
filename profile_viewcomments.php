@@ -1,9 +1,10 @@
 <?php
-    session_start();
+    require_once 'partials/session_start.php';
+    //This page will only appear if the user is logged in. If not logged in, he/she will be re-directed.
     if(isset($_SESSION['user'])) {
-    require 'partials/database.php';
-    require 'partials/head_profile.php';
-    require 'partials/functions.php';
+        require 'partials/database.php';
+        require 'partials/head_profile.php';
+        require 'partials/functions.php';
 ?>
 <div id="content" class="container">
     <div class="row">
@@ -12,40 +13,43 @@
                 <h3>View all comments</h3>    
             </div>
             <div class="card_content">
-                 <?php
+            <!-- This partial will retreive and loop all comments on the website. -->
+            <?php
                 require 'partials/fetch_comments_profile.php';
-                foreach($count as $c) { ?>
-                <div class="recent_loop row">
-                    <div class="col-sm-9">
-                        <p> <?= $c['time'] ?></p>
-                        <p> <?= $c['name'] ?></p>
-                        <p> <?= $c['content']; ?> </p> 
-                        <!--<p> <?= $c['email'] ?></p>-->
-                    </div>
+                foreach($count as $c) { 
+            ?>
+            <div class="recent_loop row">
+                <div class="col-sm-9">
+                    <p> <?= $c['time'] ?></p>
+                    <p> <?= $c['name'] ?></p>
+                    <p> <?= $c['content']; ?> </p> 
+                    <!--<p> <?= $c['email'] ?></p>-->
+                </div>
 
+                <!-- All logged in users can view the comments, but only a user with the username "admin" can delete it. For everyone else, the option won't appear. This is done by comparison -->
+                <div class="col-sm-3">
+                    <form action="comment.php" method="get">
+                        <input type="hidden" value="<?= $c['postID'] ?>" name="postID"/>
+                        <input type="submit" value="show post" class="btn btn-primary btn_card"/>
+                    </form>
+                      <?php if($_SESSION["user"]["username"] == $c['name'] or $_SESSION["user"]["username"] == "admin") {?> 
+                      <form action="partials/delete_comment.php" method="post">
+                        <input type="hidden" value="<?=$c["postID"] ?>" name="postID"/>
+                        <input type="submit" value="delete" class="btn btn-primary btn_card"/>
+                      </form>
+                      <?php } ?>
+                </div> 
+             </div>
 
-                    <div class="col-sm-3">
-                        <form action="comment.php" method="get">
-                            <input type="hidden" value="<?= $c['postID'] ?>" name="postID"/>
-                            <input type="submit" value="show post" class="btn btn-primary btn_card"/>
-                        </form>
-                          <?php if($_SESSION["user"]["username"] == $c['name'] or $_SESSION["user"]["username"] == "admin") {?> 
-                          <form action="partials/delete_comment.php" method="post">
-                            <input type="hidden" value="<?=$c["postID"] ?>" name="postID"/>
-                            <input type="submit" value="delete" class="btn btn-primary btn_card"/>
-                          </form>
-                          <?php } ?>
-                    </div> 
-                 </div>
-
-                <?php } ?>
+            <?php } ?>
 
             </div>
         </div>
     </div>
+        <!--  A function is initiated to gather the post amount. Then our pagination is required. -->
         <?php
-       	$total_records = postamount();
-        require 'partials/pagination_pages.php';
+            $total_records = postamount();
+            require 'partials/pagination_pages.php';
         ?> 
 </div>  
 
@@ -54,6 +58,6 @@
     require 'partials/footer_profile.php';
     }
     else {
-    header('Location: landing.php?logged_in=false');
+        header('Location: landing.php?logged_in=false');
     }
 ?>

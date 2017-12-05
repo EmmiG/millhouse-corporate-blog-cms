@@ -6,7 +6,7 @@ if(isset($_GET["page"])) {
 	$page=1; 
 };  
 $start_from = ($page-1) * $limit;  
-$statement = $pdo->prepare("SELECT * FROM posts WHERE userID = :userID ORDER BY postID DESC LIMIT 5");   
+$statement = $pdo->prepare("SELECT * FROM posts WHERE userID = :userID ORDER BY postID DESC LIMIT $start_from, $limit");   
 $statement->execute(array(
 	":userID" => $_SESSION["user"]["userID"]
 )); 
