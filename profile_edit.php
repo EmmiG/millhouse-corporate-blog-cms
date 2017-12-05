@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-sm-12">      
             <div class="card_header">
-                <h3>Which post would you like to edit?</h3>    
+                <h4>Which post would you like to edit?</h4>    
             </div>
             <div class="card_content">
             <!-- A partial will run a SQL-request to fetch the entries made by a particular user. Then they are looped out thorugh a foreach loop. The user who made the entries can edit them as they will not appear otherwise. -->

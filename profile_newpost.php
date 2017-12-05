@@ -7,7 +7,7 @@
 ?>
 <!-- The new entry partial will gather the data through POST and add it to the SQL-database. -->
 <div id="content" class="container">
-    <h4>New post</h4>
+    <h2>New post</h2>
     <form action="partials/new_entry.php" method="POST">
         <div class="form-group">
             <label for="username"> Title </label>

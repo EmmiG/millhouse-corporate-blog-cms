@@ -21,6 +21,10 @@ h2 {
 }
 
 h3 {
+    font-size: 1.3em;
+}
+
+h4 {
     font-size: 1em;
 }
 
@@ -37,11 +41,11 @@ p{
 }
 
 a {
-    color: #FFF;
+    color: $linkColorLight;
     text-decoration: none;
     
     &:focus {
-        color: #FFF;
+        color: $linkColorLight;
     }
 }
 
@@ -49,144 +53,77 @@ article {
     text-align: left;
 }
 
-.btn-primary {
-    font-size: 1em;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    padding: 0.8em 1.8em;
-    border-radius: 10em;
-    border: 0;
-    cursor: pointer;
-    background-color: #F69C35;
-    display: block;
-    margin: auto;
-
-    &:hover {
-    	color: #FFF;
-    }
-}
-
-.btn-primary.btn-login {
-    background-color: #FF5860;
-}
-
 .content_wrap {
     padding: 0 12px;
-}
-
-.btn_ghost {
-    font-weight: 700;
-    float: right;
-    text-transform: uppercase;
-    
-    &:hover {
-        text-decoration: underline;
-    }
-    
-    a {
-        color: #222;
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        transition: all 0.2s;
-        
-    }
 }
 
 .pagination {
     float: right;
 }
+
 /*--------------------------------------
         NAVBAR
 --------------------------------------*/
 .navbar-default {
     background-color: $brandColorBlue;
     color: #FFF;
-    display: inline-block;
-    margin: 0 auto;
-    boder: 0;
+    
+    a {
+        color: $linkColorLight !important;
+    }
     
     .navbar-toggle {
         border: none;
 
-            &:hover{
-              background-color: #2c6284;  
-            }
+        &:focus, &:hover {
+          background-color: $navCompColor;  
+        }
     }
     
     .navbar-nav {
         margin: 0px -15px;
     
-        li>a{
-        color: #FFF;
-
-            &:hover{
-                color: #FFF;
-                background-color: #2c6284;
+        li {
+            
+            > a:hover {
+                    background-color: $navCompColor;
             }
             
-            &:focus {
-              color: #FFF;  
+            .dropdown-menu {
+                background-color: $navCompColor !important;
+                left: 12px;
+
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: $brandColorBlue;
+                    }
+                }
+            }
+        }
+        
+        /*open dropdown menu*/
+        .open {
+            
+            > a {
+                background-color: $navCompColor !important;
+            }    
+            
+            .dropdown-menu > li > a:hover {
+                    background-color: $brandColorBlue;
             }
         }
     }
 }
 
-
-.navbar-default .navbar-nav > li > .dropdown-menu {
-    background-color: #2c6284;
-    left: 12px;
-    
-    a {
-        color: #FFF;
-        text-decoration: none;
-        
-        &:hover {
-            background-color: $brandColorBlue;
-        }
-    }
-}
-
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
-    color: #FFF;
-    background-color: #2c6284;
-}
-
-.navbar-default .navbar-nav .open .dropdown-menu>li>a {
-    color: #FFF;
-    
-    &:hover {
-        color: #FFF;
-        background-color: $brandColorBlue;
-    }
-}
-
-#bs-example-navbar-collapse-1 > ul:nth-child(3) > li.dropdown.open > ul {
-    padding: 0;
-}
-
-.navbar {
-    margin-bottom: 0;
-}
-
-
 .navbar-fixed-top {
-border-width: 0;
+    border-width: 0;
 }
 
-#nav-logo{
+#nav-logo {
     display: none;
 }
-    
-#blog:before { 
-  display: block; 
-  content: " "; 
-  margin-top: -50px; 
-  height: 50px; 
-  visibility: hidden; 
-}
-
 
 
 /*--------------------------------------
@@ -202,13 +139,11 @@ border-width: 0;
     background-attachment: fixed;
     
     a:hover, a:focus, .fa-angle-down:active {
-        color: #FFF;
+        color: $linkColorLight;
     }
 }
 
-
 .jumbo_start {
-    background-color: #D9DEE4;
     background-image: url(../images/watch@500px.jpg);
     
     img {
@@ -219,9 +154,6 @@ border-width: 0;
     }
 }
 
-.jumbo_login {
-    background-image: url(../images/login_background@500px.jpg);
-}
 
 /*--------------------------------------
         ARROW DOWN ANIMATION
@@ -255,29 +187,34 @@ border-width: 0;
 	}
 }
 
-#blog {
-	-webkit-transition: all 0.5s ease;
+/*needed because bootstrap navbar needs 50px in body and push content down*/
+#comments:before, #blog:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -50px; 
+  height: 50px; 
+  visibility: hidden; 
 }
+
 
 /*--------------------------------------
         LOG IN
 --------------------------------------*/
 
 .jumbo_login {
-    background-color: #C4CDD6;
+    background-image: url(../images/login_background@500px.jpg);
     padding-top: 0;
 }
 
 .login_box {
     color: #FFF;
-    margin: 0 auto;
-    margin-bottom: 56px;
+    margin: 0 auto 56px auto;
     max-width: 480px;
     padding: 48px 56px;
     background: rgba(15,50,72,0.80);
     border-radius: 2px;
     
-    h3 {
+    h1 {
         font-size: 2em;
         text-align: center;
     }
@@ -285,16 +222,22 @@ border-width: 0;
     p {
         color: #FFF;
         font-size: 1.1em;
-        margin-bottom: 8px;  
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    
+        .p_forgot {
+        text-decoration: underline;
+        text-align: right;
     }
     
     a {
-        color: #FFF;
+        color: $linkColorLight;
         text-decoration: none;
         
-            &:hover {
-    	    color: #D8D8D8;
-            }
+        &:hover {
+            color: #D8D8D8;
+        }
     }
     
     img {
@@ -302,14 +245,8 @@ border-width: 0;
         display: block;
         margin: auto;
     }
-    
-    
-    
+      
     .register_text {
-        
-        p {
-        text-align: center;
-        }
         
         p:nth-child(2) {
             font-weight:500;
@@ -317,15 +254,6 @@ border-width: 0;
         }  
     }
     
-    .p_forgot {
-        text-decoration: underline;
-        text-align: right;
-    }
-	.p_login {
-		text-align: center;
-		text-decoration: underline;
-		margin-bottom: 20px;
-	}
 }
 
 @media screen and(min-width: 500px){
@@ -380,7 +308,7 @@ border-width: 0;
                 ABOUT
 ------------------------------------------*/
 
-.about_wrap img{
+.about_wrap img {
     overflow: hidden;
     max-height: 480px;
     display: block;
@@ -390,25 +318,6 @@ border-width: 0;
 /*--------------------------------------
         CATEGORY
 --------------------------------------*/
-
-//.category_box {
-//    box-shadow: 0px 0px 2px;
-//    text-align: center;
-//    padding: 5px;
-//    margin-top: 30px;
-//}
-
-//#category {
-//    display: flex;
-//    align-items: center;
-//    width: auto;
-//    text-align: center;
-//    
-//    .buttons {
-//        display: flex;
-//        margin: 0 auto; 
-//    }
-//}
 
 #category {
     text-align: center;
@@ -514,6 +423,28 @@ border-width: 0;
   -webkit-box-orient: vertical;
 }
 
+
+/*--------------------------------------
+        ARCHIVE
+--------------------------------------*/
+.archive_title {
+    //color: black;
+}
+
+#content_archive {
+   //background: white;
+}
+
+.archive_box {
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid #eee;
+}
+
+/*--------------------------------------
+        ADMIN/PROFILE
+--------------------------------------*/
 /*--------------------------------------
         ADMIN/PROFILE
 --------------------------------------*/
@@ -600,6 +531,8 @@ border-width: 0;
     display: none;
 }
 
+
+
 /*********SHORTCUT BOX***********/
 
 .shortcut {
@@ -612,9 +545,8 @@ border-width: 0;
     -webkit-flex-flow: wrap row;
     flex-flow: wrap row;
     padding: 0;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 a.shortcut_box {
@@ -629,6 +561,7 @@ a.shortcut_box {
     box-sizing: border-box;
     
     p {
+        margin-top: 8px;
         color: #FFF;
         text-align: center;
     }
@@ -653,8 +586,6 @@ a.shortcut_box {
     }
 }
 
-
-
 /*********CONTENT***********/  
 
 #profile_body {
@@ -662,16 +593,12 @@ a.shortcut_box {
     padding: 0;
 }
 
-#content {
-    transition: all 0.3s;
-}
-
 .card_header {
     background-color: $brandColorBlue;
-    padding: 2px 20px;
-    margin-top: 12px;
+    padding: 8px 20px;
+    margin-top: 16px;
     
-    h3 {
+    h4 {
         color: #fff
     }
 }
@@ -687,7 +614,7 @@ a.shortcut_box {
     border-bottom: 1px solid #333;
     
     img {
-        width: 3em;
+        display: none;
     }
     
     p {
@@ -707,7 +634,9 @@ a.shortcut_box {
     }
     
     #view_svg {
+        display: block;
         float:right;
+        width: 3em;
     }
 }
 
@@ -761,11 +690,6 @@ a.shortcut_box {
         margin-bottom: 60px;
     }
     
-    .navbar-brand {
-        margin-top: 45px;
-        height: 65px;
-    }
-    
     ul {
         list-style-type: none;
         padding-left: 0;
@@ -773,31 +697,18 @@ a.shortcut_box {
     }
     
     h3 {
-        font-size: 18px;
         font-weight: bold;
         margin-top: 30px;
     }
     
     a {
-        color: #fff;
-        text-decoration: none;
+        color: $linkColorLight;
         
         &:hover, &:focus {
             text-decoration: none;
             color: #EC9E0C; 
         }
     
-    }
-    
-    .btn {
-        background-color: #B4B5BB;
-        &:hover {
-            background: #EC9E0C; 
-        }
-        
-        a:hover {
-            color: #fff;  
-        }
     }
     
     img {
