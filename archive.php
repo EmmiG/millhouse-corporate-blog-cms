@@ -24,7 +24,15 @@
                                 <span class="span_light"><?= $selpost['time']?> | <?= $selpost['name'] ?></span>
                                 <!--<article><?= $selpost['content'] ?></article>-->
                                 <!--<p><?= $selpost['email'] ?></p>-->
+                                <form action="comment.php" method="get">
+                                   <input type="hidden" value="<?= $selpost['postID'] ?>" name="postID"/>
+                                   <a href="comment.php?postID=<?= $selpost['postID'] ?>" class="black-text d-flex flex-row-reverse">
+                                   <h3 class="readmore_h3">Read more <i class="fa fa-chevron-right"></i></h3>
+                                   </a>
+                               </form>
                             </div>
+                  
+                  
                                  
                              <?php }} ?>
                         </article>

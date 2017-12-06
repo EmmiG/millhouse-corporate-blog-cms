@@ -44,7 +44,7 @@
             <div class="overview_content card_content">
                 <div class="overview_wrap row">
                     <div class="overview_box col-xs-6 col-sm-3">
-                       <span class="overview_dig"><?= count_posts(); ?></span>
+                       <span class="overview_dig"><?= postamount(); ?></span>
                         <span class="overview_text">Total posts</span>
                     </div>
                     <div class="overview_box col-xs-6 col-sm-3">
@@ -76,12 +76,12 @@
             <div class="card_content">
                 <?php 
                     require 'partials/fetch_entries_profile.php';
-                    foreach($count as $c) { 
+                    foreach($posts_profile as $post) { 
                 ?>
                 <div class="recent_loop row">
-                    <h3> <?= $c['title'] ?></h3>
-                    <span class="span_light"> <?= $c['time'] ?> | Author: <?= $c['name'] ?></span>
-                    <a href="comment.php?postID=<?= $c['postID'] ?>">
+                    <h3> <?= $post['title'] ?></h3>
+                    <span class="span_light"> <?= $post['time'] ?> | Author: <?= $post['name'] ?></span>
+                    <a href="comment.php?postID=<?= $post['postID'] ?>">
                         <img id="view_svg" src="../images/eye.svg">
                     </a>
                     <div class="clear"></div>
@@ -98,12 +98,12 @@
             <div class="card_content">
                 <?php
                     require 'partials/fetch_comments_profile.php';
-                    foreach($count as $c) { 
+                    foreach($comments_profile as $comment) { 
                 ?>
                 <div class="recent_loop row">
-                    <h3> <?= $c['name'] ?></h3>
-                    <span class="span_light"> <?= $c['time'] ?></span>
-                    <p> <?= $c['content']; ?> </p>
+                    <h3> <?= $comment['name'] ?></h3>
+                    <span class="span_light"> <?= $comment['time'] ?></span>
+                    <p> <?= $comment['content']; ?> </p>
                 </div>
                 <?php } ?>
             </div>

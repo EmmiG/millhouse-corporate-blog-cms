@@ -46,7 +46,14 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ARCHIVE <i class="caret"></i></a>
                       <ul class="dropdown-menu">
+                        
                         <?php
+                        /*
+                        Both fetch_years and fetch_months are required and looped. The fetch_months values are
+                        converted from INT to string. the fetch_years retreives the years and puts them on the
+                        same row in the loop. Those values are not converted. The result is something like 
+                        "March (fetch_months) 2017 (fetch_years)". This is probably a bad solution – but it does the job. 
+                        */
                         require 'fetch_months.php';
                         require 'fetch_years.php';
                         foreach ($months as $index => $value) {

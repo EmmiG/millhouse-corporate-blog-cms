@@ -1,17 +1,7 @@
 <?php  
-
-function count_posts() {
-	require 'database.php';
-	$statement = $pdo->prepare("SELECT COUNT(*) FROM posts");
-	$statement->execute(array(
-	":userID" => $_SESSION["user"]["userID"]
-	));
-	$count = $statement->fetch(PDO::FETCH_ASSOC);
-	foreach($count as $c) { 
-		return $c;
-		}
-	}
-
+/*
+This function counts all the posts made by the logged in user.
+*/
 function user_posts() {
 	require 'database.php';
 	$statement = $pdo->prepare("SELECT COUNT(*) FROM posts where userID = :userID");
@@ -23,19 +13,21 @@ function user_posts() {
 		return $c;
 	}
 }
-
+/*
+This function counts all the comments in the database.
+*/
 function count_comments() {
 	require 'database.php';
 	$statement = $pdo->prepare("SELECT COUNT(*) FROM comments");
-	$statement->execute(array(
-	":userID" => $_SESSION["user"]["userID"]
-	));
+	$statement->execute();
 	$count = $statement->fetch(PDO::FETCH_ASSOC);
 	foreach($count as $c) {
 		return $c;
 	}
 }
-
+/*
+This function counts all the comments made by the logged in user.
+*/
 function count_user_comments() {
 	require 'database.php';
 	$statement = $pdo->prepare("SELECT COUNT(*) FROM comments where userID = :userID");
@@ -48,7 +40,9 @@ function count_user_comments() {
 		return $c;
 	}
 }
-
+/*
+This function will check if there's a duplet in the datebase when the user registers so there are no duplet-usernames.
+*/
 function duplet() {
 	require 'database.php';
 	$statement = $pdo->prepare("SELECT COUNT(username) AS num FROM users WHERE username = :username");
@@ -64,7 +58,9 @@ function duplet() {
 			return false;
 	}
 }
-
+/*
+This function will count how many posts the logged in user has made.
+*/
 function postamount_individual() {
 		require 'partials/database.php';
 		$statement = $pdo->prepare("SELECT COUNT(*) FROM posts where userID = :userID");
@@ -77,6 +73,9 @@ function postamount_individual() {
 	}
 }
 
+/*
+This function will count the total amount of posts in the database.
+*/
 function postamount() {
 	require 'partials/database.php';
 	$statement = $pdo->prepare("SELECT COUNT(*) FROM posts");
@@ -86,6 +85,4 @@ function postamount() {
 		return $c;
 	}
 }
-
-
 ?>
