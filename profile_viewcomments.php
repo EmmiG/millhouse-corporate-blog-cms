@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-sm-12">      
             <div class="card_header">
-                <h3>View all comments</h3>    
+                <h4>View all comments</h4>    
             </div>
             <div class="card_content">
             <!-- This partial will retreive and loop all comments on the website. -->
