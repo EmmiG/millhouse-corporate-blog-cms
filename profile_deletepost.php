@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-sm-12">      
             <div class="card_header">
-                <h3>Which post would you like to delete?</h3>    
+                <h2>Which post would you like to delete?</h2>    
             </div>
             <div class="card_content">
             <!-- A partial will run a SQL-request to fetch the entries made by a particular user. Then they are looped out thorugh a foreach loop. The user who made the entries can delete them as they will not appear otherwise. -->
@@ -20,10 +20,9 @@
             ?>
             <div class="recent_loop row">
                 <div class="col-sm-9">
-                    <h4><?= $post['title'] ?></h4>
-                    <h5><?= $post['time'] ?></h5>
+                    <h3><?= $post['title'] ?></h3>
+                    <span class="span_light"><?= $post['time'] ?></span>
                     <p><?= $post['content'] ?></p>
-                    <!--<p> <?= $c['email'] ?></p>-->
                 </div>
                 <div class="col-sm-3">     
                     <form action="partials/delete_entry.php" method="post">

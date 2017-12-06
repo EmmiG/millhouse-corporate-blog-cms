@@ -22,7 +22,7 @@
 
     <div class="collapse navbar-collapse" id="sidebar_collapsed">       
         <div class="sidebar_header">
-            <img src="../images/admin.svg"><h3>ADMIN</h3>
+            <img src="../images/admin.svg"><h1>ADMIN</h1>
         </div>
         <ul class="list-unstyled components">
             <!--<li class="active">-->

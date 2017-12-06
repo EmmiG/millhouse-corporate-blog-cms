@@ -19,8 +19,9 @@
                                     foreach($selected_posts as $selpost) { 
                             ?>
                             <div class="archive_box">
-                                <h4><?= $selpost['title'] ?></h4>
-                                <h5><?= $selpost['time']?> | <?= $selpost['name'] ?></h5>
+                                <a href="comment.php?postID=<?= $selpost['postID'] ?>">
+                                <h3 class="archive_title"><?= $selpost['title'] ?></h3></a>
+                                <span class="span_light"><?= $selpost['time']?> | <?= $selpost['name'] ?></span>
                                 <!--<article><?= $selpost['content'] ?></article>-->
                                 <!--<p><?= $selpost['email'] ?></p>-->
                                 <form action="comment.php" method="get">

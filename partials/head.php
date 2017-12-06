@@ -35,7 +35,7 @@
                     <li><a id="nav-logo" href="index.php"><img src="../images/millhouse_white_logo.svg"></a></li>
               
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORY <span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORY <i class="caret"></i></a>
                       <ul class="dropdown-menu">
                         <li><a href="category.php?category=kläder">Kläder</a></li>
                         <li><a href="category.php?category=verktyg">Verktyg</a></li>
@@ -44,7 +44,7 @@
                     </li> 
                     
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ARCHIVE <span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ARCHIVE <i class="caret"></i></a>
                       <ul class="dropdown-menu">
                         
                         <?php
