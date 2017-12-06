@@ -1,5 +1,9 @@
 <?php
-	require 'database.php';
+    /*
+    If the user has set the sorting themselves, the $sorting variable will be either asc/desc, depending on their
+    decision. Else it will be DESC by default.
+    */
+	require_once 'database.php';
     if(isset($_GET['sorting'])) {
         $sorting = $_GET['sorting'];
     }
@@ -11,4 +15,4 @@
 				":category"     => $_GET["category"]
 				));
 	$sorted_posts = $statement->fetchAll(PDO::FETCH_ASSOC);
-	?>
+?>

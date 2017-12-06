@@ -6,7 +6,7 @@
         require 'partials/head_profile.php';
         //A SQL-request is send through the partial to gather a particular entry through POST.
         if(isset($_POST["postID"])) {
-            require 'partials/fetch_individual_entry_profile.php';
+            require 'partials/fetch_individual_entry.php';
             foreach($indivudual_post as $post) { 
 ?>
 <div id="content" class="container">

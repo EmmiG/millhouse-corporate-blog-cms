@@ -16,14 +16,14 @@
             <!-- This partial will retreive and loop all comments on the website. -->
             <?php
                 require 'partials/fetch_comments_profile.php';
-                foreach($count as $c) { 
+                foreach($comments_profile as $comment) { 
             ?>
             <div class="recent_loop row">
                 <div class="col-sm-9">
-                    <p> <?= $c['time'] ?></p>
-                    <p> <?= $c['name'] ?></p>
-                    <p> <?= $c['content']; ?> </p> 
-                    <!--<p> <?= $c['email'] ?></p>-->
+                    <p> <?= $comment['time'] ?></p>
+                    <p> <?= $comment['name'] ?></p>
+                    <p> <?= $comment['content']; ?> </p> 
+                    <!--<p> <?= $comment['email'] ?></p>-->
                 </div>
 
                 <!-- All logged in users can view the comments, but only a user with the username "admin" can delete it. For everyone else, the option won't appear. This is done by comparison -->
@@ -32,9 +32,9 @@
                         <input type="hidden" value="<?= $c['postID'] ?>" name="postID"/>
                         <input type="submit" value="show post" class="btn btn-primary btn_card"/>
                     </form>
-                      <?php if($_SESSION["user"]["username"] == $c['name'] or $_SESSION["user"]["username"] == "admin") {?> 
+                      <?php if($_SESSION["user"]["username"] == $comment['name'] or $_SESSION["user"]["username"] == "admin") {?> 
                       <form action="partials/delete_comment.php" method="post">
-                        <input type="hidden" value="<?=$c["postID"] ?>" name="postID"/>
+                        <input type="hidden" value="<?=$comment["postID"] ?>" name="postID"/>
                         <input type="submit" value="delete" class="btn btn-primary btn_card"/>
                       </form>
                       <?php } ?>
