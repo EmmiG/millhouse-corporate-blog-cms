@@ -76,12 +76,12 @@
             <div class="card_content">
                 <?php 
                     require 'partials/fetch_entries_profile.php';
-                    foreach($count as $c) { 
+                    foreach($posts_profile as $post) { 
                 ?>
                 <div class="recent_loop row">
-                    <h3> <?= $c['title'] ?></h3>
-                    <h5> <?= $c['time'] ?> | Author: <?= $c['name'] ?></h5>
-                    <a href="comment.php?postID=<?= $c['postID'] ?>">
+                    <h3> <?= $post['title'] ?></h3>
+                    <h5> <?= $post['time'] ?> | Author: <?= $post['name'] ?></h5>
+                    <a href="comment.php?postID=<?= $post['postID'] ?>">
                         <img id="view_svg" src="../images/eye.svg">
                     </a>
                     <div class="clear"></div>
@@ -98,12 +98,12 @@
             <div class="card_content">
                 <?php
                     require 'partials/fetch_comments_profile.php';
-                    foreach($count as $c) { 
+                    foreach($comments_profile as $comment) { 
                 ?>
                 <div class="recent_loop row">
-                    <h3> <?= $c['name'] ?></h3>
-                    <h5> <?= $c['time'] ?></h5>
-                    <p> <?= $c['content']; ?> </p>
+                    <h3> <?= $comment['name'] ?></h3>
+                    <h5> <?= $comment['time'] ?></h5>
+                    <p> <?= $comment['content']; ?> </p>
                 </div>
                 <?php } ?>
             </div>
