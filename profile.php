@@ -44,7 +44,7 @@
             <div class="overview_content card_content">
                 <div class="overview_wrap row">
                     <div class="overview_box col-xs-6 col-sm-3">
-                       <h1><?= count_posts(); ?></h1>
+                       <h1><?= postamount(); ?></h1>
                         <h3>Total posts</h3>
                     </div>
                     <div class="overview_box col-xs-6 col-sm-3">
