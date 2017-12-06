@@ -19,12 +19,19 @@
                                     foreach($selected_posts as $selpost) { 
                             ?>
                             <div class="archive_box">
-                                <a href="comment.php?postID=<?= $selpost['postID'] ?>">
-                                <h4 class="archive_title"><?= $selpost['title'] ?></h4></a>
+                                <h4><?= $selpost['title'] ?></h4>
                                 <h5><?= $selpost['time']?> | <?= $selpost['name'] ?></h5>
                                 <!--<article><?= $selpost['content'] ?></article>-->
                                 <!--<p><?= $selpost['email'] ?></p>-->
+                                <form action="comment.php" method="get">
+                                   <input type="hidden" value="<?= $selpost['postID'] ?>" name="postID"/>
+                                   <a href="comment.php?postID=<?= $selpost['postID'] ?>" class="black-text d-flex flex-row-reverse">
+                                   <h3 class="readmore_h3">Read more <i class="fa fa-chevron-right"></i></h3>
+                                   </a>
+                               </form>
                             </div>
+                  
+                  
                                  
                              <?php }} ?>
                         </article>
