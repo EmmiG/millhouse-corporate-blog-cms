@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-sm-12">      
             <div class="card_header">
-                <h4>View all posts</h4>    
+                <h2>View all posts</h2>    
             </div>
             <div class="card_content">
                 <!-- The fetch_entries partial will retreive and loop all posts on the website. -->
@@ -20,8 +20,8 @@
                 ?>
                 <div class="recent_loop all_posts row">
                     <div class="col-sm-9">
-                        <h4><?= $post['title'] ?></h4>
-                        <h5><?= $post['time'] ?></h5>
+                        <h3><?= $post['title'] ?></h3>
+                        <span class="span_light"><?= $post['time'] ?></span>
                         <?= $post['content'] ?>
                     </div>
                     <div class="col-sm-3"> 

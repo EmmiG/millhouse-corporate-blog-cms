@@ -20,9 +20,9 @@
     <?php
         foreach($posts as $post) {?>
             <div class="entry_box">
-                <h5><?= $post['time'] ?></h5>
+                <span class="span_light"><?= $post['time'] ?></span>
                 <h1><?= $post['title'] ?></h1>
-                <h5><?= $post['name'] ?> | category: <?= $post['category'] ?></h5>
+                <span class="span_light"><?= $post['name'] ?> | category: <?= $post['category'] ?></span>
                 <article><?= $post['content'] ?></article>
                     <!-- The two partials below gather the like/comment-count for each individual post through the hidden postID-values. -->
                     <div class="btn_wrap">

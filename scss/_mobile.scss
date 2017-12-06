@@ -6,7 +6,7 @@ body {
     padding-top: 50px;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
@@ -21,19 +21,18 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3em;
-}
-
-h4 {
     font-size: 1em;
 }
 
-h5 {
+.span_light {
     font-size: 0.8em;
     font-weight: 300;
     letter-spacing: 2.2px;
+    margin: 10px 0;
+    display: block;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
-
 
 p{
     color: #555;
@@ -389,6 +388,10 @@ article {
         }
     }
     
+    h2 {
+        font-size: 1.2em;
+    }
+    
 }
 
 .card-body {
@@ -413,8 +416,10 @@ article {
     display:none;
 }
 
-.card_h3 {
-    text-transform: none;
+.category_readmore {
+    font-weight: 500;
+    display: block;
+    margin: 20px 0 10px 0;
 }
 
 .card-text {
@@ -427,24 +432,13 @@ article {
 /*--------------------------------------
         ARCHIVE
 --------------------------------------*/
-.archive_title {
-    //color: black;
-}
-
-#content_archive {
-   //background: white;
-}
 
 .archive_box {
-    text-align: center;
     margin-top: 54px;
     margin-bottom: 48px;
     border-bottom: 1px solid #eee;
 }
 
-/*--------------------------------------
-        ADMIN/PROFILE
---------------------------------------*/
 /*--------------------------------------
         ADMIN/PROFILE
 --------------------------------------*/
@@ -459,6 +453,12 @@ article {
     transition: all 0.3s;
     position: relative;
      
+     h1 {
+         font-size: 1.3em;
+         margin: 20px 0 10px 0;
+         display: inline-block;
+     }
+     
     ul p {
         color: #fff;
         padding: 10px;
@@ -472,17 +472,17 @@ article {
     }
      
     ul li.active > a {
-        color: #fff;
+        color: $linkColorLight;
         background: #8C8E92;
     }
          
     img {
-        width:2em;
+        width: 2em;
         margin-right: 8px;
     }
      
     ul li a:hover{
-        color: #FFF;
+        color: $linkColorLight;
         background: #2c6284;
     }
 }
@@ -490,13 +490,11 @@ article {
 #sidebar .sidebar_header {
     display: none;
 }
-
-
      
 #sidebar ul ul a {
     padding-left: 30px;
     background: #2c6284;
-    color: #fff;
+    color: $linkColorLight;
 }
 
 #sidebar .navbar-collapse {
@@ -510,27 +508,20 @@ article {
     &:hover {
         color: $brandColorBlue;
         background-color: #FFF;
-    }
-    
+    }  
 }
-
-
     
 #sidebar .navbar-collapse ul {
     margin-bottom: 0;
 }
 
-
 .logout{
     background-color: #3D4B5B;
-    
-
 } 
 
 .top_nav {
     display: none;
 }
-
 
 
 /*********SHORTCUT BOX***********/
@@ -598,8 +589,10 @@ a.shortcut_box {
     padding: 8px 20px;
     margin-top: 16px;
     
-    h4 {
-        color: #fff
+    h2 {
+        color: #fff;
+        font-size: 1em;
+        margin: 10px 0;
     }
 }
 
@@ -640,10 +633,11 @@ a.shortcut_box {
     }
 }
 
-/*********RECENT POSTS & COMMENTS***********/
+/*********OVERVIEW***********/
 
 .overview_wrap {
     text-align: center;
+    
 }
 
 .overview_content {
@@ -652,6 +646,10 @@ a.shortcut_box {
 
 .overview_box {
     border-right: dotted #e3e3e3;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
     
     &:nth-child(2) {
         border:none;
@@ -660,7 +658,33 @@ a.shortcut_box {
     &:nth-child(4) {
         border:none;
     }
+    
+    .overview_dig {
+        font-size: 2em;
+        display: block;
+        margin: 18px 0 0;
+    }
+    
+    .overview_text {
+        font-size: 1em;
+        display: block;
+        margin: 10px 0;
+    }
 }
+.overview_text {
+    
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    display: block;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    :nth-child(2){
+        font-size: 1em!important;
+    }
+}
+
 /*********EDIT PAGE***********/
 
 .edit_box {

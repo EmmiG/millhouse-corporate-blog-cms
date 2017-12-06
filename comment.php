@@ -10,9 +10,9 @@
 			require 'partials/fetch_individual_entry.php';
 			foreach($indivudual_post as $post) { ?>
 				<div class="entry_box">
-                    <h5><?= $post['time'] ?></h5>
+                    <span class="span_light"><?= $post['time'] ?></span>
                     <h1><?= $post['title'] ?></h1>
-                    <h5><?= $post['name'] ?> | category: <?= $post['category'] ?></h5>
+                    <span class="span_light"><?= $post['name'] ?> | category: <?= $post['category'] ?></span>
                     <article><?= $post['content'] ?></article>
 				</div>
 			<?php	} ?>
@@ -51,8 +51,8 @@
 			require 'partials/fetch_comments_comment.php';
 			foreach($comments as $comment) { ?>
 				<div class="entry_box comment_box">
-                    <h5>Time: <?= $comment["time"]; ?></h5>
-                    <h4>Name: <?= $comment["name"]; ?></h4>
+                    <span class="span_light">Time: <?= $comment["time"]; ?></span>
+                    <h3>Name: <?= $comment["name"]; ?></h3>
                     <p>Comments: <?= $comment["content"]; ?></p>
                     <hr>
 				</div>

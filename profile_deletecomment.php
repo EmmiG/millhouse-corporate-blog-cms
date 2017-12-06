@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-sm-12">      
             <div class="card_header">
-                <h4>Which comment would you like to delete?</h4>    
+                <h2>Which comment would you like to delete?</h2>    
             </div>
             <div class="card_content">
             <!-- A partial will run a SQL-request to fetch the comments made by a particular user. Then they are looped out thorugh a foreach loop. The user who made the comments can delete them as they will not appear otherwise. -->
@@ -20,8 +20,8 @@
             ?>
             <div class="recent_loop row">
                 <div class="col-sm-9">
-                    <!--<h4><?= $comment['title'] ?></h4>-->
-                    <h5><?= $comment['time'] ?></h5>
+                    <!--<h3><?= $comment['title'] ?></h3>-->
+                    <span class="span_light"><?= $comment['time'] ?></span>
                     <p><?= $comment['content'] ?></p>
                 </div>
                 <div class="col-sm-3">     

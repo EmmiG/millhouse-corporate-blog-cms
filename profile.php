@@ -10,10 +10,10 @@
 <div id="content">
     <div class="top_nav">
         <a href="index.php">
-            <h3>Shortcut blog</h3>
+            <span>Shortcut blog</span>
         </a>
-        <h3 id="profile_avatar"><img src="../images/avatar.svg">
-        LOGGED IN: <?=  $_SESSION["user"]["username"]; ?></h3>
+        <span id="profile_avatar"><img src="../images/avatar.svg">
+        LOGGED IN: <?=  $_SESSION["user"]["username"]; ?></span>
     </div>
     <div class="clear"></div>
     
@@ -39,25 +39,25 @@
     <div class="row">
         <div class="col-sm-12"> 
             <div class="card_header">          
-                <h3>Overview</h3>
+                <h2>Overview</h2>
             </div>       
             <div class="overview_content card_content">
                 <div class="overview_wrap row">
                     <div class="overview_box col-xs-6 col-sm-3">
-                       <h1><?= count_posts(); ?></h1>
-                        <h3>Total posts</h3>
+                       <span class="overview_dig"><?= count_posts(); ?></span>
+                        <span class="overview_text">Total posts</span>
                     </div>
                     <div class="overview_box col-xs-6 col-sm-3">
-                        <h1><?= user_posts(); ?></h1>
-                        <h3>My posts</h3>
+                        <span class="overview_dig"><?= user_posts(); ?></span>
+                        <span class="overview_text">My posts</span>
                     </div>
                     <div class="overview_box col-xs-6 col-sm-3">
-                       <h1><?= count_comments(); ?></h1>
-                        <h3>Total comments</h3>
+                       <span class="overview_dig"><?= count_comments(); ?></span>
+                        <span class="overview_text">Total comments</span>
                     </div>
                     <div class="overview_box col-xs-6 col-sm-3">
-                        <h1><?= count_user_comments(); ?></h1>
-                        <h3>My comments</h3>
+                        <span class="overview_dig"><?= count_user_comments(); ?></span>
+                        <span class="overview_text">My comments</span>
 
                     </div>
                 </div>
@@ -71,7 +71,7 @@
         <div class="col-sm-6">
 
             <div class="card_header">
-                <h3>Recent posts</h3>
+                <h2>Recent posts</h2>
             </div>    
             <div class="card_content">
                 <?php 
@@ -80,7 +80,7 @@
                 ?>
                 <div class="recent_loop row">
                     <h3> <?= $c['title'] ?></h3>
-                    <h5> <?= $c['time'] ?> | Author: <?= $c['name'] ?></h5>
+                    <span class="span_light"> <?= $c['time'] ?> | Author: <?= $c['name'] ?></span>
                     <a href="comment.php?postID=<?= $c['postID'] ?>">
                         <img id="view_svg" src="../images/eye.svg">
                     </a>
@@ -92,7 +92,7 @@
 
         <div class="col-sm-6">
             <div class="card_header">
-                <h3>Recent comments</h3>
+                <h2>Recent comments</h2>
             </div>
 
             <div class="card_content">
@@ -102,7 +102,7 @@
                 ?>
                 <div class="recent_loop row">
                     <h3> <?= $c['name'] ?></h3>
-                    <h5> <?= $c['time'] ?></h5>
+                    <span class="span_light"> <?= $c['time'] ?></span>
                     <p> <?= $c['content']; ?> </p>
                 </div>
                 <?php } ?>

@@ -20,8 +20,8 @@
                             ?>
                             <div class="archive_box">
                                 <a href="comment.php?postID=<?= $selpost['postID'] ?>">
-                                <h4 class="archive_title"><?= $selpost['title'] ?></h4></a>
-                                <h5><?= $selpost['time']?> | <?= $selpost['name'] ?></h5>
+                                <h3 class="archive_title"><?= $selpost['title'] ?></h3></a>
+                                <span class="span_light"><?= $selpost['time']?> | <?= $selpost['name'] ?></span>
                                 <!--<article><?= $selpost['content'] ?></article>-->
                                 <!--<p><?= $selpost['email'] ?></p>-->
                             </div>
