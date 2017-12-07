@@ -83,6 +83,7 @@
                     <span class="span_light"> <?= $post['time'] ?> | Author: <?= $post['name'] ?></span>
                     <a href="comment.php?postID=<?= $post['postID'] ?>">
                         <img id="view_svg" src="../images/eye.svg">
+                        <span class="sr-only">Opens post</span>
                     </a>
                     <div class="clear"></div>
                 </div>        

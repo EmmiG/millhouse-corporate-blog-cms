@@ -11,6 +11,7 @@
     <div id="arrow_down">
         <i class="fa fa-angle-down" aria-hidden="true"></i>
     </div>
+    <span class="sr-only">Scrolls down the page to the first post</span>
     </a>
 </div>
 

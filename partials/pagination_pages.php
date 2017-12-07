@@ -12,7 +12,7 @@
     If the $_GET value is more than one a previous button will appear.
     */
     if(isset($_GET['page']) && $_GET['page'] > 1) {
-        $page_links .= "<li class='page-item'><a class='page-link' href='?page=".($_GET['page'] - 1)."' aria-label='Previous'><span aria-hidden='true' class='glyphicon glyphicon-chevron-left'><span class='sr-only'>Previous</span></a></li>";
+        $page_links .= "<li class='page-item'><a class='page-link' href='?page=".($_GET['page'] - 1)."' aria-label='Previous'><span aria-hidden='true' class='glyphicon glyphicon-chevron-left'><span class='sr-only'>Previous</span><span class='sr-only'>Go to previous page</span></a></li>";
     }
     /*
     If a user deletes the GET-data in the URL the script will assume that the page is number one.
@@ -22,10 +22,10 @@
     if(empty($_GET['page'])) {
         for ($i=1; $i<=$total_pages; $i++) {  
              if(1 == $i) {
-                $page_links .= "<li class='active'><a class='page-link' href='?page=".$i."'>$i</a></li>"; 
+                $page_links .= "<li class='active'><a class='page-link' href='?page=".$i."'>$i<span class='sr-only'>Go to first page</span></a></li>"; 
              }
             else {
-                $page_links .= "<li class='page-item'><a class='page-link' href='?page=".$i."'>$i</a></li>"; 
+                $page_links .= "<li class='page-item'><a class='page-link' href='?page=".$i."'>$i<span class='sr-only'>Go to next page</span></a></li>"; 
              }
         };
         /*
