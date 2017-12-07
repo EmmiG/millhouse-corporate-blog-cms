@@ -547,7 +547,7 @@ margin-bottom: 12px;
 }
 
 a.shortcut_box {
-    background-color: #00C59E;
+    background-color: #1B8455;
     margin-top: 8px;
     margin-left: 8px;
     width: 25%;
@@ -556,23 +556,26 @@ a.shortcut_box {
     display: block;
     text-decoration: none;
     box-sizing: border-box;
+    overflow: hidden;
     
     p {
         margin-top: 8px;
         color: #FFF;
         text-align: center;
+        font-weight: 500;
+        letter-spacing: 1px;
     }
     
     &:nth-child(2){
-        background-color: #00B0C8;
+        background-color: #2D7C97!important;
     }
     
     &:nth-child(3){
-        background-color: #FF6C58;
+        background-color: #BB4433!important;
     }
     
     &:nth-child(4){
-        background-color: #F69C35;
+        background-color: #a86800!important;
     }
    
     img {
@@ -582,6 +585,8 @@ a.shortcut_box {
         margin: auto;
     }
 }
+
+
 
 /*********CONTENT***********/  
 
@@ -765,4 +770,15 @@ a.shortcut_box {
 
 .clear {   
     clear:both;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

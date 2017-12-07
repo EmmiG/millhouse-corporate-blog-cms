@@ -201,6 +201,10 @@ a.shortcut_box {
     width: 25%;
     min-height: 180px;
     
+    p {
+        margin-top: 16px;
+    }
+    
     img {
         padding-top: 42px;
         width: 5em;
@@ -230,6 +234,13 @@ a.shortcut_box {
         background-color: #F69C35;
     }
 }
+
+@media screen and(max-width: 930px){
+    a.shortcut_box {
+        min-width: 100px;
+    }
+}
+
 
 /*********OVERVIEW***********/ 
 
