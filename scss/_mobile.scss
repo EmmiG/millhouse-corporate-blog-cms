@@ -132,7 +132,7 @@ article {
 .jumbotron {
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #064410;
+    background-color: $brandColorBlue;
     height: 100vh;
     margin: 0;
     background-attachment: fixed;
@@ -277,7 +277,7 @@ article {
     }
     
     img {
-        width: 378px;
+        width: 100%;
     }
 }
 
@@ -307,12 +307,21 @@ article {
                 ABOUT
 ------------------------------------------*/
 
-.about_wrap img {
-    overflow: hidden;
-    max-height: 480px;
-    display: block;
-    margin: auto;
+.about_wrap {
+    padding-bottom: 16px;
+    
+    p {
+        text-align: justify;
+    }
+
+    img {
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
 }
+
 
 /*--------------------------------------
         CATEGORY
@@ -567,15 +576,15 @@ a.shortcut_box {
     }
     
     &:nth-child(2){
-        background-color: #2D7C97!important;
+        background-color: #2D7C97;
     }
     
     &:nth-child(3){
-        background-color: #BB4433!important;
+        background-color: #BB4433;
     }
     
     &:nth-child(4){
-        background-color: #a86800!important;
+        background-color: #a86800;
     }
    
     img {
@@ -773,12 +782,13 @@ a.shortcut_box {
 }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+    position: absolute;
+    color: #333;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }

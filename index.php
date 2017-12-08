@@ -29,12 +29,12 @@
                     <div class="btn_wrap">
                         <form action="comment.php#comments" method="get">
                             <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                            <input type="submit" value="<?php require 'partials/fetch_comment_count.php'; ?>comments" class="btn btn_ghost"/>
+                            <input type="submit" aria-label="comment" value="<?php require 'partials/fetch_comment_count.php'; ?>comments" class="btn btn_ghost"/>
                         </form>
 
                         <form id="like_<?= $post["postID"] ?>" action="partials/like.php" method="post">
                             <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                            <input type="submit" value="<?php require 'partials/fetch_like_count.php'?>likes &#9829;" class="btn btn_ghost"/>
+                            <input type="submit" aria-label="like" value="<?php require 'partials/fetch_like_count.php'?>likes &#9829;" class="btn btn_ghost"/>
                         </form>
                         <div class="clear"></div>
                     </div>

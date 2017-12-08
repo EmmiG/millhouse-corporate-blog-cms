@@ -6,7 +6,7 @@
         require 'partials/head_profile.php';
         //A SQL-request is send through the partial to gather a particular entry through POST.
         if(isset($_POST["postID"])) {
-            require 'partials/fetch_individual_entry.php';
+            require 'partials/fetch_individual_entry_profile.php';
             foreach($indivudual_post as $post) { 
 ?>
 <div id="content" class="container">
@@ -23,11 +23,11 @@
         <div class="comment_field col-sm-12">
             <div class="form-group">
                 <label for="title"> Title </label>
-                <input type="text" name="title" class="form-control" value="<?= $post["title"]; ?>" required>
+                <input id="title" type="text" name="title" class="form-control" value="<?= $post["title"]; ?>" required>
             </div>
         </div>
         <div class="form-group">
-            <label for="content"> Content </label>
+            <label for="summernote"> Content </label>   
             <textarea type="text" name="content" id="summernote" rows="15"><?= $post["content"]; ?></textarea>
             <!-- We use the Summernote.js-plugin for WYSIWIG implementation. -->
             <script>
@@ -48,7 +48,7 @@
         </div>
         <div class="form-group">
             <label for="category"> Category </label><br>
-            <select class="custom-select" name="category" required>
+            <select id="category" class="custom-select" name="category" required>
                 <option selected><?= $post["category"]; ?></option>
                 <option value="Frukter">Fruits</option>
                 <option value="Verktyg">Tools</option>
