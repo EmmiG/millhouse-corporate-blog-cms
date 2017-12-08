@@ -329,6 +329,7 @@ article {
 
 #category {
     text-align: center;
+    margin: 56px auto;
     
     .buttons {
         display: flex;
@@ -338,11 +339,16 @@ article {
         
         .btn-primary {
             margin: 0 8px;
+
         }
     }
     
 }
 
+.content_wrap .descending {
+            margin: 24px auto;
+
+        }
 .card-wrap {
     display: -webkit-box;
     display: -moz-box;

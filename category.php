@@ -10,7 +10,7 @@
     <form action="" method="GET">
         <input type="hidden" value="<?= $_GET['category'] ?>" name="category"/>
         <input type="hidden" value="<?php if(isset($_GET['sorting']) && $_GET['sorting'] == 'desc') { echo 'asc'; } else { echo 'desc'; } ?>" name="sorting"/>
-        <input type="submit" value="<?php if(isset($_GET['sorting']) && $_GET['sorting'] == 'desc') { echo 'Ascending'; } else { echo 'Descending'; } ?>" class="btn btn-primary"/>
+        <input type="submit" value="<?php if(isset($_GET['sorting']) && $_GET['sorting'] == 'desc') { echo 'Ascending'; } else { echo 'Descending'; } ?>" class="btn btn-primary descending"/>
     </form>
     <div class="card-wrap">   
         <?php
