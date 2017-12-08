@@ -19,11 +19,11 @@
                 foreach($indivudual_post_profile as $post) { 
             ?>
             <div class="recent_loop row">
-                <div class="col-sm-9">
+                <div class="col-sm-7 col-md-9">
                     <h3><?= $post['title'] ?></h3>
                     <span class="span_light"><?= $post['time'] ?></span>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-5 col-md-3">
                     <form action="profile_editpost.php" method="post">
                         <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
                         <input type="submit" value="edit" class="btn btn-primary btn_card"/>
@@ -42,9 +42,6 @@
     ?>
         
 </div>  
-
-
-
 
 <?php
     require 'partials/footer_profile.php';

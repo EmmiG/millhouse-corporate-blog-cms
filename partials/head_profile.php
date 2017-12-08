@@ -16,7 +16,7 @@
 <nav id="sidebar">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar_collapsed" aria-expanded="false">
-            <i class="glyphicon glyphicon-align-center"><span class="sr-only">open navbar</span></i>
+        <i class="glyphicon glyphicon-align-center"><span class="sr-only">open navbar</span></i>
         </button>
     </div> 
 

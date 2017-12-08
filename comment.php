@@ -46,9 +46,9 @@
                 <input type="submit" value="Send"class="btn btn-primary">
             </div>
         </form>
-    </div>
+    </div><!--end id comments-->
 
-    <h2 style="padding-bottom: 24px;"><?php require 'partials/fetch_comment_count.php'; ?> Comments</h2>
+    <h2 class="h2_comments"><?php require 'partials/fetch_comment_count.php'; ?> Comments</h2>
     <!-- The partial gathers the postID and will find any comment attached to it. Then it will use a foreach-loop to print it onto the website. -->
     <?php
         require 'partials/fetch_comments_comment.php';

@@ -20,6 +20,7 @@
     font-weight: 700;
     float: right;
     text-transform: uppercase;
+    background: transparent;
     
     &:hover {
         text-decoration: underline;
@@ -32,4 +33,9 @@
         transition: all 0.2s;
         
     }
+}
+
+.btn_card {
+    width: 140px;
+    margin: 10px auto;
 }
