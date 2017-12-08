@@ -1,13 +1,13 @@
     <!-- Latest compiled and minified JavaScript -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+</main>
 <!--FOOTER-->
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-3">
-                    <a href="index.php"><img src="images/millhouse_white_logo.svg" alt="millhouse footer logo"></a>
+                    <a href="index.php"><img src="images/millhouse_white_logo.svg" alt="millhouse logo footer"></a>
                 </div>
                 <div class="col-xs-4 col-sm-2">
                     <h3>Home</h3>

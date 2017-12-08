@@ -28,11 +28,11 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav ta-bort">
+                <ul class="nav navbar-nav space">
                     <li><a href="index.php">HOME</a></li>                   
                     <li><a href="about.php">ABOUT<span class="sr-only">Opens about page (same window)</span></a></li>
                 
-                    <li><a id="nav-logo" href="index.php"><img src="../images/millhouse_white_logo.svg"><span class="sr-only">Opens start blog page (same window)</span></a></li>
+                    <li><a id="nav-logo" href="index.php"><img src="../images/millhouse_white_logo.svg" alt="small millhouse logo navbar"><span class="sr-only">Opens start blog page (same window)</span></a></li>
               
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORY <i class="caret"></i></a>
@@ -74,3 +74,4 @@
           </div><!-- /.container-fluid -->
         </nav>
     </header>
+    <main>

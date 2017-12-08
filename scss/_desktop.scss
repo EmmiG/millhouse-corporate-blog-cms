@@ -28,7 +28,7 @@ body {
     }
 }
 
-.ta-bort {
+.space {
     margin-left: 48px !important;
 }
 
@@ -123,7 +123,11 @@ entry_box {
     padding: 48px 0;
     
     h1 {
-        margin: 0 0 32px;
+        margin: 16px 0 48px;
+    }
+    
+    img {
+        max-width: 450px;
     }
     
 }
@@ -219,19 +223,6 @@ a.shortcut_box {
     
     &:nth-child(1){
         margin-left: 0;
-    }
-    
-    
-    &:nth-child(2){
-        background-color: #00B0C8;
-    }
-    
-    &:nth-child(3){
-        background-color: #FF6C58;
-    }
-    
-    &:nth-child(4){
-        background-color: #F69C35;
     }
 }
 
