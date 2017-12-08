@@ -20,13 +20,13 @@
         foreach($sorted_posts as $post) { ?>  
         <div class="card">
             <?php 
-                if($_GET['category'] == 'frukter') {
-                    echo '<img src="/images/sunglasses.jpeg">';
+                if($_GET['category'] == 'sunglasses') {
+                    echo '<img src="/images/sunglasses@500px.jpg">';
                }
-               else if($_GET['category'] == 'verktyg') {
+               else if($_GET['category'] == 'interior') {
                     echo '<img src="/images/login_background@500px.jpg">';
                }
-                else if($_GET['category'] == 'kläder') {
+                else if($_GET['category'] == 'watches') {
                     echo '<img src="/images/watch@500px.jpg">';
                }
             ?>
