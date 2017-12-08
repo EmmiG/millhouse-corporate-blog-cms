@@ -19,7 +19,17 @@
         include 'partials/sort_category.php';
         foreach($sorted_posts as $post) { ?>  
         <div class="card">
-            <img src="/images/watch@500px.jpg" alt="card photo wristwatch">
+            <?php 
+                if($_GET['category'] == 'sunglasses') {
+                    echo '<img src="/images/sunglasses@500px.jpg">';
+               }
+               else if($_GET['category'] == 'interior') {
+                    echo '<img src="/images/login_background@500px.jpg">';
+               }
+                else if($_GET['category'] == 'watches') {
+                    echo '<img src="/images/watch@500px.jpg">';
+               }
+            ?>
             <div class="card-body">
                 <h2 class="card-title"><?= $post['title'] ?></h2>
                 <hr>

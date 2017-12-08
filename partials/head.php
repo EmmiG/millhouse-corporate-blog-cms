@@ -37,9 +37,9 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORY <i class="caret"></i></a>
                       <ul class="dropdown-menu">
-                        <li><a href="category.php?category=kläder">Kläder</a></li>
-                        <li><a href="category.php?category=verktyg">Verktyg</a></li>
-                        <li><a href="category.php?category=frukter">Frukter</a></li>
+                        <li><a href="category.php?category=watches">Watches</a></li>
+                        <li><a href="category.php?category=interior">Interior</a></li>
+                        <li><a href="category.php?category=sunglasses">Sunglasses</a></li>
                       </ul>
                     </li> 
                     
