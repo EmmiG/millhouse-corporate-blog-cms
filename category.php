@@ -30,12 +30,10 @@
                     echo '<img src="/images/watch@500px.jpg">';
                }
             ?>
-
             <div class="card-body">
                 <h2 class="card-title"><?= $post['title'] ?></h2>
                 <hr>
                 <span class="span_light"><?= $post['time'] ?> | <?= $post['name'] ?></span>
-<!--                    <p class="card-text"><?= $post['content'] ?></p>-->
                 <!-- Using the loop to attach the postID to a hidden form which can take us to the entry itself. -->
                 <form action="comment.php" method="get">
                     <input type="hidden" value="<?= $post['postID'] ?>" name="postID"/>
@@ -43,8 +41,21 @@
                     <span class="category_readmore">Read more <i class="fa fa-chevron-right"></i></span>
                     </a>
                 </form>
+            <div class="card">
+                <img src="/images/watch@500px.jpg">
+                <div class="card-body">
+                    <h2 class="card-title"><?= $post['title'] ?></h2>
+                    <hr>
+                    <span class="span_light"><?= $post['time'] ?> | <?= $post['name'] ?></span>
+                    <!-- Using the loop to attach the postID to a hidden form which can take us to the entry itself. -->
+                    <form action="comment.php" method="get">
+                        <input type="hidden" value="<?= $post['postID'] ?>" name="postID"/>
+                        <a href="comment.php?postID=<?= $post['postID'] ?>" class="black-text d-flex flex-row-reverse">
+                        <span class="category_readmore">Read more <i class="fa fa-chevron-right"></i></span>
+                        </a>
+                    </form>
+                </div>
             </div>
-        </div>
 
         <?php } ?>
     </div>

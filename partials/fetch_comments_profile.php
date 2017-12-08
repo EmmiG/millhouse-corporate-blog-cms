@@ -14,6 +14,7 @@
     /*
     The SQL-statement is initiated. Only 5 entries per page. 
     */
+    require_once 'database.php';
     $start_from = ($page-1) * $limit; 
     $statement = $pdo->prepare("SELECT * FROM comments order by ID DESC LIMIT $start_from, $limit");
     $statement->execute(); 

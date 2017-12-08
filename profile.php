@@ -12,26 +12,26 @@
         <a href="index.php">
             <span>Shortcut blog</span>
         </a>
-        <span id="profile_avatar"><img src="../images/avatar.svg">
+        <span id="profile_avatar"><img src="../images/avatar.svg" alt="profile avatar">
         LOGGED IN: <?=  $_SESSION["user"]["username"]; ?></span>
     </div>
     <div class="clear"></div>
     
     <div class="shortcut container">
         <a href="profile_newpost.php" class="shortcut_box">
-           <img src="../images/new_post.svg">
+           <img src="../images/new_post.svg" alt="new post shortcut">
            <p>New post</p>
         </a>
         <a href="profile_edit.php" class="shortcut_box">
-            <img src="../images/edit.svg">
+            <img src="../images/edit.svg" alt="edit post shortcut">
             <p>Edit post</p>
         </a>
         <a href="profile_deletepost.php" class="shortcut_box">
-            <img src="../images/delete_post.svg">
+            <img src="../images/delete_post.svg" alt="delete post shortcut" alt="delete post">
             <p>Delete post</p>
         </a>
         <a href="profile_deletecomment.php" class="shortcut_box">
-            <img src="../images/delete_comment.svg">   
+            <img src="../images/delete_comment.svg" alt="delete comment shortcut">   
             <p>Delete comment</p>
         </a>       
     </div>
@@ -82,7 +82,7 @@
                     <h3> <?= $post['title'] ?></h3>
                     <span class="span_light"> <?= $post['time'] ?> | Author: <?= $post['name'] ?></span>
                     <a href="comment.php?postID=<?= $post['postID'] ?>">
-                        <img id="view_svg" src="../images/eye.svg">
+                        <img id="view_svg" src="../images/eye.svg" alt="view post logo">
                         <span class="sr-only">Opens post</span>
                     </a>
                     <div class="clear"></div>
