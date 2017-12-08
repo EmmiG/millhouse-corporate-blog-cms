@@ -23,8 +23,8 @@
     */
     if(password_verify($password, $fetched_user["password"])){
         $_SESSION["user"] = $fetched_user;
-        header("Location: ../profile.php?success=true");
+        header("Location: ../profile.php");
     } else {
-        header("Location: ../landing.php?error=Wrong username&success=false");
+        header("Location: ../landing.php?error=wrong username or password");
     }
 ?>

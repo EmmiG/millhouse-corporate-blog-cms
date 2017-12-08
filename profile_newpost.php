@@ -37,10 +37,9 @@
 
         <label for="category"> Choose category</label><br>
         <select id="category" class="custom-select" name="category">
-            <option selected>Open this select menu</option>
-            <option class="btn" value="Kläder">Clothes</option>
-            <option class="btn" value="Frukter">Fruits</option>
-            <option class="btn" value="Verktyg">Tools</option>
+            <option class="btn" value="Watches">Watches</option>
+            <option class="btn" value="Interior">Interior</option>
+            <option class="btn" value="Sunglasses">Sunglasses</option>
         </select>
 
         <div class="form-group">

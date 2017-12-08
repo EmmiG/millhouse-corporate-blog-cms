@@ -50,8 +50,9 @@
             <label for="category"> Category </label><br>
             <select id="category" class="custom-select" name="category" required>
                 <option selected><?= $post["category"]; ?></option>
-                <option value="Frukter">Fruits</option>
-                <option value="Verktyg">Tools</option>
+                <option value="Watches">Watches</option>
+                <option value="Interior">Interior</option>
+                <option value="Sunglasses">Sunglasses</option>
             </select>
 
         </div>
