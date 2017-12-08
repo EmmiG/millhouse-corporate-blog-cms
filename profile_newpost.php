@@ -11,11 +11,11 @@
     <form action="partials/new_entry.php" method="POST">
         <div class="form-group">
             <label for="username"> Title </label>
-            <input type="text" name="title" class="form-control">
+            <input id="username" type="text" name="title" class="form-control">
         </div>
 
         <div class="form-group">
-            <label for="password"> Content </label>
+            <label for="summernote"> Content </label>
             <textarea type="text" name="content" id="summernote" rows="15"></textarea>
                 <!-- We use the Summernote.js-plugin for WYSIWIG implementation. -->
 			    <script>
@@ -36,7 +36,7 @@
         </div>
 
         <label for="category"> Choose category</label><br>
-        <select class="custom-select" name="category">
+        <select id="category" class="custom-select" name="category">
             <option selected>Open this select menu</option>
             <option class="btn" value="Kläder">Clothes</option>
             <option class="btn" value="Frukter">Fruits</option>

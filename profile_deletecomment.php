@@ -6,6 +6,7 @@
         require 'partials/head_profile.php';
         require 'partials/functions.php';
 ?>
+
 <div id="content" class="container">
     <div class="row">
         <div class="col-sm-12">      
@@ -30,23 +31,21 @@
                         <input type="submit" value="delete" class="btn btn-primary btn_card"/>
                     </form>
                 </div> 
-            </div>  
+            </div><!--end recent_loop--> 
 
             <?php
                } 
             ?>
-            </div>
-        </div>
-    </div>
+            </div><!--end card_content-->
+        </div><!--end col-->       
+    </div><!--end row-->
+
     <!--  A function is initiated to gather the post amount. Then our pagination is required. -->
     <?php
         $total_records = postamount_individual();
         require 'partials/pagination_pages.php';
     ?>    
-</div>  
-
-
-
+</div><!--end container-->
 
 <?php
     require 'partials/footer_profile.php';

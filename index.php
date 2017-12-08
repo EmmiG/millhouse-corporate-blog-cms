@@ -6,7 +6,7 @@
 ?>
 
 <div class="jumbotron jumbo_start">
-    <img src="images/millhouse_white_logo.svg">
+    <img src="images/millhouse_white_logo.svg" alt="big millhouse logo start page">
     <a href="#blog">
     <div id="arrow_down">
         <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -25,25 +25,28 @@
                 <h1><?= $post['title'] ?></h1>
                 <span class="span_light"><?= $post['name'] ?> | category: <?= $post['category'] ?></span>
                 <article><?= $post['content'] ?></article>
-                    <!-- The two partials below gather the like/comment-count for each individual post through the hidden postID-values. -->
-                    <div class="btn_wrap">
-                        <form action="comment.php#comments" method="get">
-                            <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                            <input type="submit" value="<?php require 'partials/fetch_comment_count.php'; ?>comments" class="btn btn_ghost"/>
-                        </form>
 
-                        <form id="like" action="partials/like.php" method="post">
-                            <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
-                            <input type="submit" value="<?php require 'partials/fetch_like_count.php'?>likes &#9829;" class="btn btn_ghost"/>
-                        </form>
-                        <div class="clear"></div>
-                    </div>
-                </div>
+                <!-- The two partials below gather the like/comment-count for each individual post through the hidden postID-values. -->
+                <div id="like<?=$post["postID"]?>" class="btn_wrap">
+                    <form action="comment.php#comments" method="get">
+                        <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
+                        <input type="submit" aria-label="like" value="<?php require 'partials/fetch_comment_count.php'; ?>comments" class="btn btn_ghost"/>
+                    </form>
 
-                <hr>
+                    <form action="partials/like.php" method="post">
+                        <input type="hidden" value="<?= $post["postID"] ?>" name="postID"/>
+                        <input type="submit" aria-label="comments" value="<?php require 'partials/fetch_like_count.php'?>likes &#9829;" class="btn btn_ghost"/>
+                    </form>
+                    <div class="clear"></div>
 
-        <?php } ?>  
-    </article>
+                </div><!--end btn_wrap-->
+            </div><!--end entry_box-->
+
+            <hr>
+
+    <?php } ?>  
+    </article>  
+
     <!-- The total records variable is needed in order for the pagination to work. The postamount function let's us know how many entries that are present in the database. Then the pagination_pages will print out the pagination results. -->
     <div class="pagination">  
         <?php
@@ -51,7 +54,8 @@
             require 'partials/pagination_pages.php';
         ?> 
     </div>
-    <div class="clear"></div>  
-</div>
+    <div class="clear"></div>
+
+</div><!--end content_wrap-->
 
 <?php require 'partials/footer.php'; ?>

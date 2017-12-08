@@ -19,7 +19,7 @@
         include 'partials/sort_category.php';
         foreach($sorted_posts as $post) { ?>  
         <div class="card">
-            <img src="/images/watch@500px.jpg">
+            <img src="/images/watch@500px.jpg" alt="card photo wristwatch">
             <div class="card-body">
                 <h2 class="card-title"><?= $post['title'] ?></h2>
                 <hr>
