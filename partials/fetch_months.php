@@ -1,5 +1,5 @@
 <?php    
-   	require_once 'partials/database.php';
+   	require_once 'database.php';
     /*
     This statement will from our posts-database and group them by year/month. This is later echoed into a 
     dropdown menu in our navbar. Only months that have entries will be visible. It is an ugly solution though as 
