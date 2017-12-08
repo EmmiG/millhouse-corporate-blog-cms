@@ -16,33 +16,20 @@
         <?php
         //A foreach loop will iterate through a SQL-request depending on the value of GET.
         if(isset($_GET['category'])) {
-        include 'partials/sort_category.php';
-        foreach($sorted_posts as $post) { ?>  
-        <div class="card">
-            <?php 
-                if($_GET['category'] == 'sunglasses') {
-                    echo '<img src="/images/sunglasses@500px.jpg">';
-               }
-               else if($_GET['category'] == 'interior') {
-                    echo '<img src="/images/login_background@500px.jpg">';
-               }
-                else if($_GET['category'] == 'watches') {
-                    echo '<img src="/images/watch@500px.jpg">';
-               }
-            ?>
-            <div class="card-body">
-                <h2 class="card-title"><?= $post['title'] ?></h2>
-                <hr>
-                <span class="span_light"><?= $post['time'] ?> | <?= $post['name'] ?></span>
-                <!-- Using the loop to attach the postID to a hidden form which can take us to the entry itself. -->
-                <form action="comment.php" method="get">
-                    <input type="hidden" value="<?= $post['postID'] ?>" name="postID"/>
-                    <a href="comment.php?postID=<?= $post['postID'] ?>" class="black-text d-flex flex-row-reverse">
-                    <span class="category_readmore">Read more <i class="fa fa-chevron-right"></i></span>
-                    </a>
-                </form>
+            include 'partials/sort_category.php';
+            foreach($sorted_posts as $post) { ?>  
             <div class="card">
-                <img src="/images/watch@500px.jpg">
+                <?php 
+                    if($_GET['category'] == 'sunglasses') {
+                        echo '<img src="/images/sunglasses@500px.jpg">';
+                   }
+                   else if($_GET['category'] == 'interior') {
+                        echo '<img src="/images/login_background@500px.jpg">';
+                   }
+                    else if($_GET['category'] == 'watches') {
+                        echo '<img src="/images/watch@500px.jpg">';
+                   }
+                ?>
                 <div class="card-body">
                     <h2 class="card-title"><?= $post['title'] ?></h2>
                     <hr>
@@ -56,7 +43,6 @@
                     </form>
                 </div>
             </div>
-
         <?php } ?>
     </div>
 </div>
