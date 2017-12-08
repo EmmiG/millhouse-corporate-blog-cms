@@ -8,9 +8,13 @@
         <div class="row">
             <div class="login_box">
                 <!-- This message will only be present if a user is trying to enter their dashboard without being logged in. -->
-             	<?php if(isset($_GET['logged_in'])) { 
-					  	echo "<p class='p_login'>Please login in order to access your dashboard</p>";
-					  } 				
+                <?php 
+                    if(isset($_GET['logged_in'])) { 
+				        echo "<p class='p_login'>Please login in order to access your dashboard</p>";
+                    } 	
+                    if(isset($_GET['error'])) { 
+				        echo "<p class='p_login'>Wrong username or password.</p>";
+                    } 
 				?>
                 <img src="images/millhouse_white_logo.svg">
                 <h1>LOGIN</h1>

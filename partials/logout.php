@@ -4,5 +4,5 @@
     */
 	require_once 'session_start.php';
 	session_destroy();
-	header("Location: ../landing.php?Message=logged_out");	
+	header("Location: ../landing.php");	
 ?>
