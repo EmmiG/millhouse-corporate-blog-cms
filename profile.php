@@ -19,8 +19,8 @@
     
     <div class="shortcut container">
         <a href="profile_newpost.php" class="shortcut_box">
-           <img src="../images/new_post.svg" alt="new post shortcut">
-           <p>New post</p>
+            <img src="../images/new_post.svg" alt="new post shortcut">
+            <p>New post</p>
         </a>
         <a href="profile_edit.php" class="shortcut_box">
             <img src="../images/edit.svg" alt="edit post shortcut">
@@ -44,7 +44,7 @@
             <div class="overview_content card_content">
                 <div class="overview_wrap row">
                     <div class="overview_box col-xs-6 col-sm-3">
-                       <span class="overview_dig"><?= postamount(); ?></span>
+                        <span class="overview_dig"><?= postamount(); ?></span>
                         <span class="overview_text">Total posts</span>
                     </div>
                     <div class="overview_box col-xs-6 col-sm-3">
@@ -58,12 +58,11 @@
                     <div class="overview_box col-xs-6 col-sm-3">
                         <span class="overview_dig"><?= count_user_comments(); ?></span>
                         <span class="overview_text">My comments</span>
-
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </div><!--end overview_wrap-->
+            </div><!--end overview_content-->
+        </div><!--end col-->
+    </div><!--end row-->
 
 
     <!--Shows the latest comments and entries through the partials.-->
@@ -109,8 +108,9 @@
                 <?php } ?>
             </div>
         </div> 
-    </div>
-</div> <!--END CONTENT-->
+        
+    </div><!--end row-->
+</div> <!--end content-->
 
 <?php
 	require 'partials/footer_profile.php';

@@ -20,12 +20,12 @@
                 foreach($indivudual_comment_profile as $comment) { 
             ?>
             <div class="recent_loop row">
-                <div class="col-sm-9">
+                <div class="col-sm-7 col-md-9">
                     <!--<h3><?= $comment['title'] ?></h3>-->
                     <span class="span_light"><?= $comment['time'] ?></span>
                     <p><?= $comment['content'] ?></p>
                 </div>
-                <div class="col-sm-3">     
+                <div class="col-sm-5 col-md-3">    
                     <form action="partials/delete_comment.php" method="post">
                         <input type="hidden" value="<?=$comment["postID"] ?>" name="postID"/>
                         <input type="submit" value="delete" class="btn btn-primary btn_card"/>

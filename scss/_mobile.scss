@@ -277,7 +277,7 @@ article {
     }
     
     img {
-        width: 100%;
+        width: 100%!important;
     }
 }
 
@@ -299,6 +299,10 @@ article {
     h3, h5 {
         padding: 0;
     }
+}
+
+.h2_comment {
+    padding-bottom: 24px;
 }
 
 
