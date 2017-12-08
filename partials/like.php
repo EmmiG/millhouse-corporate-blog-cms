@@ -10,5 +10,5 @@
     $statement->execute(array(
     ":postID"        => $_POST["postID"],
     ));
-    header("Location: ../index.php?postID=".$_POST['postID']."#like");
+    header("Location: ../index.php#like_".$_POST["postID"]);
 ?>
