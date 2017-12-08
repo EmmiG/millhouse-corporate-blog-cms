@@ -4,7 +4,14 @@
     <div class="container">
         <div class="row">
             <div class="login_box">
+
+            <?php 
+                if(isset($_GET['username'])) { 
+                    echo "<p class='p_login'>The username is already taken.</p>";
+                } 				
+				?>
                 <img src="images/millhouse_white_logo.svg" alt="millhouse logo register user">
+
                 <h1>Register</h1>
                     <form action="partials/register.php" method="POST">
                     <div class="form-group">
