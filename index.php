@@ -6,7 +6,7 @@
 ?>
 
 <div class="jumbotron jumbo_start">
-    <img src="images/millhouse_white_logo.svg">
+    <img src="images/millhouse_white_logo.svg" alt="big millhoouse logo">
     <a href="#blog">
     <div id="arrow_down">
         <i class="fa fa-angle-down" aria-hidden="true"></i>

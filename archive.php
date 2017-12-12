@@ -20,7 +20,7 @@
                             ?>
                             <div class="archive_box">
                                 <a href="comment.php?postID=<?= $selpost['postID'] ?>">
-                                <h3 class="archive_title"><?= $selpost['title'] ?></h3></a>
+                                <h2><?= $selpost['title'] ?></h2></a>
                                 <span class="span_light"><?= $selpost['time']?> | <?= $selpost['name'] ?></span>
                                 <!--<article><?= $selpost['content'] ?></article>-->
                                 <!--<p><?= $selpost['email'] ?></p>-->
@@ -34,11 +34,11 @@
                                  
                              <?php }} ?>
                         </article>
-                    </div><!--card_content-->
-                </div><!--stänger col-sm-12-->
-            </div><!--stänger row-->
-        </div><!--stänger content_wrap-->
-    </div><!--stänger container-->
-</div><!--stänger main_wrap-->
+                    </div><!--end card_content-->
+                </div><!--end col-sm-12-->
+            </div><!--end row-->
+        </div><!--end content_wrap-->
+    </div><!--end container-->
+</div><!--end main_wrap-->
 
 <?php  require 'partials/footer.php'; ?>

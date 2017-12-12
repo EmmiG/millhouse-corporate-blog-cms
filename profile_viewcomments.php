@@ -20,8 +20,8 @@
             ?>
             <div class="recent_loop row">
                 <div class="col-sm-7 col-md-9">
-                    <p> <?= $comment['time'] ?></p>
-                    <p> <?= $comment['name'] ?></p>
+                    <span class="span_light"><?= $comment['time'] ?></span>
+                    <h3> <?= $comment['name'] ?></h3>
                     <p> <?= $comment['content']; ?> </p> 
                 </div>
 
