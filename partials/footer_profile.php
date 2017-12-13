@@ -3,6 +3,5 @@
     </main>
     <footer>
     </footer>
-    <!--<script src="https://cdn.jsdelivr.net/npm/tota11y@0.1.6/build/tota11y.min.js"></script>-->
 </body>
 </html>

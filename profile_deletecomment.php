@@ -21,7 +21,6 @@
             ?>
             <div class="recent_loop row">
                 <div class="col-sm-7 col-md-9">
-                    <!--<h3><?= $comment['title'] ?></h3>-->
                     <span class="span_light"><?= $comment['time'] ?></span>
                     <p><?= $comment['content'] ?></p>
                 </div>

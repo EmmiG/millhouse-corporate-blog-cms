@@ -34,7 +34,7 @@ h3 {
     text-transform: uppercase;
 }
 
-p{
+p {
     color: #555;
     text-align: left;
 }
@@ -165,11 +165,12 @@ article {
 	animation-duration: 2s;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+    -webkit-transition: height 0.6s ease-in-out;
+    -o-transition: height 0.6s ease-in-out;
     transition: height 0.6s ease-in-out;
     font-size: 5em;
     text-align: center;
-    margin-top: 5%;
-    
+    margin-top: 5%; 
 }
 
 
@@ -188,11 +189,11 @@ article {
 
 /*needed because bootstrap navbar needs 50px in body and push content down*/
 #comments:before, #blog:before { 
-  display: block; 
-  content: " "; 
-  margin-top: -50px; 
-  height: 50px; 
-  visibility: hidden; 
+    display: block; 
+    content: " "; 
+    margin-top: -50px; 
+    height: 50px; 
+    visibility: hidden; 
 }
 
 
@@ -251,8 +252,7 @@ article {
             font-weight:500;
             margin-bottom: 0;
         }  
-    }
-    
+    } 
 }
 
 @media screen and(min-width: 500px){
@@ -260,8 +260,6 @@ article {
         margin-top: 5vh;
     }
 }
-
-
 
 /*--------------------------------------
         BLOG 
@@ -326,7 +324,6 @@ article {
     }
 }
 
-
 /*--------------------------------------
         CATEGORY
 --------------------------------------*/
@@ -336,33 +333,41 @@ article {
     margin: 56px auto;
     
     .buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin: 32px 0 48px;
         
         .btn-primary {
             margin: 0 8px;
-
         }
-    }
-    
+    } 
 }
 
 .content_wrap .descending {
-            margin: 24px auto;
+    margin: 24px auto;
+}
 
-        }
 .card-wrap {
     display: -webkit-box;
-    display: -moz-box;
     display: -ms-flexbox;
     display: -moz-flex;
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: wrap row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: wrap row;
     flex-flow: wrap row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-bottom: 40px;
 }
@@ -377,7 +382,8 @@ article {
     margin: 4px;
     
         &:hover{
-             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             -ms-transform: scale(1.02);
             -webkit-transform: scale(1.02);
             transform: scale(1.02);  
@@ -398,27 +404,25 @@ article {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
-//        white-space: nowrap;
-//        overflow: hidden;
         
         &:nth-of-type(n){
             display: none;
         }
-    }
-       
+    }   
 }
 
 .card-body {
     position: relative;
     -ms-flex: 1 1 auto;
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1.25rem;
     
     h2 {
         font-size: 1.2em;
+        -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -441,13 +445,13 @@ article {
 .category_readmore {
     font-weight: 500;
     display: block;
-   padding-top: 32px;
+    padding-top: 32px;
 }
 
 .card-text {
     display: -webkit-box;
-              -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 
@@ -455,21 +459,31 @@ article {
         ARCHIVE
 --------------------------------------*/
 
+#archive {
+    margin-top: 40px;
+}
+
 .archive_box {
     margin-top: 54px;
     margin-bottom: 48px;
     border-bottom: 1px solid #eee;
-}
-
+    
+    
     a {
         color: #000;
         text-decoration: none;
     }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
 
 .readmore_h3 {
-text-align:right;
-color: #000;
-margin-bottom: 12px;
+    text-align:right;
+    color: #000;
+    margin-bottom: 12px;
 }
 
 /*--------------------------------------
@@ -483,6 +497,8 @@ margin-bottom: 12px;
     height: 60px;
     width: 100%;
     z-index: 999;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     position: relative;
      
@@ -561,14 +577,16 @@ margin-bottom: 12px;
 
 .shortcut {
     display: -webkit-box;
-    display: -moz-box;
     display: -ms-flexbox;
     display: -moz-flex;
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: wrap row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: wrap row;
     flex-flow: wrap row;
     padding: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 8px;
 }
@@ -582,6 +600,7 @@ a.shortcut_box {
     height: 120px;
     display: block;
     text-decoration: none;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     overflow: hidden;
     
@@ -613,8 +632,6 @@ a.shortcut_box {
     }
 }
 
-
-
 /*********CONTENT***********/  
 
 #profile_body {
@@ -636,7 +653,7 @@ a.shortcut_box {
 
 .card_content {
     background-color: #fff;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .recent_loop {
@@ -649,6 +666,7 @@ a.shortcut_box {
     }
     
     p {
+        -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -675,7 +693,6 @@ a.shortcut_box {
 
 .overview_wrap {
     text-align: center;
-    
 }
 
 .overview_content {
@@ -710,7 +727,6 @@ a.shortcut_box {
     }
 }
 .overview_text {
-    
     text-align: center;
     font-weight: 500;
     font-size: 2em;
@@ -741,7 +757,6 @@ a.shortcut_box {
                 FOOTER
 ------------------------------------------*/
 
-
 #footer {
     background-color: $brandColorBlue;
     color: #fff;
@@ -770,14 +785,12 @@ a.shortcut_box {
             text-decoration: none;
             color: #EC9E0C; 
         }
-    
     }
     
     img {
         margin: 0 auto;
         display: block;
     }
-    
 }
 
 .social_networks {
@@ -789,11 +802,13 @@ a.shortcut_box {
         font-size: 2.4em;
         color: #f9f9f9;
         padding: 10px;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
         transition: 0.2s;
     }
 }
 
-/*--------------*/
+/*---------------------------*/
 
 .clear {   
     clear:both;
@@ -801,7 +816,7 @@ a.shortcut_box {
 
 .sr-only {
     position: absolute;
-    color: #333;
+    color: #555;
     width: 1px;
     height: 1px;
     padding: 0;
